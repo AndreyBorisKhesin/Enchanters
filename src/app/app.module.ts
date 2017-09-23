@@ -12,6 +12,8 @@ import { SocialPage } from '../pages/social/social';
 import { BusinessPage } from '../pages/business/business';
 import { TechnologyPage } from '../pages/technology/technology';
 import { LeafPage } from '../pages/leaf/leaf';
+import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,6 +22,8 @@ import { UserProvider } from '../providers/user/user';
 import { HttpModule } from '@angular/http';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBngzUa5bdDC3sh9L_x9cD62lSQneCQRKM",
@@ -41,7 +45,9 @@ const firebaseConfig = {
     SocialPage,
     BusinessPage,
     TechnologyPage,
-    LeafPage
+    LeafPage,
+    LoginPage,
+    SignupPage
   ],
   imports: [
     BrowserModule,
@@ -61,14 +67,17 @@ const firebaseConfig = {
     SocialPage,
     BusinessPage,
     TechnologyPage,
-    LeafPage
+    LeafPage,
+    LoginPage,
+    SignupPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     FirebaseProvider,
-    UserProvider
+    UserProvider,
+    AngularFireAuth
   ]
 })
 export class AppModule {}
