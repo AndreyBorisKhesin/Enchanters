@@ -30,7 +30,7 @@ static NSString* const kCdvUserAgentVersionKey = @"Cordova-User-Agent-Version";
 static NSString* gOriginalUserAgent = nil;
 static NSInteger gNextLockToken = 0;
 static NSInteger gCurrentLockToken = 0;
-static NSMutableArray* gPendingSetUserAgentBlocks = nil;
+static NSMutableArray* gPendingsetUserNameAgentBlocks = nil;
 
 @implementation CDVUserAgentUtil
 
@@ -69,7 +69,7 @@ static NSMutableArray* gPendingSetUserAgentBlocks = nil;
 + (void)onAppLocaleDidChange:(NSNotification*)notification
 {
     // TODO: We should figure out how to update the user-agent of existing UIWebViews when this happens.
-    // Maybe use the PDF bug (noted in setUserAgent:).
+    // Maybe use the PDF bug (noted in setUserNameAgent:).
     gOriginalUserAgent = nil;
 }
 
@@ -80,11 +80,11 @@ static NSMutableArray* gPendingSetUserAgentBlocks = nil;
         VerboseLog(@"Gave lock %d", gCurrentLockToken);
         block(gCurrentLockToken);
     } else {
-        if (gPendingSetUserAgentBlocks == nil) {
-            gPendingSetUserAgentBlocks = [[NSMutableArray alloc] initWithCapacity:4];
+        if (gPendingsetUserNameAgentBlocks == nil) {
+            gPendingsetUserNameAgentBlocks = [[NSMutableArray alloc] initWithCapacity:4];
         }
         VerboseLog(@"Waiting for lock");
-        [gPendingSetUserAgentBlocks addObject:block];
+        [gPendingsetUserNameAgentBlocks addObject:block];
     }
 }
 
@@ -96,9 +96,9 @@ static NSMutableArray* gPendingSetUserAgentBlocks = nil;
     NSAssert(gCurrentLockToken == *lockToken, @"Got token %ld, expected %ld", (long)*lockToken, (long)gCurrentLockToken);
 
     VerboseLog(@"Released lock %d", *lockToken);
-    if ([gPendingSetUserAgentBlocks count] > 0) {
-        void (^block)() = [gPendingSetUserAgentBlocks objectAtIndex:0];
-        [gPendingSetUserAgentBlocks removeObjectAtIndex:0];
+    if ([gPendingsetUserNameAgentBlocks count] > 0) {
+        void (^block)() = [gPendingsetUserNameAgentBlocks objectAtIndex:0];
+        [gPendingsetUserNameAgentBlocks removeObjectAtIndex:0];
         gCurrentLockToken = ++gNextLockToken;
         NSLog(@"Gave lock %ld", (long)gCurrentLockToken);
         block(gCurrentLockToken);
@@ -108,7 +108,7 @@ static NSMutableArray* gPendingSetUserAgentBlocks = nil;
     *lockToken = 0;
 }
 
-+ (void)setUserAgent:(NSString*)value lockToken:(NSInteger)lockToken
++ (void)setUserNameAgent:(NSString*)value lockToken:(NSInteger)lockToken
 {
     NSAssert(gCurrentLockToken == lockToken, @"Got token %ld, expected %ld", (long)lockToken, (long)gCurrentLockToken);
     VerboseLog(@"User-Agent set to: %@", value);

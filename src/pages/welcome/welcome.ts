@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { BusinessPage } from '../business/business';
 import { SocialPage } from '../social/social';
 import { UserProvider } from '../../providers/user/user';
@@ -16,7 +16,7 @@ export class WelcomePage {
     public navParams: NavParams,
     public userProvider: UserProvider,
   ) {
-    this.user = this.userProvider.getUser();
+    this.user = this.userProvider.getUserName();
   }
 
   ionViewDidLoad() {

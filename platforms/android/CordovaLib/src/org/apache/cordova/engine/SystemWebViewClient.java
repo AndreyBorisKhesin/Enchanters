@@ -89,7 +89,7 @@ public class SystemWebViewClient extends WebViewClient {
         // Get the authentication token (if specified)
         AuthenticationToken token = this.getAuthenticationToken(host, realm);
         if (token != null) {
-            handler.proceed(token.getUserName(), token.getPassword());
+            handler.proceed(token.getUserNameName(), token.getPassword());
             return;
         }
 

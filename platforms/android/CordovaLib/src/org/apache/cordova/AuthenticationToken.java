@@ -30,7 +30,7 @@ public class AuthenticationToken {
      *
      * @return the user name
      */
-    public String getUserName() {
+    public String getUserNameName() {
         return userName;
     }
 
@@ -40,7 +40,7 @@ public class AuthenticationToken {
      * @param userName
      *            the new user name
      */
-    public void setUserName(String userName) {
+    public void setUserNameName(String userName) {
         this.userName = userName;
     }
 

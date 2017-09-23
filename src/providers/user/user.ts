@@ -12,18 +12,21 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class UserProvider {
 
-  user: any;
+  name: string;
+  email: string;
+  password: string;
+  skills: Map<string, [number, boolean]>;
 
   constructor(public http: Http) {
-    this.user = "";
+    this.name = "";
   }
 
-  setUser(value: any) {
-    this.user = value;
+  setUserName(value: any) {
+    this.name = value;
   }
 
-  getUser(): any {
-    return this.user;
+  getUserName(): any {
+    return this.name;
   }
 
 }
