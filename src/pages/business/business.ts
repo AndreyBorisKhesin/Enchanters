@@ -21,7 +21,7 @@ export class BusinessPage {
   newSkill = '';
 
   constructor(public navCtrl: NavController, public firebaseProvider: FirebaseProvider) {
-    this.skills = this.firebaseProvider.getSkills();
+    this.skills = this.firebaseProvider.getBusinessSkills();
   }
 
 }

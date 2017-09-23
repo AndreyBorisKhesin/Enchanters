@@ -2,13 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LearningPage } from '../learning/learning';
 import { SocialPage } from '../social/social';
-
-/**
- * Generated class for the WelcomePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { UserProvider } from '../../providers/user/user';
 
 @IonicPage()
 @Component({
@@ -16,12 +10,19 @@ import { SocialPage } from '../social/social';
   templateUrl: 'welcome.html',
 })
 export class WelcomePage {
+  user: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public userProvider: UserProvider,
+  ) {
+    this.user = this.userProvider.getUser();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
+    console.log('in the welcome page, user is ' + this.user);
   }
 
   goToLearningPage() {

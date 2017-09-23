@@ -26,10 +26,9 @@ export class FirebaseProvider {
     this.afd.list('/names/').remove(id);
   }
 
-  getSkills() {
+  getBusinessSkills() {
 
     return this.afd.list('/skills/business/');
-    //var items = this.afd.list('/skills/business/0');
   }
 
 }

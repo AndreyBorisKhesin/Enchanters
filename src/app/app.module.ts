@@ -16,6 +16,7 @@ import { TechnologyPage } from '../pages/technology/technology';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { FirebaseProvider } from '../providers/firebase/firebase';
+import { UserProvider } from '../providers/user/user';
 import { HttpModule } from '@angular/http';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
@@ -66,7 +67,8 @@ const firebaseConfig = {
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    FirebaseProvider
+    FirebaseProvider,
+    UserProvider
   ]
 })
 export class AppModule {}
