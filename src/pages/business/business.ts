@@ -27,7 +27,7 @@ export class BusinessPage {
     public firebaseProvider: FirebaseProvider,
     public navParams: NavParams
   ) {
-    this.skills = this.firebaseProvider.getSkills();
+    this.skills = this.firebaseProvider.getBusinessSkills();
   }
 
   ionViewDidEnter() {

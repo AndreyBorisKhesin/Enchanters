@@ -19,7 +19,7 @@ export class TechnologyPage {
 
   skills: FirebaseListObservable<any[]>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public firebaseProvider: FirebaseProvider,) {
     this.skills = this.firebaseProvider.getTechSkills();
   }
 
