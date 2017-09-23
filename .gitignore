@@ -12,7 +12,7 @@
 #.vscode/
 #npm-debug.log*
 #
-#.idea/
+.idea/
 #.sourcemaps/
 #.sass-cache/
 #.tmp/
@@ -27,7 +27,7 @@ node_modules/
 #plugins/
 #plugins/android.json
 #plugins/ios.json
-#www/
+www/
 #$RECYCLE.BIN/
 #
 #.DS_Store
