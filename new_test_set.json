@@ -17,18 +17,18 @@
 				"name": "Accounting & Actuarial Science",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "Introduction to Pension Mathematics",
+						"description": "Learn about how actuarial functions apply to pension plan funding.  Seminar covers topics of liability, accrud benefic, and projected benefit cost methods.",
+						"organizer": "Bilbo Baggins",
+						"date": "2017-10-04",
+						"location": "Conference Room A"
 					},
 					"1": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "Loss Models for Dummies",
+						"description": "Models for loss severity and frequency.  Includes discussions of Poisson models, aggregate claims models, and Classical Ruin Theory.",
+						"organizer": "Thorin Oakensheild",
+						"date": "2017-09-25",
+						"location": "Great Hall"
 					}
 				},
 				"requests": {}
@@ -37,17 +37,17 @@
 				"name": "Client Services",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "Putting the Client First: How to exceed needs and expectations",
+						"description": "Client Services involves working closely with clients to meet their financial goals.  This workshop covers how to personalize the client experience by understanding their financial needs, and offering appropriate solutions.",
+						"organizer": "Peregrin Took",
+						"date": "2017-10-23",
+						"location": "Green Dragon Room"
 					},
 					"1": {
 						"name": "",
 						"description": "",
 						"organizer": "",
-						"time": "",
+						"date": "",
 						"location": ""
 					}
 				},
@@ -57,17 +57,17 @@
 				"name": "Loan Management & Insurance",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "Workshop: Life Insurance Practice",
+						"description": "Learn about the pricing, risk management, and mortality and maturity guarantees in insurance products.",
+						"organizer": "Thranduil Greenleaf",
+						"date": "2017-09-29",
+						"location": "105B"
 					},
 					"1": {
 						"name": "",
 						"description": "",
 						"organizer": "",
-						"time": "",
+						"date": "",
 						"location": ""
 					}
 				},
@@ -77,17 +77,17 @@
 				"name": "Marketing",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "How to make your graphic designs appealing",
+						"description": "RBC employs webpages, mobile applications, promotional materials and more to connect with current and potential clients.  Learn how to make your designs appealing and user friendly in this seminar.",
+						"organizer": "Meriadoc Brandybuck",
+						"date": "2017-10-27",
+						"location": "Conference Room C"
 					},
 					"1": {
 						"name": "",
 						"description": "",
 						"organizer": "",
-						"time": "",
+						"date": "",
 						"location": ""
 					}
 				},
@@ -97,11 +97,11 @@
 				"name": "Public Relations",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "Social Media 101",
+						"description": "Focuses on the influence of social media on public perception. Involves a brief overview of popular social media plaforms such as Facebook and Twitter followed by case studies.",
+						"organizer": "Legolas Greenleaf",
+						"date": "2017-10-11",
+						"location": "Conference Room A"
 					},
 					"1": {
 						"name": "",
@@ -117,11 +117,11 @@
 				"name": "Sales & Operations",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "Complex Operations Seminar",
+						"description": "Complex operations encompasses a wide range of responsibilities such as ensuring client transactions are efficient and accurate. Learn more about what we do here at RBC.",
+						"organizer": "Lord Elrond",
+						"time": "2017-10-31",
+						"location": "Room 505A"
 					},
 					"1": {
 						"name": "",
@@ -137,11 +137,11 @@
 				"name": "Risk Management",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "Risk Management Q&A Session",
+						"description": "Bring your questions about VaR and CTE risk measures, strategies for mitigating or transferring risk, or anything else you like.  Casual Q&A session; food and beverages provided.",
+						"organizer": "Gandalf the White",
+						"time": "2017-10-30",
+						"location": "Room 506A"
 					},
 					"1": {
 						"name": "",
@@ -157,11 +157,11 @@
 				"name": "Trading & Capital Markets",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "Stocks and Bonds and Derivatives, Oh My!",
+						"description": "An introductory seminar on trading financial securities.  Basic coverage of the different types of securities and traders. Great for those outside the field who want to learn more about trading.",
+						"organizer": "Radagast the Brown",
+						"time": "2017-20-01",
+						"location": "Conference Room A"
 					},
 					"1": {
 						"name": "",
@@ -177,11 +177,11 @@
 				"name": "Wealth Management",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "Managing HNWI Wealth",
+						"description": "A seminar on wealth management for high-net-worth-individuals.",
+						"organizer": "Smaug",
+						"time": "2017-09-26",
+						"location": "Great Hall"
 					},
 					"1": {
 						"name": "",
