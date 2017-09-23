@@ -4,6 +4,7 @@ import { BusinessPage } from '../business/business';
 import { SocialPage } from '../social/social';
 import { CalendarPage } from '../calendar/calendar';
 import { UserProvider } from '../../providers/user/user';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 @Component({
   selector: 'page-welcome',
@@ -18,6 +19,7 @@ export class WelcomePage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public userProvider: UserProvider,
+    private auth: AngularFireAuth
   ) {
     this.getUserInfo();
   }
@@ -41,7 +43,10 @@ export class WelcomePage {
   }
 
   goToCalendar(filter: string) {
-    this.navCtrl.push(CalendarPage, {filter: filter});
+    this.navCtrl.push(CalendarPage, { filter: filter });
   }
 
+  signOut() {
+    this.auth.auth.signOut();
+  }
 }
