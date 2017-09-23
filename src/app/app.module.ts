@@ -8,10 +8,10 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from '../pages/welcome/welcome';
-import { LearningPage } from '../pages/learning/learning';
 import { SocialPage } from '../pages/social/social';
 import { BusinessPage } from '../pages/business/business';
 import { TechnologyPage } from '../pages/technology/technology';
+import { LeafPage } from '../pages/leaf/leaf';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -38,10 +38,10 @@ const firebaseConfig = {
     HomePage,
     TabsPage,
     WelcomePage,
-    LearningPage,
     SocialPage,
     BusinessPage,
-    TechnologyPage
+    TechnologyPage,
+    LeafPage
   ],
   imports: [
     BrowserModule,
@@ -58,10 +58,10 @@ const firebaseConfig = {
     HomePage,
     TabsPage,
     WelcomePage,
-    LearningPage,
     SocialPage,
     BusinessPage,
-    TechnologyPage
+    TechnologyPage,
+    LeafPage
   ],
   providers: [
     StatusBar,

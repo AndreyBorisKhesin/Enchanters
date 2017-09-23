@@ -38,9 +38,6 @@ export class HomePage {
   }
 
   goToWelcomePage() {
-    // "authenticate and get name"
-    // this.userProvider.setUser();
-    // actually go to the welcome page
     this.navCtrl.push(WelcomePage);
   }
 

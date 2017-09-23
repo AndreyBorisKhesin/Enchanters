@@ -4,29 +4,21 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Learning
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
 
 <ion-content padding>
-  <p>Welcome to the business page!</p>
 
-  <ion-list>
-    <ion-item-sliding *ngFor="let item of names | async">
-      <ion-item>
-        {{ item.$value }}
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="danger" icon-only (click)="removeItem(item.$key)"><ion-icon name="trash"></ion-icon></button>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 (click)="goToLeaf()">This column will take 6 columns</ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <ion-list>
-    <ion-item-sliding *ngFor="let item of skills | async">
-      <ion-item>
-        {{ item.$value }}
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="danger" icon-only (click)="removeItem(item.$key)"><ion-icon name="trash"></ion-icon></button>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
 </ion-content>
