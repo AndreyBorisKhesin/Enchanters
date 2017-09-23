@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { BusinessPage } from '../business/business';
-import { TechnologyPage } from '../technology/technology';
 
 /**
- * Generated class for the LearningPage page.
+ * Generated class for the BusinessPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,20 +10,16 @@ import { TechnologyPage } from '../technology/technology';
 
 @IonicPage()
 @Component({
-  selector: 'page-learning',
-  templateUrl: 'learning.html',
+  selector: 'page-business',
+  templateUrl: 'business.html',
 })
-export class LearningPage {
-
-  BusRoot: any = BusinessPage;
-  TechRoot: any = TechnologyPage;
+export class BusinessPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LearningPage');
+    console.log('ionViewDidLoad BusinessPage');
   }
 
 }

@@ -10,6 +10,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { LearningPage } from '../pages/learning/learning';
 import { SocialPage } from '../pages/social/social';
+import { BusinessPage } from '../pages/business/business';
+import { TechnologyPage } from '../pages/technology/technology';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -36,7 +38,9 @@ const firebaseConfig = {
     TabsPage,
     WelcomePage,
     LearningPage,
-    SocialPage
+    SocialPage,
+    BusinessPage,
+    TechnologyPage
   ],
   imports: [
     BrowserModule,
@@ -54,7 +58,9 @@ const firebaseConfig = {
     TabsPage,
     WelcomePage,
     LearningPage,
-    SocialPage
+    SocialPage,
+    BusinessPage,
+    TechnologyPage
   ],
   providers: [
     StatusBar,
