@@ -30,7 +30,8 @@ export class HomePage {
 
   addItem() {
     this.firebaseProvider.addItem(this.newName);
-    this.userProvider.setUser(this.newName);
+    this.userProvider.setUserName(this.newName);
+    this.userProvider.setUserPosition("Data Analyst Intern");
   }
 
   removeItem(id) {

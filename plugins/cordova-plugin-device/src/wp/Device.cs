@@ -63,7 +63,7 @@ namespace WPCordovaClassLib.Cordova.Commands
 
                 string returnVal = "???unknown???";
 
-                using (IsolatedStorageFile appStorage = IsolatedStorageFile.GetUserStoreForApplication())
+                using (IsolatedStorageFile appStorage = IsolatedStorageFile.getUserNameStoreForApplication())
                 {
                     try
                     {

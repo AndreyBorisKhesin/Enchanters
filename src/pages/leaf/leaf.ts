@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+import { QuestionPage } from '../question/question';
+import { CalendarPage } from '../calendar/calendar';
 
 /**
  * Generated class for the LeafPage page.
@@ -8,20 +10,43 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage({
-  name: 'LeafPage'
-})
 @Component({
   selector: 'page-leaf',
   templateUrl: 'leaf.html',
 })
 export class LeafPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  topic: string;
+
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams
+  ) {
+    this.topic = this.navParams.get('topic');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LeafPage');
+  }
+
+  learn() {
+    this.goToCalendar(5);
+  }
+
+  ask() {
+
+  }
+
+  mentor() {
+    this.goToCalendar(5);
+  }
+
+  goToQuestion(filter: any): void {
+    this.navCtrl.push(QuestionPage);
+  }
+
+  goToCalendar(filter: any): void {
+    this.navCtrl.push(CalendarPage);
   }
 
 }

@@ -217,16 +217,16 @@ public class SystemWebViewEngine implements CordovaWebViewEngine {
 
         // Fix for CB-1405
         // Google issue 4641
-        String defaultUserAgent = settings.getUserAgentString();
+        String defaultUserAgent = settings.getUserNameAgentString();
 
         // Fix for CB-3360
         String overrideUserAgent = preferences.getString("OverrideUserAgent", null);
         if (overrideUserAgent != null) {
-            settings.setUserAgentString(overrideUserAgent);
+            settings.setUserNameAgentString(overrideUserAgent);
         } else {
             String appendUserAgent = preferences.getString("AppendUserAgent", null);
             if (appendUserAgent != null) {
-                settings.setUserAgentString(defaultUserAgent + " " + appendUserAgent);
+                settings.setUserNameAgentString(defaultUserAgent + " " + appendUserAgent);
             }
         }
         // End CB-3360
@@ -237,7 +237,7 @@ public class SystemWebViewEngine implements CordovaWebViewEngine {
             this.receiver = new BroadcastReceiver() {
                 @Override
                 public void onReceive(Context context, Intent intent) {
-                    settings.getUserAgentString();
+                    settings.getUserNameAgentString();
                 }
             };
             webView.getContext().registerReceiver(this.receiver, intentFilter);

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { BusinessPage } from '../business/business';
 import { SocialPage } from '../social/social';
 import { UserProvider } from '../../providers/user/user';
@@ -10,7 +10,9 @@ import { AngularFireAuth } from 'angularfire2/auth';
   templateUrl: 'welcome.html',
 })
 export class WelcomePage {
-  user: any;
+  userName: string;
+  userEmail: string;
+  userPosition: string;
 
   constructor(
     public navCtrl: NavController,
@@ -18,12 +20,17 @@ export class WelcomePage {
     public userProvider: UserProvider,
     private auth: AngularFireAuth
   ) {
-    this.user = this.userProvider.getUser();
+    this.getUserInfo();
+  }
+
+  getUserInfo() {
+    this.userName = this.userProvider.getUserName();
+    this.userEmail = this.userProvider.getUserEmail();
+    this.userPosition = this.userProvider.getUserPosition();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
-    console.log('in the welcome page, user is ' + this.user);
   }
 
   goToLearningPage() {

@@ -1,8 +1,8 @@
 import { FirebaseProvider } from './../../providers/firebase/firebase';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { FirebaseListObservable } from 'angularfire2/database';
-
+import { BusinessPage } from '../business/business';
 /**
  * Generated class for the TechnologyPage page.
  *
@@ -10,7 +10,6 @@ import { FirebaseListObservable } from 'angularfire2/database';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-technology',
   templateUrl: 'technology.html',
@@ -19,12 +18,20 @@ export class TechnologyPage {
 
   skills: FirebaseListObservable<any[]>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public firebaseProvider: FirebaseProvider,) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public firebaseProvider: FirebaseProvider,
+  ) {
     this.skills = this.firebaseProvider.getTechSkills();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TechnologyPage');
+  }
+
+  goToBusiness() {
+    this.navCtrl.push(BusinessPage);
   }
 
 }

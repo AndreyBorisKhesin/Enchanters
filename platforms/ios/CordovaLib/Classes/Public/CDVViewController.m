@@ -354,7 +354,7 @@
 - (void)setLockToken:(NSInteger)lockToken
 {
 	_userAgentLockToken = lockToken;
-	[CDVUserAgentUtil setUserAgent:self.userAgent lockToken:lockToken];
+	[CDVUserAgentUtil setUserNameAgent:self.userAgent lockToken:lockToken];
 }
 
 -(void)viewWillAppear:(BOOL)animated

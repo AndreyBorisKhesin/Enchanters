@@ -23,5 +23,5 @@
 + (NSString*)originalUserAgent;
 + (void)acquireLock:(void (^)(NSInteger lockToken))block;
 + (void)releaseLock:(NSInteger*)lockToken;
-+ (void)setUserAgent:(NSString*)value lockToken:(NSInteger)lockToken;
++ (void)setUserNameAgent:(NSString*)value lockToken:(NSInteger)lockToken;
 @end
