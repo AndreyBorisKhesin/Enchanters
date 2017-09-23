@@ -17,15 +17,11 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class BusinessPage {
 
-  names: FirebaseListObservable<any[]>;
   skills: FirebaseListObservable<any[]>;
-  newName = '';
   newSkill = '';
 
   constructor(public navCtrl: NavController, public firebaseProvider: FirebaseProvider) {
-    this.names = this.firebaseProvider.getNames();
     this.skills = this.firebaseProvider.getSkills();
   }
-
 
 }

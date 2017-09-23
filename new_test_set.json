@@ -1,0 +1,119 @@
+{
+  "users": {
+    "0": {
+      "name": "christine",
+      "email": "christine@bbc.com",
+      "skills": ["AI", "C"]
+    },
+    "1": {
+      "name": "andrey",
+      "email": "andrey@bbc.com",
+      "skills": ["mathematica", "staying awake"]
+    }
+  },
+  "skills": {
+    "business": {
+      "0": {
+        "name": "Accounting & Actuarial Science",
+        "events": {},
+        "requests": {}
+      },
+      "1": {
+        "name": "Client Services",
+        "events": {},
+        "requests": {}
+      },
+      "2": {
+        "name": "Loan Management & Insurance",
+        "events": {},
+        "requests": {}
+      },
+      "3": {
+        "name": "Marketing",
+        "events": {},
+        "requests": {}
+      },
+      "4": {
+        "name": "Public Relations",
+        "events": {},
+        "requests": {}
+      },
+      "5": {
+        "name": "Sales & Operations",
+        "events": {},
+        "requests": {}
+      },
+      "6": {
+        "name": "Risk Management",
+        "events": {},
+        "requests": {}
+      },
+      "7": {
+        "name": "Trading & Capital Markets",
+        "events": {},
+        "requests": {}
+      },
+      "8": {
+        "name": "Wealth Management",
+        "events": {},
+        "requests": {}
+      }
+    },
+    "technology": {
+      "0": {
+        "name": "Back End Development",
+        "0": {
+          "name": "Computer Architecture",
+          "events": {},
+          "requests": {}
+        },
+        "1": {
+          "name": "Security & Cryptography",
+          "events": {},
+          "requests": {}
+        },
+        "2": {
+          "name": "Operating Systems",
+          "events": {},
+          "requests": {}
+        }
+      },
+      "1": {
+        "name": "Computing Theory",
+        "0": {
+          "name": "Algorithms & Data Structures",
+          "events": {},
+          "requests": {}
+        },
+        "1": {
+          "name": "Data Management",
+          "events": {},
+          "requests": {}
+        },
+        "2": {
+          "name": "Machine Learning",
+          "events": {},
+          "requests": {}
+        }
+      },
+      "2": {
+        "name": "Front End Development",
+        "0": {
+          "name": "Human-Computer Interaction",
+          "events": {},
+          "requests": {}
+        },
+        "1": {
+          "name": "Mobile Development",
+          "events": {},
+          "requests": {}
+        },
+        "2": {
+          "name": "Web Development",
+          "events": {},
+          "requests": {}
+        }
+      }
+    }
+  }
+}

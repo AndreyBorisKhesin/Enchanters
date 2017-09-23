@@ -19,7 +19,7 @@ export class FirebaseProvider {
   }
 
   addItem(newName) {
-    this.afd.list('names/').push(newName);
+    this.afd.list('/names/').push(newName);
   }
 
   removeItem(id) {
@@ -27,7 +27,9 @@ export class FirebaseProvider {
   }
 
   getSkills() {
-    return this.afd.list('/skills/')
+
+    return this.afd.list('/skills/business/');
+    //var items = this.afd.list('/skills/business/0');
   }
 
 }
