@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { LeafPage } from '../leaf/leaf';
+import { TechnologyPage } from '../technology/technology';
 
 /**
  * Generated class for the BusinessPage page.
@@ -17,6 +18,7 @@ import { LeafPage } from '../leaf/leaf';
 @Component({
   selector: 'page-business',
   templateUrl: 'business.html',
+  styleUrls: ['/pages/business/business.scss']
 })
 export class BusinessPage {
 
@@ -34,8 +36,12 @@ export class BusinessPage {
     console.log("ionViewDidEnter I'm in business");
   }
 
-  goToLeaf(){
-    this.navCtrl.push(LeafPage);
+  goToLeaf() {
+    this.navCtrl.push(LeafPage, {topic: "Wealth Management"});
+  }
+
+  goToTech() {
+    this.navCtrl.push(TechnologyPage);
   }
 
 }

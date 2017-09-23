@@ -7,12 +7,15 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Leaf</ion-title>
+    <ion-title>Topic</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <p>This is a leaf page</p>
+  <h1>{{topic}}</h1>
+  <button ion-button primary (click)="learn()">Learn</button>
+  <button ion-button primary (click)="ask()">Ask</button>
+  <button ion-button primary (click)="mentor()">Mentor</button>
 </ion-content>

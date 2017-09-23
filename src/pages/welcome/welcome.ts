@@ -9,19 +9,26 @@ import { UserProvider } from '../../providers/user/user';
   templateUrl: 'welcome.html',
 })
 export class WelcomePage {
-  user: any;
+  userName: string;
+  userEmail: string;
+  userPosition: string;
 
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     public userProvider: UserProvider,
   ) {
-    this.user = this.userProvider.getUserName();
+    this.getUserInfo();
+  }
+
+  getUserInfo() {
+    this.userName = this.userProvider.getUserName();
+    this.userEmail = this.userProvider.getUserEmail();
+    this.userPosition = this.userProvider.getUserPosition();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
-    console.log('in the welcome page, user is ' + this.user);
   }
 
   goToLearningPage() {

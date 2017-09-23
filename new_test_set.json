@@ -196,58 +196,184 @@
 		},
 		"technology": {
 			"0": {
-				"name": "Back End Development",
-				"0": {
-					"name": "Computer Architecture",
-					"events": {},
-					"requests": {}
+				"name": "Computer Architecture",
+				"events": {
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-09-25",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-10-19",
+						"location": ""
+					}
 				},
-				"1": {
-					"name": "Security & Cryptography",
-					"events": {},
-					"requests": {}
-				},
-				"2": {
-					"name": "Operating Systems",
-					"events": {},
-					"requests": {}
-				}
+				"requests": {}
 			},
 			"1": {
-				"name": "Computing Theory",
-				"0": {
-					"name": "Algorithms & Data Structures",
-					"events": {},
-					"requests": {}
+				"name": "Security & Cryptography",
+				"events": {
+					"0": {
+						"name": "Introduction to RSA WOrkshop",
+						"description": "",
+						"organizer": "Sauron",
+						"date": "2017-10-06",
+						"location": ""
+					},
+					"1": {
+						"name": "Basic Password Hashing and Authentication",
+						"description": "",
+						"organizer": "Saruman the White",
+						"date": "2017-10-01",
+						"location": ""
+					}
 				},
-				"1": {
-					"name": "Data Management",
-					"events": {},
-					"requests": {}
-				},
-				"2": {
-					"name": "Machine Learning",
-					"events": {},
-					"requests": {}
-				}
+				"requests": {}
 			},
 			"2": {
-				"name": "Front End Development",
-				"0": {
-					"name": "Human-Computer Interaction",
-					"events": {},
-					"requests": {}
+				"name": "Operating Systems",
+				"events": {
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-10-26",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-10-30",
+						"location": ""
+					}
 				},
-				"1": {
-					"name": "Mobile Development",
-					"events": {},
-					"requests": {}
+				"requests": {}
+			},
+			"3": {
+				"name": "Algorithms & Data Structures",
+				"events": {
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-09-29",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-10-05",
+						"location": ""
+					}
 				},
-				"2": {
-					"name": "Web Development",
-					"events": {},
-					"requests": {}
-				}
+				"requests": {}
+			},
+			"4": {
+				"name": "Data Management",
+				"events": {
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-09-24",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-10-03",
+						"location": ""
+					}
+				},
+				"requests": {}
+			},
+			"5": {
+				"name": "Machine Learning",
+				"events": {
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-10-26",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-09-29",
+						"location": ""
+					}
+				},
+				"requests": {}
+			},
+			"6": {
+				"name": "Human-Computer Interaction",
+				"events": {
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-10-04",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-10-21",
+						"location": ""
+					}
+				},
+				"requests": {}
+			},
+			"7": {
+				"name": "Mobile Development",
+				"events": {
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-10-15",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-10-11",
+						"location": ""
+					}
+				},
+				"requests": {}
+			},
+			"8": {
+				"name": "Web Development",
+				"events": {
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-09-27",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"date": "2017-10-03",
+						"location": ""
+					}
+				},
+				"requests": {}
 			}
 		}
 	}

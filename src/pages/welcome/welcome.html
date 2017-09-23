@@ -7,12 +7,55 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{user}}, welcome to ENT! </ion-title>
+    <ion-title>Welcome to ENT! </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content padding>
+  <!-- <ion-card>
+    <img src="" />
+    <div card-title>ENT</div>
+    <div card-subtitle>Education Networking Tree</div>
+  </ion-card> -->
+
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <!-- <img src="img/marty-avatar.png"> -->
+      </ion-avatar>
+      <h2>{{userName}}</h2>
+      <p>{{userPosition}}</p>
+    </ion-item>
+
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left secondary small>
+        <ion-icon name="checkmark-circle"></ion-icon>
+        <div>12 Arbies</div>
+      </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left danger small>
+        <ion-icon name="help-circle"></ion-icon>
+        <div>4 Questions</div>
+      </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
   <button ion-button block (click)="goToLearningPage()">Learning</button>
   <button ion-button block (click)="goToSocialPage()">Social</button>
+
 </ion-content>
