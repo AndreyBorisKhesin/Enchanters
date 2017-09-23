@@ -11,6 +11,19 @@ import { WelcomePage } from '../pages/welcome/welcome';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { FirebaseProvider } from '../providers/firebase/firebase';
+import { HttpModule } from '@angular/http';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from 'angularfire2';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBngzUa5bdDC3sh9L_x9cD62lSQneCQRKM",
+  authDomain: "enchanters-74480.firebaseapp.com",
+  databaseURL: "https://enchanters-74480.firebaseio.com",
+  projectId: "enchanters-74480",
+  storageBucket: "enchanters-74480.appspot.com",
+  messagingSenderId: "661519086631"
+};
 
 @NgModule({
   declarations: [
@@ -23,6 +36,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(firebaseConfig),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -37,7 +53,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    FirebaseProvider
   ]
 })
 export class AppModule {}
