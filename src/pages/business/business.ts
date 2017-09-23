@@ -22,7 +22,7 @@ import { TechnologyPage } from '../technology/technology';
 })
 export class BusinessPage {
 
-  skills: FirebaseListObservable<any[]>;
+  public skills: FirebaseListObservable<any[]>;
 
   constructor(
     public navCtrl: NavController,
@@ -36,8 +36,10 @@ export class BusinessPage {
     console.log("ionViewDidEnter I'm in business");
   }
 
-  goToLeaf() {
-    this.navCtrl.push(LeafPage, {topic: "Wealth Management"});
+  goToLeaf(topic: any) {
+    console.log("Clicked in business: " + topic);
+    // this.navCtrl.push(LeafPage, {topic: "Wealth Management"});
+    this.navCtrl.push(LeafPage, {topic: topic});
   }
 
   goToTech() {
