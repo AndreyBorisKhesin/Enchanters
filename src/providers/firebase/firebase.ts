@@ -26,4 +26,8 @@ export class FirebaseProvider {
     this.afd.list('/names/').remove(id);
   }
 
+  getSkills() {
+    return this.afd.list('/skills/')
+  }
+
 }
