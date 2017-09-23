@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { BusinessPage } from '../business/business';
 import { SocialPage } from '../social/social';
+import { CalendarPage } from '../calendar/calendar';
 import { UserProvider } from '../../providers/user/user';
 
 @Component({
@@ -37,6 +38,10 @@ export class WelcomePage {
 
   goToSocialPage() {
     this.navCtrl.push(SocialPage);
+  }
+
+  goToCalendar(filter: string) {
+    this.navCtrl.push(CalendarPage, {filter: filter});
   }
 
 }

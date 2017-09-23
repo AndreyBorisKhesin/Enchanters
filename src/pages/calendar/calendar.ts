@@ -15,7 +15,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CalendarPage {
 
+  filter: string;
+  title: string;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.filter = this.navParams.get('filter');
+
+    switch(this.filter) {
+      case "myQuestions":
+        this.title = "My Questions";
+        break;
+      default:
+        this.title = "Questions";
+    }
+
+    console.log(this.title);
   }
 
   ionViewDidLoad() {
