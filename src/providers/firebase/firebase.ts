@@ -27,8 +27,11 @@ export class FirebaseProvider {
   }
 
   getBusinessSkills() {
-
     return this.afd.list('/skills/business/');
+  }
+
+  getTechSkills() {
+    return this.afd.list('/skills/technology/');
   }
 
 }

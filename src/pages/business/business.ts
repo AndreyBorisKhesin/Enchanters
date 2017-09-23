@@ -18,10 +18,13 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class BusinessPage {
 
   skills: FirebaseListObservable<any[]>;
-  newSkill = '';
 
   constructor(public navCtrl: NavController, public firebaseProvider: FirebaseProvider) {
     this.skills = this.firebaseProvider.getBusinessSkills();
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad BusinessPage');
   }
 
 }

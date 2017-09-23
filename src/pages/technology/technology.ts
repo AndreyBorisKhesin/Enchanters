@@ -1,5 +1,7 @@
+import { FirebaseProvider } from './../../providers/firebase/firebase';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 /**
  * Generated class for the TechnologyPage page.
@@ -15,7 +17,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TechnologyPage {
 
+  skills: FirebaseListObservable<any[]>;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.skills = this.firebaseProvider.getTechSkills();
   }
 
   ionViewDidLoad() {
