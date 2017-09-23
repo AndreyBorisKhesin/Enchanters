@@ -29,24 +29,30 @@ export class LeafPage {
     console.log('ionViewDidLoad LeafPage');
   }
 
-  learn() {
-    this.goToCalendar(5);
+  learn(topic: string) {
+    this.goToLearnCalendar(topic);
   }
 
   ask() {
 
   }
 
-  mentor() {
-    this.goToCalendar(5);
+  mentor(topic: string) {
+    this.goToMentorCalendar(topic);
   }
 
   goToQuestion(filter: any): void {
     this.navCtrl.push(QuestionPage);
   }
 
-  goToCalendar(filter: any): void {
-    this.navCtrl.push(CalendarPage);
+  goToLearnCalendar(filter: any): void {
+    this.navCtrl.push(CalendarPage, {filter: filter});
   }
+
+  goToMentorCalendar(filter: any): void {
+
+  }
+
+
 
 }

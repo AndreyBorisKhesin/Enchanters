@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { BusinessPage } from '../business/business';
 import { SocialPage } from '../social/social';
+import { CalendarPage } from '../calendar/calendar';
 import { UserProvider } from '../../providers/user/user';
 import { AngularFireAuth } from 'angularfire2/auth';
 
@@ -41,8 +42,11 @@ export class WelcomePage {
     this.navCtrl.push(SocialPage);
   }
 
+  goToCalendar(filter: string) {
+    this.navCtrl.push(CalendarPage, { filter: filter });
+  }
+
   signOut() {
     this.auth.auth.signOut();
   }
-
 }
