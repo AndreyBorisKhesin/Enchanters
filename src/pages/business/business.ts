@@ -20,17 +20,13 @@ import { LeafPage } from '../leaf/leaf';
 })
 export class BusinessPage {
 
-  names: FirebaseListObservable<any[]>;
   skills: FirebaseListObservable<any[]>;
-  newName = '';
-  newSkill = '';
 
   constructor(
     public navCtrl: NavController,
     public firebaseProvider: FirebaseProvider,
     public navParams: NavParams
   ) {
-    this.names = this.firebaseProvider.getNames();
     this.skills = this.firebaseProvider.getSkills();
   }
 
