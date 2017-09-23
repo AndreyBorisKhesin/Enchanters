@@ -5,12 +5,12 @@
       "email": "christine@bbc.com",
       "skills": ["AI", "C"]
     },
-    "userN2": {
+    "user2": {
       "name": "andrey",
       "email": "andrey@bbc.com",
       "skills": ["mathematica", "staying awake"]
     }
-  }
+  },
   "skills": {
 
   }
