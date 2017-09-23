@@ -16,99 +16,180 @@
 			"0": {
 				"name": "Accounting & Actuarial Science",
 				"events": {
-					"name": "",
-					"description": "",
-					"organizer": "",
-					"time": "",
-					"location": ""
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					}
 				},
 				"requests": {}
 			},
 			"1": {
 				"name": "Client Services",
 				"events": {
-					"name": "",
-					"description": "",
-					"organizer": "",
-					"time": "",
-					"location": ""
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					}
 				},
 				"requests": {}
 			},
 			"2": {
 				"name": "Loan Management & Insurance",
 				"events": {
-					"name": "",
-					"description": "",
-					"organizer": "",
-					"time": "",
-					"location": ""
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					}
 				},
 				"requests": {}
 			},
 			"3": {
 				"name": "Marketing",
 				"events": {
-					"name": "",
-					"description": "",
-					"organizer": "",
-					"time": "",
-					"location": ""
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					}
 				},
 				"requests": {}
 			},
 			"4": {
 				"name": "Public Relations",
 				"events": {
-					"name": "",
-					"description": "",
-					"organizer": "",
-					"time": "",
-					"location": ""
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					}
 				},
 				"requests": {}
 			},
 			"5": {
 				"name": "Sales & Operations",
 				"events": {
-					"name": "",
-					"description": "",
-					"organizer": "",
-					"time": "",
-					"location": ""
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					}
 				},
 				"requests": {}
 			},
 			"6": {
 				"name": "Risk Management",
 				"events": {
-					"name": "",
-					"description": "",
-					"organizer": "",
-					"time": "",
-					"location": ""
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					}
 				},
 				"requests": {}
 			},
 			"7": {
 				"name": "Trading & Capital Markets",
 				"events": {
-					"name": "",
-					"description": "",
-					"organizer": "",
-					"time": "",
-					"location": ""
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					}
 				},
 				"requests": {}
 			},
 			"8": {
 				"name": "Wealth Management",
 				"events": {
-					"name": "",
-					"description": "",
-					"organizer": "",
-					"time": "",
-					"location": ""
+					"0": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					},
+					"1": {
+						"name": "",
+						"description": "",
+						"organizer": "",
+						"time": "",
+						"location": ""
+					}
 				},
 				"requests": {}
 			}
