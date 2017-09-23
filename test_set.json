@@ -1,0 +1,17 @@
+{
+  "users": {
+    "user1": {
+      "name": "christine",
+      "email": "christine@bbc.com",
+      "skills": ["AI", "C"]
+    },
+    "user2": {
+      "name": "andrey",
+      "email": "andrey@bbc.com",
+      "skills": ["mathematica", "staying awake"]
+    }
+  },
+  "skills": {
+
+  }
+}
