@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33f474d3-92d9-4da5-9b0b-59a5052e43bc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/build/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/build/main.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/build/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/build/main.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/build/vendor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/build/vendor.js.map" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -295,12 +286,12 @@
       <option name="presentableId" value="Default" />
       <updated>1506176239753</updated>
       <workItem from="1506176241205" duration="875000" />
-      <workItem from="1506177169473" duration="781000" />
+      <workItem from="1506177169473" duration="884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1656000" />
+    <option name="totallyTimeSpent" value="1759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
