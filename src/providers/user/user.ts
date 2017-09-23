@@ -16,17 +16,37 @@ export class UserProvider {
   email: string;
   password: string;
   skills: Map<string, [number, boolean]>;
+  position: string;
 
   constructor(public http: Http) {
     this.name = "";
+    this.email = "";
+    this.password = "";
+    this.skills = new Map();
   }
 
   setUserName(value: any) {
     this.name = value;
   }
 
-  getUserName(): any {
+  getUserName(): string {
     return this.name;
+  }
+
+  getUserEmail(): string {
+    return this.email;
+  }
+
+  setUserEmail(value: string) {
+    this.email = value;
+  }
+
+  getUserPosition(): string {
+    return this.position;
+  }
+
+  setUserPosition(value: string) {
+    this.position = value;
   }
 
 }
