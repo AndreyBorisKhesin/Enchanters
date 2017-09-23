@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { QuestionPage } from '../question/question';
+import { CalendarPage } from '../calendar/calendar';
 
 /**
  * Generated class for the LeafPage page.
@@ -28,7 +30,7 @@ export class LeafPage {
   }
 
   learn() {
-
+    this.goToCalendar(5);
   }
 
   ask() {
@@ -36,7 +38,15 @@ export class LeafPage {
   }
 
   mentor() {
-    
+    this.goToCalendar(5);
+  }
+
+  goToQuestion(filter: any): void {
+    this.navCtrl.push(QuestionPage);
+  }
+
+  goToCalendar(filter: any): void {
+    this.navCtrl.push(CalendarPage);
   }
 
 }

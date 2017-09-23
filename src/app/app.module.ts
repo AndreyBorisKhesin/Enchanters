@@ -9,6 +9,8 @@ import { SocialPage } from '../pages/social/social';
 import { BusinessPage } from '../pages/business/business';
 import { TechnologyPage } from '../pages/technology/technology';
 import { LeafPage } from '../pages/leaf/leaf';
+import { QuestionPage } from '../pages/question/question';
+import { CalendarPage } from '../pages/calendar/calendar';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -35,7 +37,9 @@ const firebaseConfig = {
     SocialPage,
     BusinessPage,
     TechnologyPage,
-    LeafPage
+    LeafPage,
+    QuestionPage,
+    CalendarPage
   ],
   imports: [
     BrowserModule,
@@ -52,7 +56,9 @@ const firebaseConfig = {
     SocialPage,
     BusinessPage,
     TechnologyPage,
-    LeafPage
+    LeafPage,
+    QuestionPage,
+    CalendarPage
   ],
   providers: [
     StatusBar,
