@@ -14,7 +14,6 @@ export class UserProvider {
 
   name: string;
   email: string;
-  arbies: number;
   password: string;
   position: string;
   preferences: Map<string, number>;
