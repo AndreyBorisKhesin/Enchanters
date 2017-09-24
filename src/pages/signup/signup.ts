@@ -71,14 +71,9 @@ export class SignupPage {
       .then(auth => {
         this.userProvider.setUserName(this.signupData.name);
         this.userProvider.setUserEmail(this.signupData.email);
-<<<<<<< HEAD
-	this.userProvider.setUserPreferences(this.signupData.preferences);
-	this.userProvider.setUserArbies(this.signupData.arbies);
-=======
         this.userProvider.setUserPreferences(this.signupData.preferences);
         this.userProvider.setArbies(0);
         this.userProvider.setNumQuestions(0);
->>>>>>> 1b619626603abd5fc05f929bfbba57ea9cff5e94
         this.firebaseProvider.addNewUser(this.signupData);
       })
       .catch(err => {
