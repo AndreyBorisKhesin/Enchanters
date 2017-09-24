@@ -15,6 +15,7 @@ import { QuestionPage } from '../pages/question/question';
 import { CalendarPage } from '../pages/calendar/calendar';
 import { AskPage } from '../pages/ask/ask';
 import { AddeventPage } from '../pages/addevent/addevent';
+import { AddsocialPage } from '../pages/addsocial/addsocial';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -49,7 +50,8 @@ const firebaseConfig = {
     QuestionPage,
     CalendarPage,
     AskPage,
-    AddeventPage
+    AddeventPage,
+    AddsocialPage
   ],
   imports: [
     BrowserModule,
@@ -72,7 +74,8 @@ const firebaseConfig = {
     QuestionPage,
     CalendarPage,
     AskPage,
-    AddeventPage
+    AddeventPage,
+    AddsocialPage
   ],
   providers: [
     StatusBar,

@@ -99,4 +99,8 @@ export class FirebaseProvider {
     return this.afd.list('/social/events/');
   }
 
+  addNewSocialEvent(newSocialEvent) {
+    this.afd.list('/social/events/').push(newSocialEvent);
+  }
+
 }
