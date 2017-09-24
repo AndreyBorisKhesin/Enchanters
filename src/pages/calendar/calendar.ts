@@ -32,7 +32,7 @@ export class CalendarPage {
         // This is going to be difficult
         break;
       case "mentor-Accounting & Actuarial Science":
-        this.title = "Accounting & Acturial Science Questions";
+        this.title = "Accounting & Actuarial Science Questions";
         this.topicId = 0;
         break;
       case "mentor-Client Services":
@@ -67,7 +67,7 @@ export class CalendarPage {
         this.title = "Wealth Management Questions";
         this.topicId = 8;
         break;
-      case "learn-Accounting & Acturial Science":
+      case "learn-Accounting & Actuarial Science":
         this.title = "Accounting & Actuarial Science Help";
         this.topicId = 0;
         break;
