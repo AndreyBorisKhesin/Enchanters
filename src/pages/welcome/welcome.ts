@@ -39,7 +39,7 @@ export class WelcomePage {
   }
 
   goToSocialPage() {
-    this.navCtrl.push(SocialPage);
+    this.navCtrl.push(CalendarPage, { social: true });
   }
 
   goToCalendar(filter: string) {

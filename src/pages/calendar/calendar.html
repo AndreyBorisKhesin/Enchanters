@@ -40,5 +40,17 @@
     </ion-card>
   </div>
 
+  <div *ngIf="isSocial">
+    <ion-card>
+      <ion-card-header>
+
+      </ion-card-header>
+      <ion-card-content>
+        <button ion-button color='secondary' outline (click)='register()'>Register</button>
+        <button ion-button color='danger' outline (click)='dismiss()'>Dismiss</button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
 
 </ion-content>

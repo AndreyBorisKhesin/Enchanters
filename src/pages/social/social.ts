@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CalendarPage } from '../calendar/calendar';
 
 /**
  * Generated class for the SocialPage page.
@@ -20,6 +21,10 @@ export class SocialPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SocialPage');
+  }
+
+  goToSocialPage() {
+    this.navCtrl.push(CalendarPage, {social: "true"});
   }
 
 }

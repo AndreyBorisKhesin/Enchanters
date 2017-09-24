@@ -63,14 +63,14 @@ export class FirebaseProvider {
 
     var str1 = new String('/skills/business/');
     var str2 = str1.concat(index);
-    var path =  str2.concat('/events/')
+    var path = str2.concat('/events/')
     return this.afd.list(path);
   }
 
   getBusinessQuestions(index) {
     var str1 = new String('/skills/business/');
     var str2 = str1.concat(index);
-    var path =  str2.concat('/requests/')
+    var path = str2.concat('/requests/')
     console.log("In firebase: path is " + path);
     return this.afd.list(path);
   }
@@ -78,13 +78,19 @@ export class FirebaseProvider {
   addNewBusinessQuestion(index, addQuestion) {
     var str1 = new String('/skills/business/');
     var str2 = str1.concat(index);
-    var path =  str2.concat('/requests/');
+    var path = str2.concat('/requests/');
     console.log("In firebase: path is " + path);
     this.afd.list(path).push(addQuestion);
   }
 
   getMyQuestions(email) {
-    
+
+  }
+
+  getUserData() {
+    console.log("Getting all user data");
+    var path = '/users/';
+    return this.afd.list(path);
   }
 
 }
