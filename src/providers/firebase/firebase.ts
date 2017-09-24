@@ -82,4 +82,8 @@ export class FirebaseProvider {
     this.afd.list(path).push(newQuestion);
   }
 
+  getMyQuestions(email) {
+    
+  }
+
 }

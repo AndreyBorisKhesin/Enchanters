@@ -18,7 +18,7 @@
     <ion-card *ngFor="let request of requests | async">
       <ion-card-content class='wrap'>
         {{request.question}}
-        <br> {{request.email}}
+        <br> {{request.asker}}
       </ion-card-content>
     </ion-card>
   </div>
