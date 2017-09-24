@@ -2,26 +2,36 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { BusinessPage } from '../business/business';
 import { SocialPage } from '../social/social';
+import { CalendarPage } from '../calendar/calendar';
 import { UserProvider } from '../../providers/user/user';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 @Component({
   selector: 'page-welcome',
   templateUrl: 'welcome.html',
 })
 export class WelcomePage {
-  user: any;
+  userName: string;
+  userEmail: string;
+  userPosition: string;
 
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     public userProvider: UserProvider,
+    private auth: AngularFireAuth
   ) {
-    this.user = this.userProvider.getUserName();
+    this.getUserInfo();
+  }
+
+  getUserInfo() {
+    this.userName = this.userProvider.getUserName();
+    this.userEmail = this.userProvider.getUserEmail();
+    this.userPosition = this.userProvider.getUserPosition();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
-    console.log('in the welcome page, user is ' + this.user);
   }
 
   goToLearningPage() {
@@ -32,4 +42,11 @@ export class WelcomePage {
     this.navCtrl.push(SocialPage);
   }
 
+  goToCalendar(filter: string) {
+    this.navCtrl.push(CalendarPage, { filter: filter });
+  }
+
+  signOut() {
+    this.auth.auth.signOut();
+  }
 }
