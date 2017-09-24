@@ -255,7 +255,7 @@ export class CalendarPage {
     this.userProvider.setArbies(this.userProvider.getArbies() + 3);
     console.log("Arbies: " + this.userProvider.getArbies());
     let toast = this.ToastController.create({
-      message: 'You have earned 3 Arbies for creating an event!',
+      message: 'You have earned 1 Arbie for connecting!',
       duration: 1700,
       position: 'middle',
     });
@@ -266,7 +266,7 @@ export class CalendarPage {
     this.userProvider.setArbies(this.userProvider.getArbies() + 1);
     console.log("Arbies: " + this.userProvider.getArbies());
     let toast = this.ToastController.create({
-      message: 'You have earned 1 Arbie for connecting!',
+      message: 'You have earned 3 Arbies for creating an event!',
       duration: 1700,
       position: 'middle',
     });
@@ -275,6 +275,15 @@ export class CalendarPage {
 
   dismiss() {
     // Should dismiss this card; doesn't do anything yet
+  }
+
+  learn() {
+    let toast = this.ToastController.create({
+      message: 'You are attending this learning event!',
+      duration: 1700,
+      position: 'middle',
+    });
+    toast.present();
   }
 
 }

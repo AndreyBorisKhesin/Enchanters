@@ -89,6 +89,7 @@ export class AddeventPage {
     this.newEvent.organizer = this.userProvider.getUserName();
     console.log("In addevent, organizer = " + this.newEvent.organizer);
     this.firebaseProvider.addNewBusinessEvent(this.topicId, this.newEvent);
+    
     this.navCtrl.pop();
   }
 
