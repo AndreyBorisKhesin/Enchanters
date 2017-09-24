@@ -411,11 +411,11 @@
 						"location": "Room 303"
 					},
 					"1": {
-						"name": "",
-						"description": "",
-						"organizer": "",
+						"name": "ANDREY",
+						"description": ""
+						"organizer": "Isildur",
 						"date": "2017-10-30",
-						"location": ""
+						"location": "Room 800"
 					}
 				},
 				"requests": {
@@ -428,10 +428,10 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
-						"description": ""
+						"asker": "Denethor II",
+						"email": "StewardOfGondar@ent.ca",
+						"question": "Defrag",
+						"description": "What does it mean to 'defrag' my computer?"
 					}
 				}
 			},
@@ -446,11 +446,11 @@
 						"location": "505A"
 					},
 					"1": {
-						"name": "",
+						"name": "ANDREY",
 						"description": "",
-						"organizer": "",
+						"organizer": "Eomer",
 						"date": "2017-10-05",
-						"location": ""
+						"location": "505B"
 					}
 				},
 				"requests": {
@@ -463,9 +463,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Grima Wormtongue",
+						"email": "corruption@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -481,11 +481,11 @@
 						"location": "103C"
 					},
 					"1": {
-						"name": "",
+						"name": "ANDREY",
 						"description": "",
-						"organizer": "",
+						"organizer": "Shadow Fax",
 						"date": "2017-10-03",
-						"location": ""
+						"location": "103B"
 					}
 				},
 				"requests": {
@@ -498,9 +498,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Eowyn",
+						"email": "ladyOfRohan@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -516,11 +516,11 @@
 						"location": "505B"
 					},
 					"1": {
-						"name": "",
-						"description": "",
-						"organizer": "",
+						"name": "Whats the difference between Machine Learning and Artificial Intelligence?",
+						"description": "The title says it all.",
+						"organizer": "Sauron",
 						"date": "2017-09-29",
-						"location": ""
+						"location": "Mordor"
 					}
 				},
 				"requests": {
@@ -533,9 +533,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Galadriel",
+						"email": "LadyOfLorien@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -551,11 +551,11 @@
 						"location": "Great Hall"
 					},
 					"1": {
-						"name": "",
+						"name": "ANDREY",
 						"description": "",
-						"organizer": "",
+						"organizer": "Balrog",
 						"date": "2017-10-21",
-						"location": ""
+						"location": "Moria"
 					}
 				},
 				"requests": {
@@ -568,9 +568,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Saruman",
+						"email": "SarumanWhite@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -586,11 +586,11 @@
 						"location": "103 (First Floor)"
 					},
 					"1": {
-						"name": "",
+						"name": "ANDREY",
 						"description": "",
-						"organizer": "",
+						"organizer": "Peter Jackson",
 						"date": "2017-10-11",
-						"location": ""
+						"location": "First Floor Auditorium"
 					}
 				},
 				"requests": {
@@ -603,9 +603,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "J.R.R. Tolkien",
+						"email": "middleEarth@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -638,9 +638,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Elijah Wood",
+						"email": "isDanielRadcliffe@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
