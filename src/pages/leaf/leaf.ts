@@ -40,7 +40,8 @@ export class LeafPage {
   }
 
   ask(topic: string) {
-    this.navCtrl.push(AskPage, { topic: topic });
+    let filter = topic;
+    this.navCtrl.push(AskPage, {filter: filter});
   }
 
   mentor(topic: string) {
