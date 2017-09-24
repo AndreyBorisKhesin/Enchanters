@@ -18,40 +18,42 @@
 </ion-header>
 
 <ion-content padding>
-	<!-- <ion-card>
-		<img src="" />
-		<div card-title>ENT</div>
-		<div card-subtitle>Education Networking Tree</div>
-	</ion-card> -->
-
+	<ion-grid>
+		<ion-row>
+			<ion-col col-3>
+				<br><img class="left" src="img/tree.png">
+			</ion-col>
+			<ion-col col-9>
+				<ion-card>
+					<ion-item text-center>{{userName}}<br><ion-note>{{userEmail}}</ion-note></ion-item>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
 	<ion-item>
-		<ion-avatar item-start>
-			<!-- <img src="img/marty-avatar.png"> -->
-		</ion-avatar>
-		<h2>{{userName}}</h2>
-		<p>{{userEmail}}</p>
-		<p>{{userPosition}}</p>
+		<p text-justify>Here are your specialties and interests:</p>
 	</ion-item>
-	<p text-justify>Here are your specialties and interests:</p>
 </ion-content>
 <ion-footer>
 	<ion-grid>
 		<ion-row>
-			<ion-col col-12><button ion-button small class="tiny-button">
-				<ion-icon padding-right name="md-checkmark-circle"></ion-icon>12 Arbies
-			</button>
-			<button ion-button small class="tiny-button" (click)="goToCalendar('myQuestions')">
-				<ion-icon padding-right name="md-help-circle"></ion-icon>4 Questions
-			</button></ion-col>
-		</ion-row>
-		<ion-row>
 			<ion-col col-12>
-				<button ion-button block class="long-button" color="default" outline (click)="goToLearningPage()">Professional Development</button>
+				<button ion-button small class="tiny-button">
+					<ion-icon padding-right name="md-checkmark-circle"></ion-icon>12 Arbies
+				</button>
+				<button ion-button small class="tiny-button" (click)="goToCalendar('myQuestions')">
+					<ion-icon padding-right name="md-help-circle"></ion-icon>4 Questions
+				</button>
 			</ion-col>
 		</ion-row>
 		<ion-row>
 			<ion-col col-12>
-				<button ion-button block class="long-button" color='secondary' outline (click)="goToSocialPage()">Social Events</button>
+				<button ion-button block class="long-button" color="default" (click)="goToLearningPage()">Professional Development</button>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-12>
+				<button ion-button block class="long-button" color='secondary' (click)="goToSocialPage()">Social Events</button>
 			</ion-col>
 		</ion-row>
 	</ion-grid>

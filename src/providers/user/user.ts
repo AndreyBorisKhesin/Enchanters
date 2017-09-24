@@ -15,14 +15,15 @@ export class UserProvider {
   name: string;
   email: string;
   password: string;
-  skills: Map<string, [number, boolean]>;
   position: string;
+  preferences: any;
 
   constructor(public http: Http) {
     this.name = "";
     this.email = "";
     this.password = "";
-    this.skills = new Map();
+    this.position = "";
+    this.preferences = "";
   }
 
   setUserName(value: any) {
@@ -47,6 +48,14 @@ export class UserProvider {
 
   setUserPosition(value: string) {
     this.position = value;
+  }
+
+  getUserPreferences(): any {
+    return this.preferences;
+  }
+
+  setUserPreferences(value: any) {
+    this.preferences = value;
   }
 
 }

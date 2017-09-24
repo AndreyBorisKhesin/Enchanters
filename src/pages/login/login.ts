@@ -34,7 +34,7 @@ export class LoginPage {
         // Handle error
         let toast = this.toastCtrl.create({
           message: err.message,
-          duration: 1000
+          duration: 3000
         });
         toast.present();
       });

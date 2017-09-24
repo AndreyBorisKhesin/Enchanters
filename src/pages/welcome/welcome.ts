@@ -14,6 +14,7 @@ export class WelcomePage {
   userName: string;
   userEmail: string;
   userPosition: string;
+  userPreferences: any;
 
   constructor(
     public navCtrl: NavController,
@@ -28,6 +29,7 @@ export class WelcomePage {
     this.userName = this.userProvider.getUserName();
     this.userEmail = this.userProvider.getUserEmail();
     this.userPosition = this.userProvider.getUserPosition();
+    this.userPreferences = this.userProvider.getUserPreferences();
   }
 
   ionViewDidLoad() {

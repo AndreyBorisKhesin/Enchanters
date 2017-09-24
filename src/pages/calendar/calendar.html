@@ -20,8 +20,10 @@
         {{request.question}}
       </ion-card-header>
       <ion-card-content class='wrap'>
-        {{request.asker}}
-        <br> {{request.email}} <br>{{request.description}}
+        {{request.description}}
+        <br><ion-item text-right>
+		{{request.asker}}<br><ion-note>{{request.email}}</ion-note>
+	</ion-item>
         <br/>
         <button ion-button color='secondary' outline (click)='connect()'>Connect</button>
       </ion-card-content>
