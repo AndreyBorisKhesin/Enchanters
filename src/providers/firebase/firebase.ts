@@ -34,4 +34,20 @@ export class FirebaseProvider {
     return this.afd.list('/skills/technology/');
   }
 
+  addNewUser(newUserName) {
+    var str1 = new String("/users/");
+    var str2 = str1.concat(newUserName);
+    var path = str2.concat("/name/");
+    this.afd.list(path).push(newUserName);
+  }
+
+  addNewEmail(newUserName, newUserEmail) {
+    var str1 = new String("/users/");
+    var str2 = str1.concat(newUserName);
+    var path = str2.concat("/email/");
+    this.afd.list(path).push(newUserEmail);
+  }
+
+
+
 }
