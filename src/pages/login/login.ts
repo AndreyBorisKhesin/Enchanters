@@ -12,7 +12,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 })
 export class LoginPage {
 
-  userData: FirebaseListObservable<any[]>;
+  userData: Map<any, any>;
 
   loginData = {
     email: '',
@@ -40,15 +40,21 @@ export class LoginPage {
       });
 
     // retrive user data from firebase and populate user provider
-    this.userData = this.db.getUserData();
-    this.userData.subscribe(users => {
-      users.forEach(user => {
-        console.log('User:', user.email);
-      });
-    });
+    // let allUsers = this.db.getUserData() as Array<Array<any>>;
+    // console.log(allUsers);
+    // console.log(allUsers[0]);
+    // console.log("len of allUsers[0]: " + allUsers[0].length);
+    // console.log("typs of allUsers[0] " + typeof(allUsers[0]));
+    // console.log(allUsers[0]);
+    // for (let i = 0; i < allUsers.length; i++) {
+    //   if (this.loginData.email == allUsers[1][i]) {
+    //     console.log("Found user");
+    //     this.userProvider.setUserName(allUsers[0][i]);
+    //     // this.userProvider.setUserEmail(this.userData.get('email'));
+    //     // this.userProvider.setUserPreferences(this.userData.get('preferences'));
+    //   }
+    // }
 
-    // kind of a cheat here
-    this.userProvider.setUserEmail(this.loginData.email);
   }
 
   signup() {

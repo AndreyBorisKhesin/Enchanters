@@ -87,11 +87,48 @@ export class FirebaseProvider {
 
   }
 
-  getUserData() {
-    console.log("Getting all user data");
-    var path = '/users/';
-    return this.afd.list(path);
-  }
+  // getUserName(email: string) {
+  //   this.afd.list('/users/', { preserveSnapshot: true })
+  //     .subscribe(snapshots => {
+  //       snapshots.forEach(snapshot => {
+  //         console.log(snapshot.val());
+  //         console.log(snapshot.val().email);
+  //         console.log(email);
+  //         if (snapshot.val().email == email) {
+  //           return snapshot.val().name;
+  //         }
+  //       })
+  //     });
+  // }
+
+  // getUserData() {
+  //   console.log("Getting all user data");
+  //   let i = 0;
+  //   this.afd.list('/users/', { preserveSnapshot: true })
+  //     .subscribe(snapshots => {
+  //       snapshots.forEach(snapshot => {
+  //         i += 1;
+  //       })
+  //     });
+  //   let allUsers = new Array(3);
+  //   let names = new Array(i);
+  //   let emails = new Array(i);
+  //   let preferences = new Array(i);
+  //   i = 0;
+  //   this.afd.list('/users/', { preserveSnapshot: true })
+  //     .subscribe(snapshots => {
+  //       snapshots.forEach(snapshot => {
+  //         names[i] = snapshot.val().name;
+  //         emails[i] = snapshot.val().email;
+  //         preferences[i] = snapshot.val().preferences;
+  //         i += 1;
+  //       })
+  //     });
+  //   allUsers[0] = names as Array<any>;
+  //   allUsers[1] = emails as Array<any>;
+  //   allUsers[2] = preferences;
+  //   return allUsers;
+  // }
 
   addNewBusinessEvent(index, newEvent) {
     var str1 = new String('/skills/business/');

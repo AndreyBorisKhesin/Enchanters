@@ -3,6 +3,7 @@ import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { FirebaseProvider } from '../../providers/firebase/firebase';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { AddeventPage } from '../addevent/addevent';
+import { UserProvider } from '../../providers/user/user';
 
 /**
  * Generated class for the CalendarPage page.
@@ -30,6 +31,7 @@ export class CalendarPage {
     public navParams: NavParams,
     public db: FirebaseProvider,
     public modelController: ModalController,
+    public userProvider: UserProvider,
   ) {
     this.isMentor = false;
     this.filter = this.navParams.get('filter');
@@ -133,20 +135,24 @@ export class CalendarPage {
       console.log("Not mentor");
       this.requests = this.db.getBusinessEvents(this.topicId);
     }
-
-
   }
-
-  // goToQuestion() {
-  //   console.log("Going to question");
-  // }
-  //
-  // goToEvent() {
-  //   console.log("Going to event");
-  // }
 
   addEvent() {
     this.navCtrl.push(AddeventPage, { filter: this.filter });
+  }
+
+  connect() {
+    this.userProvider.setArbies(this.userProvider.getArbies() + 3);
+    console.log("Arbies: " + this.userProvider.getArbies());
+  }
+
+  register() {
+    this.userProvider.setArbies(this.userProvider.getArbies() + 1);
+    console.log("Arbies: " + this.userProvider.getArbies());
+  }
+
+  dismiss() {
+    // Should dismiss this card; doesn't do anything yet
   }
 
 }

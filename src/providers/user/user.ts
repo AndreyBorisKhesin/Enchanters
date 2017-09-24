@@ -17,7 +17,9 @@ export class UserProvider {
   arbies: number;
   password: string;
   position: string;
-  preferences: any;
+  preferences: Map<string, number>;
+  arbies: number;
+  numQuestions: number;
 
   constructor(public http: Http) {
     this.name = "";
@@ -25,7 +27,7 @@ export class UserProvider {
     this.arbies = 0;
     this.password = "";
     this.position = "";
-    this.preferences = "";
+    this.preferences = new Map();
   }
 
   setUserName(value: any) {
@@ -60,11 +62,19 @@ export class UserProvider {
     this.preferences = value;
   }
 
-  getUserArbies(): number {
+  setArbies(value: any) {
+    this.arbies = value;
+  }
+
+  getArbies() {
     return this.arbies;
   }
 
-  setUserArbies(value: number) {
-    this.arbies = value;
+  getNumQuestions() {
+    return this.numQuestions;
+  }
+
+  setNumQuestions(value: number) {
+    this.numQuestions = value;
   }
 }

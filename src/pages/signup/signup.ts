@@ -55,9 +55,9 @@ export class SignupPage {
     public firebaseProvider: FirebaseProvider) {
     this.signupData.email = this.navParams.get('email');
   }
-  
+
   signup() {
-    if(this.signupData.password !== this.signupData.passwordRetyped) {
+    if (this.signupData.password !== this.signupData.passwordRetyped) {
       let alert = this.alertCtrl.create({
         title: 'Error',
         message: 'Your password and your re-entered password does not match each other.',
@@ -69,11 +69,16 @@ export class SignupPage {
 
     this.afAuth.auth.createUserWithEmailAndPassword(this.signupData.email, this.signupData.password)
       .then(auth => {
-        // Could do something with the Auth-Response
         this.userProvider.setUserName(this.signupData.name);
         this.userProvider.setUserEmail(this.signupData.email);
+<<<<<<< HEAD
 	this.userProvider.setUserPreferences(this.signupData.preferences);
 	this.userProvider.setUserArbies(this.signupData.arbies);
+=======
+        this.userProvider.setUserPreferences(this.signupData.preferences);
+        this.userProvider.setArbies(0);
+        this.userProvider.setNumQuestions(0);
+>>>>>>> 1b619626603abd5fc05f929bfbba57ea9cff5e94
         this.firebaseProvider.addNewUser(this.signupData);
       })
       .catch(err => {
