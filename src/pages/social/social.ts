@@ -34,4 +34,8 @@ export class SocialPage {
     this.navCtrl.push(AddsocialPage);
   }
 
+  attendEvent() {
+
+  }
+
 }
