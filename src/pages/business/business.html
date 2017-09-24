@@ -12,7 +12,7 @@
 	</ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content><ion-grid>
 	<h6>Commercial Banking</h6>
 	<ion-row>
 		<ion-col col-4 (click)="goToLeaf('Accounting & Actuarial Science')"><img class="tile" src="img/Accounting.jpg"></ion-col>
@@ -31,9 +31,13 @@
 		<ion-col col-4 (click)="goToLeaf('Trading & Capital Markets')"><img class="tile" src="img/Trading and Cap.jpg"></ion-col>
 		<ion-col col-4 (click)="goToLeaf('Wealth Management')"><img class="tile" src="img/Wealth.jpg"></ion-col>
 	</ion-row>
-</ion-content>
+</ion-grid></ion-content>
 
-<ion-footer>
-	<button ion-button class='bus-button' color='light'>Business</button>
-	<button ion-button class='tech-button' color='light' (click)='goToTech()'>Technology</button>
-</ion-footer>
+<ion-footer><ion-grid><ion-row>
+	<ion-col col-6>
+		<button ion-button class='foot-button' color='light'>Business</button>
+	</ion-col>
+	<ion-col col-6>
+		<button ion-button class='foot-button' color='light' (click)='goToTech()'>Technology</button>
+	</ion-col>
+</ion-row></ion-grid></ion-footer>
