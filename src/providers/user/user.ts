@@ -14,6 +14,7 @@ export class UserProvider {
 
   name: string;
   email: string;
+  arbies: number;
   password: string;
   position: string;
   preferences: any;
@@ -21,6 +22,7 @@ export class UserProvider {
   constructor(public http: Http) {
     this.name = "";
     this.email = "";
+    this.arbies = 0;
     this.password = "";
     this.position = "";
     this.preferences = "";
@@ -58,4 +60,11 @@ export class UserProvider {
     this.preferences = value;
   }
 
+  getUserArbies(): number {
+    return this.arbies;
+  }
+
+  setUserArbies(value: number) {
+    this.arbies = value;
+  }
 }

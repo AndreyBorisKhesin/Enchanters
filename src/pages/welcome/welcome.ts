@@ -13,6 +13,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 export class WelcomePage {
   userName: string;
   userEmail: string;
+  userArbies: number;
   userPosition: string;
   userPreferences: any;
 
@@ -20,14 +21,18 @@ export class WelcomePage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public userProvider: UserProvider,
+    public request0: number,
+    public request1: number,
     private auth: AngularFireAuth
-  ) {
+
+   ) {
     this.getUserInfo();
   }
 
   getUserInfo() {
     this.userName = this.userProvider.getUserName();
     this.userEmail = this.userProvider.getUserEmail();
+    this.userArbies = this.userProvider.getUserArbies();
     this.userPosition = this.userProvider.getUserPosition();
     this.userPreferences = this.userProvider.getUserPreferences();
   }

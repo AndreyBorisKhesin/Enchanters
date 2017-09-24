@@ -16,30 +16,32 @@ import { FirebaseProvider } from '../../providers/firebase/firebase';
   templateUrl: 'signup.html'
 })
 export class SignupPage {
+  
   signupData = {
     name: '',
     email: '',
     password: '',
     passwordRetyped: '',
+    arbies: 0,
     preferences: {
-    	"b0": 1,
-    	"b1": 1,
-    	"b2": 1,
-    	"b3": 1,
-    	"b4": 1,
-    	"b5": 1,
-    	"b6": 1,
-    	"b7": 1,
-    	"b8": 1,
-    	"t0": 1,
-    	"t1": 1,
-    	"t2": 1,
-    	"t3": 1,
-    	"t4": 1,
-    	"t5": 1,
-    	"t6": 1,
-    	"t7": 1,
-    	"t8": 1,
+    	"b0": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"b1": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"b2": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"b3": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"b4": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"b5": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"b6": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"b7": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"b8": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"t0": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"t1": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"t2": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"t3": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"t4": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"t5": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"t6": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"t7": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
+    	"t8": 1 + 20 * Math.floor(Math.random() + 0.2) + 0.05 * Math.random(),
 	"social": 1
     }
   };
@@ -71,6 +73,7 @@ export class SignupPage {
         this.userProvider.setUserName(this.signupData.name);
         this.userProvider.setUserEmail(this.signupData.email);
 	this.userProvider.setUserPreferences(this.signupData.preferences);
+	this.userProvider.setUserArbies(this.signupData.arbies);
         this.firebaseProvider.addNewUser(this.signupData);
       })
       .catch(err => {
