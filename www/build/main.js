@@ -327,7 +327,7 @@ var LeafPage = (function () {
 }());
 LeafPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-leaf',template:/*ion-inline-start:"/Users/Chrsitine/Desktop/Enchanters/src/pages/leaf/leaf.html"*/'<!--\n  Generated template for the LeafPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Topic</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h1>{{topic}}</h1>\n  <p>Descriptions of this topic</p>\n  <p>More Descriptions</p>\n  <p>More Descriptions</p>\n  <button ion-button primary (click)="learn(topic)">Learn</button>\n  <button ion-button primary (click)="ask()">Ask</button>\n  <button ion-button primary (click)="mentor(topic)">Mentor</button>\n</ion-content>\n'/*ion-inline-end:"/Users/Chrsitine/Desktop/Enchanters/src/pages/leaf/leaf.html"*/,
+        selector: 'page-leaf',template:/*ion-inline-start:"/Users/Chrsitine/Desktop/Enchanters/src/pages/leaf/leaf.html"*/'<!--\n  Generated template for the LeafPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Topic</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h1>{{topic}}</h1>\n  <p>Descriptions of this topic</p>\n  <p>More Descriptions</p>\n  <p>More Descriptions</p>\n  <button ion-button primary (click)="learn(topic)">Learn</button>\n  <button ion-button primary (click)="ask(topic)">Ask</button>\n  <button ion-button primary (click)="mentor(topic)">Mentor</button>\n</ion-content>\n'/*ion-inline-end:"/Users/Chrsitine/Desktop/Enchanters/src/pages/leaf/leaf.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
@@ -859,6 +859,8 @@ var FirebaseProvider = (function () {
         var str2 = str1.concat(newUserName);
         var path = str2.concat("/name/");
         this.afd.list(path).push(newUserName);
+        var newPath = str2.concat("/counter/");
+        this.afd.list(newPath).push(0);
     };
     FirebaseProvider.prototype.addNewEmail = function (newUserName, newUserEmail) {
         var str1 = new String("/users/");
@@ -866,13 +868,82 @@ var FirebaseProvider = (function () {
         var path = str2.concat("/email/");
         this.afd.list(path).push(newUserEmail);
     };
+    FirebaseProvider.prototype.getBusinessEvents = function (topic) {
+        var index;
+        if (topic == 'Accounting & Actuarial Science') {
+            index = 0;
+        }
+        else if (topic == 'Client Services') {
+            index = 1;
+        }
+        else if (topic == 'Loan Management & Insurance') {
+            index = 2;
+        }
+        else if (topic == 'Marketing') {
+            index = 3;
+        }
+        else if (topic == 'Public Relations') {
+            index = 4;
+        }
+        else if (topic == 'Sales & Operations') {
+            index = 5;
+        }
+        else if (topic == 'Risk Management') {
+            index = 6;
+        }
+        else if (topic == 'Trading & Capital Markets') {
+            index = 7;
+        }
+        else if (topic == 'Wealth Management') {
+            index = 8;
+        }
+        var str1 = new String('/skills/business/');
+        var str2 = str1.concat(index);
+        var path = str2.concat('/events/');
+        return this.afd.list(path);
+    };
+    FirebaseProvider.prototype.getBusinessQuestions = function (topic) {
+        var index;
+        if (topic == 'Accounting & Actuarial Science') {
+            index = 0;
+        }
+        else if (topic == 'Client Services') {
+            index = 1;
+        }
+        else if (topic == 'Loan Management & Insurance') {
+            index = 2;
+        }
+        else if (topic == 'Marketing') {
+            index = 3;
+        }
+        else if (topic == 'Public Relations') {
+            index = 4;
+        }
+        else if (topic == 'Sales & Operations') {
+            index = 5;
+        }
+        else if (topic == 'Risk Management') {
+            index = 6;
+        }
+        else if (topic == 'Trading & Capital Markets') {
+            index = 7;
+        }
+        else if (topic == 'Wealth Management') {
+            index = 8;
+        }
+        var str1 = new String('/skills/business/');
+        var str2 = str1.concat(index);
+        var path = str2.concat('/requests/');
+        return this.afd.list(path);
+    };
     return FirebaseProvider;
 }());
 FirebaseProvider = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */]) === "function" && _a || Object])
 ], FirebaseProvider);
 
+var _a;
 //# sourceMappingURL=firebase.js.map
 
 /***/ }),
