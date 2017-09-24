@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { CalendarPage } from '../calendar/calendar';
 import { FirebaseProvider } from '../../providers/firebase/firebase';
 import { FirebaseListObservable } from 'angularfire2/database';
@@ -22,7 +22,8 @@ export class SocialPage {
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              public firebaseProvider: FirebaseProvider) {
+              public firebaseProvider: FirebaseProvider,
+              public ToastController: ToastController) {
     this.events = this.firebaseProvider.getSocialEvents();
   }
 
@@ -34,8 +35,13 @@ export class SocialPage {
     this.navCtrl.push(AddsocialPage);
   }
 
-  attendEvent() {
-
+  register() {
+    let toast = this.ToastController.create({
+      message: 'You have successfully registered for event!',
+      duration: 1500,
+      position: 'middle',
+    });
+    toast.present();
   }
 
 }

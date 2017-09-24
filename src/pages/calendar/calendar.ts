@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ModalController } from 'ionic-angular';
+import { ToastController, NavController, NavParams, ModalController } from 'ionic-angular';
 import { FirebaseProvider } from '../../providers/firebase/firebase';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { AddeventPage } from '../addevent/addevent';
@@ -32,6 +32,7 @@ export class CalendarPage {
     public db: FirebaseProvider,
     public modelController: ModalController,
     public userProvider: UserProvider,
+    public ToastController: ToastController,
   ) {
     this.isMentor = false;
     this.isTech = false;
@@ -253,11 +254,23 @@ export class CalendarPage {
   connect() {
     this.userProvider.setArbies(this.userProvider.getArbies() + 3);
     console.log("Arbies: " + this.userProvider.getArbies());
+    let toast = this.ToastController.create({
+      message: 'You have earned 3 Arbies for creating an event!',
+      duration: 1700,
+      position: 'middle',
+    });
+    toast.present();
   }
 
   register() {
     this.userProvider.setArbies(this.userProvider.getArbies() + 1);
     console.log("Arbies: " + this.userProvider.getArbies());
+    let toast = this.ToastController.create({
+      message: 'You have earned 1 Arbie for connecting!',
+      duration: 1700,
+      position: 'middle',
+    });
+    toast.present();
   }
 
   dismiss() {
