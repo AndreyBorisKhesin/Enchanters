@@ -1,13 +1,13 @@
-webpackJsonp([4],{
+webpackJsonp([3],{
 
-/***/ 142:
+/***/ 133:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WelcomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__business_business__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__business_business__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__social_social__ = __webpack_require__(144);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__calendar_calendar__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_user_user__ = __webpack_require__(82);
@@ -69,6 +69,65 @@ WelcomePage = __decorate([
 ], WelcomePage);
 
 //# sourceMappingURL=welcome.js.map
+
+/***/ }),
+
+/***/ 134:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BusinessPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_firebase_firebase__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__leaf_leaf__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__technology_technology__ = __webpack_require__(276);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the BusinessPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var BusinessPage = (function () {
+    function BusinessPage(navCtrl, firebaseProvider, navParams) {
+        this.navCtrl = navCtrl;
+        this.firebaseProvider = firebaseProvider;
+        this.navParams = navParams;
+        this.skills = this.firebaseProvider.getBusinessSkills();
+    }
+    BusinessPage.prototype.goToLeaf = function (topic) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__leaf_leaf__["a" /* LeafPage */], { topic: topic });
+    };
+    BusinessPage.prototype.goToTech = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__technology_technology__["a" /* TechnologyPage */]);
+    };
+    return BusinessPage;
+}());
+BusinessPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
+        selector: 'page-business',template:/*ion-inline-start:"/Users/Chrsitine/Desktop/Enchanters/src/pages/business/business.html"*/'<!--\n	Generated template for the BusinessPage page.\n\n	See http://ionicframework.com/docs/components/#navigation for more info on\n	Ionic pages and navigation.\n-->\n<ion-header>\n	<ion-navbar>\n		<ion-title>\n			Learning\n		</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content>\n	<ion-grid>\n		<h6>Commercial Banking</h6>\n		<ion-row>\n			<ion-col col-4 (click)="goToLeaf(\'Accounting & Actuarial Science\')"><img class="tile" src="img/Accounting.jpg"></ion-col>\n			<ion-col col-4 (click)="goToLeaf(\'Client Services\')"><img class="tile" src="img/Client.jpg"></ion-col>\n			<ion-col col-4 (click)="goToLeaf(\'Loan Management & Insurance\')"><img class="tile" src="img/Loan and Insurance.jpg"></ion-col>\n		</ion-row>\n		<h6>Communications</h6>\n		<ion-row>\n			<ion-col col-4 (click)="goToLeaf(\'Marketing\')"><img class="tile" src="img/Marketing.jpg"></ion-col>\n			<ion-col col-4 (click)="goToLeaf(\'Public Relations\')"><img class="tile" src="img/PR.jpg"></ion-col>\n			<ion-col col-4 (click)="goToLeaf(\'Sales & Operations\')"><img class="tile" src="img/Sales and Op.jpg"></ion-col>\n		</ion-row>\n		<h6>Investment Banking</h6>\n		<ion-row>\n			<ion-col col-4 (click)="goToLeaf(\'Risk Management\')"><img class="tile" src="img/Risk.jpg"></ion-col>\n			<ion-col col-4 (click)="goToLeaf(\'Trading & Capital Markets\')"><img class="tile" src="img/Trading and Cap.jpg"></ion-col>\n			<ion-col col-4 (click)="goToLeaf(\'Wealth Management\')"><img class="tile" src="img/Wealth.jpg"></ion-col>\n		</ion-row>\n	</ion-grid>\n</ion-content>\n\n<ion-footer>\n	<button ion-button class=\'bus-button\' color=\'light\'>Business</button>\n	<button ion-button class=\'tech-button\' color=\'light\' (click)=\'goToTech()\'>Technology</button>\n</ion-footer>\n'/*ion-inline-end:"/Users/Chrsitine/Desktop/Enchanters/src/pages/business/business.html"*/,
+        styleUrls: ['/pages/business/business.scss']
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_0__providers_firebase_firebase__["a" /* FirebaseProvider */],
+        __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavParams */]])
+], BusinessPage);
+
+//# sourceMappingURL=business.js.map
 
 /***/ }),
 
@@ -185,10 +244,6 @@ webpackEmptyAsyncContext.id = 152;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"../pages/business/business.module": [
-		413,
-		3
-	],
 	"../pages/calendar/calendar.module": [
 		412,
 		2
@@ -198,7 +253,7 @@ var map = {
 		1
 	],
 	"../pages/social/social.module": [
-		414,
+		413,
 		0
 	]
 };
@@ -218,7 +273,7 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 232:
+/***/ 275:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -282,7 +337,7 @@ LeafPage = __decorate([
 
 /***/ }),
 
-/***/ 233:
+/***/ 276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -290,7 +345,7 @@ LeafPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_firebase_firebase__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__business_business__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__business_business__ = __webpack_require__(134);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -515,23 +570,23 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(399);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(339);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(410);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_welcome_welcome__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_welcome_welcome__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_social_social__ = __webpack_require__(144);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_business_business__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_technology_technology__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_leaf_leaf__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_business_business__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_technology_technology__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_leaf_leaf__ = __webpack_require__(275);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_login_login__ = __webpack_require__(280);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_signup_signup__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_question_question__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_calendar_calendar__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_status_bar__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_splash_screen__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_status_bar__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_splash_screen__ = __webpack_require__(236);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_firebase_firebase__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_user_user__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__angular_http__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angularfire2_database__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angularfire2_database__ = __webpack_require__(237);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_angularfire2__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angularfire2_auth__ = __webpack_require__(62);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -599,7 +654,6 @@ AppModule = __decorate([
                 links: [
                     { loadChildren: '../pages/question/question.module#QuestionPageModule', name: 'QuestionPage', segment: 'question', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/calendar/calendar.module#CalendarPageModule', name: 'CalendarPage', segment: 'calendar', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/business/business.module#BusinessPageModule', name: 'BusinessPage', segment: 'business', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/social/social.module#SocialPageModule', name: 'SocialPage', segment: 'social', priority: 'low', defaultHistory: [] }
                 ]
             })
@@ -633,16 +687,16 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 399:
+/***/ 339:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(276);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_welcome_welcome__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_welcome_welcome__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(280);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -699,7 +753,7 @@ MyApp = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_firebase_firebase__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__welcome_welcome__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__welcome_welcome__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_user_user__ = __webpack_require__(82);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -760,8 +814,8 @@ HomePage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FirebaseProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(274);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -830,7 +884,7 @@ FirebaseProvider = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(274);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1011,71 +1065,6 @@ CalendarPage = __decorate([
 ], CalendarPage);
 
 //# sourceMappingURL=calendar.js.map
-
-/***/ }),
-
-/***/ 84:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BusinessPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_firebase_firebase__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__leaf_leaf__ = __webpack_require__(232);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__technology_technology__ = __webpack_require__(233);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-/**
- * Generated class for the BusinessPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var BusinessPage = (function () {
-    function BusinessPage(navCtrl, firebaseProvider, navParams) {
-        this.navCtrl = navCtrl;
-        this.firebaseProvider = firebaseProvider;
-        this.navParams = navParams;
-        this.skills = this.firebaseProvider.getBusinessSkills();
-    }
-    BusinessPage.prototype.ionViewDidEnter = function () {
-        console.log("ionViewDidEnter I'm in business");
-    };
-    BusinessPage.prototype.goToLeaf = function (topic) {
-        console.log("Clicked in business: " + topic);
-        // this.navCtrl.push(LeafPage, {topic: "Wealth Management"});
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__leaf_leaf__["a" /* LeafPage */], { topic: topic });
-    };
-    BusinessPage.prototype.goToTech = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__technology_technology__["a" /* TechnologyPage */]);
-    };
-    return BusinessPage;
-}());
-BusinessPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPage */])({}),
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
-        selector: 'page-business',template:/*ion-inline-start:"/Users/Chrsitine/Desktop/Enchanters/src/pages/business/business.html"*/'<!--\n	Generated template for the BusinessPage page.\n\n	See http://ionicframework.com/docs/components/#navigation for more info on\n	Ionic pages and navigation.\n-->\n<ion-header>\n	<ion-navbar>\n		<ion-title>\n			Learning\n		</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content>\n	<ion-grid>\n		<h6>Commercial Banking</h6>\n		<ion-row>\n			<ion-col col-4 (click)="goToLeaf(\'Accounting & Actuarial Science\')"><img class="tile" src="img/Accounting.jpg"></ion-col>\n			<ion-col col-4 (click)="goToLeaf(\'Client Services\')"><img class="tile" src="img/Client.jpg"></ion-col>\n			<ion-col col-4 (click)="goToLeaf(\'Loan Management & Insurance\')"><img class="tile" src="img/Loan and Insurance.jpg"></ion-col>\n		</ion-row>\n		<h6>Communications</h6>\n		<ion-row>\n			<ion-col col-4 (click)="goToLeaf(\'Marketing\')"><img class="tile" src="img/Marketing.jpg"></ion-col>\n			<ion-col col-4 (click)="goToLeaf(\'Public Relations\')"><img class="tile" src="img/PR.jpg"></ion-col>\n			<ion-col col-4 (click)="goToLeaf(\'Sales & Operations\')"><img class="tile" src="img/Sales and Op.jpg"></ion-col>\n		</ion-row>\n		<h6>Investment Banking</h6>\n		<ion-row>\n			<ion-col col-4 (click)="goToLeaf(\'Risk Management\')"><img class="tile" src="img/Risk.jpg"></ion-col>\n			<ion-col col-4 (click)="goToLeaf(\'Trading & Capital Markets\')"><img class="tile" src="img/Trading and Cap.jpg"></ion-col>\n			<ion-col col-4 (click)="goToLeaf(\'Wealth Management\')"><img class="tile" src="img/Wealth.jpg"></ion-col>\n		</ion-row>\n	</ion-grid>\n</ion-content>\n\n<ion-footer>\n	<button ion-button class=\'bus-button\' color=\'light\'>Business</button>\n	<button ion-button class=\'tech-button\' color=\'light\' (click)=\'goToTech()\'>Technology</button>\n</ion-footer>\n'/*ion-inline-end:"/Users/Chrsitine/Desktop/Enchanters/src/pages/business/business.html"*/,
-        styleUrls: ['/pages/business/business.scss']
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */],
-        __WEBPACK_IMPORTED_MODULE_0__providers_firebase_firebase__["a" /* FirebaseProvider */],
-        __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavParams */]])
-], BusinessPage);
-
-//# sourceMappingURL=business.js.map
 
 /***/ })
 
