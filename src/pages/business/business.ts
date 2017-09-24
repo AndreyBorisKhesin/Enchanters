@@ -16,18 +16,22 @@ import { TechnologyPage } from '../technology/technology';
 	// defaultHistory: ['HomePage', 'WelcomePage']
 })
 @Component({
-	selector: 'page-business',
-	templateUrl: 'business.html'
+  selector: 'page-business',
+  templateUrl: 'business.html',
+  styleUrls: ['/pages/business/business.scss']
 })
 export class BusinessPage {
+
   public skills: FirebaseListObservable<any[]>;
-	constructor(
-		public navCtrl: NavController,
-		public firebaseProvider: FirebaseProvider,
-		public navParams: NavParams
-	) {
-		this.skills = this.firebaseProvider.getBusinessSkills();
-	}
+
+  constructor(
+    public navCtrl: NavController,
+    public firebaseProvider: FirebaseProvider,
+    public navParams: NavParams
+  ) {
+    this.skills = this.firebaseProvider.getBusinessSkills();
+  }
+>>>>>>> ed2e8ce48d10bec314e08804a946eeb924f0e43f
 
   ionViewDidEnter() {
     console.log("ionViewDidEnter I'm in business");

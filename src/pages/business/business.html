@@ -15,7 +15,7 @@
 
 <ion-content padding>
 
-  <ion-grid>
+  <!-- <ion-grid>
     <ion-row>
       <ion-col col-4 (click)="goToLeaf()"><img class="tile" src="img/output.png"></ion-col>
       <ion-col col-4 (click)="goToLeaf()"><img class="tile" src="img/output.png"></ion-col>
@@ -31,11 +31,11 @@
       <ion-col col-4 (click)="goToLeaf()"><img class="tile" src="img/output.png"></ion-col>
       <ion-col col-4 (click)="goToLeaf()"><img class="tile" src="img/output.png"></ion-col>
     </ion-row>
-  </ion-grid>
+  </ion-grid> -->
 
   <ion-list>
     <ion-item-sliding *ngFor="let item of skills | async">
-      <ion-item>
+      <ion-item (click)='goToLeaf(item.name)'>
         {{ item.name }}
       </ion-item>
       <ion-item-options side="right">
@@ -44,4 +44,11 @@
     </ion-item-sliding>
   </ion-list>
 
+
+
 </ion-content>
+
+<ion-footer>
+  <button ion-button class='bus-button' color='light'>Business</button>
+  <button ion-button class='tech-button' color='light' (click)='goToTech()'>Technology</button>
+</ion-footer>
