@@ -102,7 +102,14 @@ export class FirebaseProvider {
   }
 
   getSocialEvents() {
-    return this.afd.list('/social/events/');
+    var allSocialEvents = new Array();
+    this.afd.list('/social/events/', { preserveSnapshot: true})
+      .subscribe(snapshots=>{
+        snapshots.forEach(snapshot => {
+	  allSocialEvents.push(snapshot.val());
+        });
+      });
+    return allSocialEvents;
   }
 
   addNewSocialEvent(newSocialEvent) {
