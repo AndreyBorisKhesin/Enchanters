@@ -22,9 +22,11 @@
       <ion-card-content class='wrap'>
         {{request.asker}}
         <br> {{request.email}} <br>{{request.description}}
+        <br/>
         <button ion-button color='secondary' outline (click)='connect()'>Connect</button>
       </ion-card-content>
     </ion-card>
+    <button full ion-button (click)="addEvent()">Add Event</button>
   </div>
 
   <div *ngIf="!isMentor">

@@ -14,5 +14,15 @@
 
 
 <ion-content padding>
-
+  <ion-card *ngFor="let event of events | async" (click)='goToQuestion()'>
+    <ion-card-header class='wrap'>
+      {{event.name}}
+    </ion-card-header>
+    <ion-card-content class='wrap'>
+      {{event.date}}
+      <br> {{event.location}} <br>{{event.description}}
+      <br/>
+    </ion-card-content>
+  </ion-card>
+  <button full ion-button (click)="addEvent()">Add Event</button>
 </ion-content>

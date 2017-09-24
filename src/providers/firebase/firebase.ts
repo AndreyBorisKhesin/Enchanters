@@ -93,4 +93,16 @@ export class FirebaseProvider {
     return this.afd.list(path);
   }
 
+  addNewBusinessEvent(index, newEvent) {
+    var str1 = new String('/skills/business/');
+    var str2 = str1.concat(index);
+    var path = str2.concat('/events/');
+    console.log("In firebase: path is " + path);
+    this.afd.list(path).push(newEvent);
+  }
+
+  getSocialEvents() {
+    return this.afd.list('/social/events/');
+  }
+
 }

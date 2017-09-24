@@ -1,16 +1,4 @@
 {
-	"users": {
-		"0": {
-			"name": "christine",
-			"email": "christine@bbc.com",
-			"skills": ["AI", "C"]
-		},
-		"1": {
-			"name": "andrey",
-			"email": "andrey@bbc.com",
-			"skills": ["mathematica", "staying awake"]
-		}
-	},
 	"skills": {
 		"business": {
 			"0": {
@@ -212,7 +200,7 @@
 						"asker": "Thorin Oakenshield",
 						"email": "KingUnderTheMountain@ent.ca",
 						"question": "Documents for Depositing Securities",
-						description: "Which documents/information are required for crediting securties to its corresponding account?  Do I need cusip numbers?"
+						"description": "Which documents/information are required for crediting securties to its corresponding account?  Do I need cusip numbers?"
 					},
 					"1": {
 						"id": "0",
@@ -329,7 +317,7 @@
 				}
 			}
 		},
-		"technology": {
+	"technology": {
 			"0": {
 				"name": "Computer Architecture",
 				"events": {
@@ -411,11 +399,11 @@
 						"location": "Room 303"
 					},
 					"1": {
-						"name": "",
+						"name": "ANDREY",
 						"description": "",
-						"organizer": "",
+						"organizer": "Isildur",
 						"date": "2017-10-30",
-						"location": ""
+						"location": "Room 800"
 					}
 				},
 				"requests": {
@@ -428,10 +416,10 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
-						"description": ""
+						"asker": "Denethor II",
+						"email": "StewardOfGondar@ent.ca",
+						"question": "Defrag",
+						"description": "What does it mean to 'defrag' my computer?"
 					}
 				}
 			},
@@ -446,11 +434,11 @@
 						"location": "505A"
 					},
 					"1": {
-						"name": "",
+						"name": "ANDREY",
 						"description": "",
-						"organizer": "",
+						"organizer": "Eomer",
 						"date": "2017-10-05",
-						"location": ""
+						"location": "505B"
 					}
 				},
 				"requests": {
@@ -463,9 +451,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Grima Wormtongue",
+						"email": "corruption@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -481,11 +469,11 @@
 						"location": "103C"
 					},
 					"1": {
-						"name": "",
+						"name": "ANDREY",
 						"description": "",
-						"organizer": "",
+						"organizer": "Shadow Fax",
 						"date": "2017-10-03",
-						"location": ""
+						"location": "103B"
 					}
 				},
 				"requests": {
@@ -498,9 +486,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Eowyn",
+						"email": "ladyOfRohan@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -516,11 +504,11 @@
 						"location": "505B"
 					},
 					"1": {
-						"name": "",
-						"description": "",
-						"organizer": "",
+						"name": "Whats the difference between Machine Learning and Artificial Intelligence?",
+						"description": "The title says it all.",
+						"organizer": "Sauron",
 						"date": "2017-09-29",
-						"location": ""
+						"location": "Mordor"
 					}
 				},
 				"requests": {
@@ -533,9 +521,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Galadriel",
+						"email": "LadyOfLorien@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -551,11 +539,11 @@
 						"location": "Great Hall"
 					},
 					"1": {
-						"name": "",
+						"name": "ANDREY",
 						"description": "",
-						"organizer": "",
+						"organizer": "Balrog",
 						"date": "2017-10-21",
-						"location": ""
+						"location": "Moria"
 					}
 				},
 				"requests": {
@@ -568,9 +556,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Saruman",
+						"email": "SarumanWhite@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -586,11 +574,11 @@
 						"location": "103 (First Floor)"
 					},
 					"1": {
-						"name": "",
+						"name": "ANDREY",
 						"description": "",
-						"organizer": "",
+						"organizer": "Peter Jackson",
 						"date": "2017-10-11",
-						"location": ""
+						"location": "First Floor Auditorium"
 					}
 				},
 				"requests": {
@@ -603,9 +591,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "J.R.R. Tolkien",
+						"email": "middleEarth@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -638,13 +626,54 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Elijah Wood",
+						"email": "isDanielRadcliffe@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
 			}
 		}
-	}
-}
+	},
+	"social":{
+			"events": {
+				"0": {
+					"name": "Intern Ice Cream Social",
+					"description": "Ice cream social for our newly hired 2017 interns! Come meet your mentors and other interns!",
+					"organizer": "Tom Bombadil",
+					"date": "2017-09-25",
+					"location": "First Floor Auditorium"
+				},
+				"1": {
+					"name": "Movie Night",
+					"description": "We will be watching Lord of the Rings: The Fellowship of The Ring. Drinks and popcorn will be provided, but feel free to bring your own.",
+					"organizer": "Peter Jackson",
+					"date": "2017-10-25",
+					"location": "First Floor Auditorium"
+					},
+				"2": {
+					"name": "Softball Game",
+					"description": "Come join us for a friendly game of softball against Scotiabank! We will meet in the lobby and walk to the softball field at 1:00pm",
+					"organizer": "Aragorn",
+					"date": "2017-10-21",
+					"location": "Lobby"
+					},
+				"3": {
+					"name": "Karaoke Night",
+					"description": "Karaoke Night at Bar Plus! Please RSVP by Friday.",
+					"organizer": "Peregrin Took",
+					"date": "2017-10-06",
+					"location": "Bar Plus"
+					},
+				"4": {
+					"name": "Laser Tag",
+					"description": "Business versus Technology laser tag tournament! Winners get bragging rights.  Please RSVP one week in adavance.",
+					"organizer": "Legolas Greenleaf",
+					"date": "2017-10-13",
+					"location": "Laser Quest"
+					}
+				}
+			}
+		}
+
+

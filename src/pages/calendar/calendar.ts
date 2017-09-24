@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { FirebaseProvider } from '../../providers/firebase/firebase';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { AddeventPage } from '../addevent/addevent';
 
 /**
  * Generated class for the CalendarPage page.
@@ -30,7 +31,7 @@ export class CalendarPage {
     public db: FirebaseProvider,
     public modelController: ModalController,
   ) {
-    this.isMentor = false;
+    this.isMentor = true;
     this.filter = this.navParams.get('filter');
     this.isSocial = this.navParams.get('social');
 
@@ -131,7 +132,7 @@ export class CalendarPage {
 
     // get requests from firebase
     if (this.isSocial) {
-      
+
     } else {
       if (this.isMentor) {
         console.log("Is mentor");
@@ -150,6 +151,10 @@ export class CalendarPage {
 
   goToEvent() {
     console.log("Going to event");
+  }
+
+  addEvent() {
+    this.navCtrl.push(AddeventPage, {filter: this.filter});
   }
 
 }

@@ -14,6 +14,7 @@ import { SignupPage } from '../pages/signup/signup';
 import { QuestionPage } from '../pages/question/question';
 import { CalendarPage } from '../pages/calendar/calendar';
 import { AskPage } from '../pages/ask/ask';
+import { AddeventPage } from '../pages/addevent/addevent';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -47,7 +48,8 @@ const firebaseConfig = {
     SignupPage,
     QuestionPage,
     CalendarPage,
-    AskPage
+    AskPage,
+    AddeventPage
   ],
   imports: [
     BrowserModule,
@@ -69,7 +71,8 @@ const firebaseConfig = {
     SignupPage,
     QuestionPage,
     CalendarPage,
-    AskPage
+    AskPage,
+    AddeventPage
   ],
   providers: [
     StatusBar,
