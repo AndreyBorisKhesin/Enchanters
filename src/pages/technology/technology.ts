@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { BusinessPage } from '../business/business';
+import { LeafPage } from '../leaf/leaf';
 /**
  * Generated class for the TechnologyPage page.
  *
@@ -30,8 +31,11 @@ export class TechnologyPage {
 		console.log('ionViewDidLoad TechnologyPage');
 	}
 
+	goToLeaf(topic: any) {
+		this.navCtrl.push(LeafPage, {topic: topic});
+	}
+
 	goToBusiness() {
-		//this.navCtrl.push(BusinessPage);
 		this.navCtrl.pop();
 	}
 
