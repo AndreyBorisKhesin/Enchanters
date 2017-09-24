@@ -1,14 +1,18 @@
 {
-	"users": {
+	"socials": {
 		"0": {
-			"name": "christine",
-			"email": "christine@bbc.com",
-			"skills": ["AI", "C"]
+      "name": "social 1",
+      "description": "Learn about how actuarial functions apply to pension plan funding.  Seminar covers topics of liability, accrud benefic, and projected benefit cost methods.",
+      "organizer": "Bilbo Baggins",
+      "date": "2017-10-04",
+      "location": "Conference Room A"
 		},
 		"1": {
-			"name": "andrey",
-			"email": "andrey@bbc.com",
-			"skills": ["mathematica", "staying awake"]
+      "name": "social 2",
+      "description": "Learn about how actuarial functions apply to pension plan funding.  Seminar covers topics of liability, accrud benefic, and projected benefit cost methods.",
+      "organizer": "Bilbo Baggins",
+      "date": "2017-10-04",
+      "location": "Conference Room A"
 		}
 	},
 	"skills": {

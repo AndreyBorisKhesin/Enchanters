@@ -14,5 +14,15 @@
 
 
 <ion-content padding>
-
+  <ion-card *ngFor="let request of requests | async" (click)='goToQuestion()'>
+    <ion-card-header class='wrap'>
+      {{request.question}}
+    </ion-card-header>
+    <ion-card-content class='wrap'>
+      {{request.asker}}
+      <br> {{request.email}} <br>{{request.description}}
+      <br/>
+    </ion-card-content>
+  </ion-card>
+  <button full ion-button (click)="addEvent()">Add Event</button>
 </ion-content>
