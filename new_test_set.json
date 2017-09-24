@@ -646,5 +646,45 @@
 				}
 			}
 		}
+	},
+	"social":{
+			"events": {
+				"0": {
+					"name": "Intern Ice Cream Social",
+					"description": "Ice cream social for our newly hired 2017 interns! Come meet your mentors and other interns!",
+					"organizer": "Tom Bombadil",
+					"date": "2017-09-25",
+					"location": "First Floor Auditorium"
+				},
+				"1": {
+					"name": "Movie Night",
+					"description": "We will be watching Lord of the Rings: The Fellowship of The Ring. Drinks and popcorn will be provided, but feel free to bring your own.",
+					"organizer": "Peter Jackson",
+					"date": "2017-10-25",
+					"location": "First Floor Auditorium"
+					}
+				"2": {
+					"name": "Softball Game",
+					"description": "Come join us for a friendly game of softball against Scotiabank! We will meet in the lobby and walk to the softball field at 1:00pm",
+					"organizer": "Aragorn",
+					"date": "2017-10-21",
+					"location": "Lobby"
+					}
+				"3": {
+					"name": "Karaoke Night",
+					"description": "Karaoke Night at Bar Plus! Please RSVP by Friday.",
+					"organizer": "Peregrin Took",
+					"date": "2017-10-06",
+					"location": "Bar Plus"
+					}
+				"4": {
+					"name": "Laser Tag",
+					"description": "Business versus Technology laser tag tournament! Winners get bragging rights.  Please RSVP one week in adavance.",
+					"organizer": "Legolas Greenleaf",
+					"date": "2017-10-13",
+					"location": "Laser Quest"
+					}
+				}
+		}
 	}
 }
