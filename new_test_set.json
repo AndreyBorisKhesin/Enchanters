@@ -43,8 +43,8 @@
 						id: "0",
 						asker: "Gandalf",
 						email: "TheWizard@ent.ca",
-						question: "Maximum Likelihood Estimator for Poisson Dist.",
-						description: "What's the MLE for the Poisson Distribution?"
+						question: "MLE for Poisson.",
+						description: "What's the Maximum Likelihood Estimator for the Poisson Distribution?"
 					}
 				}
 			},

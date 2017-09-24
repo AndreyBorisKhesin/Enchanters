@@ -11,27 +11,28 @@ import { BusinessPage } from '../business/business';
  */
 
 @Component({
-  selector: 'page-technology',
-  templateUrl: 'technology.html',
+	selector: 'page-technology',
+	templateUrl: 'technology.html',
 })
 export class TechnologyPage {
 
-  skills: FirebaseListObservable<any[]>;
+	skills: FirebaseListObservable<any[]>;
 
-  constructor(
-    public navCtrl: NavController,
-    public navParams: NavParams,
-    public firebaseProvider: FirebaseProvider,
-  ) {
-    this.skills = this.firebaseProvider.getTechSkills();
-  }
+	constructor(
+		public navCtrl: NavController,
+		public navParams: NavParams,
+		public firebaseProvider: FirebaseProvider,
+	) {
+		this.skills = this.firebaseProvider.getTechSkills();
+	}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TechnologyPage');
-  }
+	ionViewDidLoad() {
+		console.log('ionViewDidLoad TechnologyPage');
+	}
 
-  goToBusiness() {
-    this.navCtrl.push(BusinessPage);
-  }
+	goToBusiness() {
+		//this.navCtrl.push(BusinessPage);
+		this.navCtrl.pop();
+	}
 
 }

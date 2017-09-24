@@ -13,12 +13,12 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding *ngIf="descriptionObtained">
   <h1>{{topic}}</h1>
-  <p>Descriptions of this topic</p>
-  <p>More Descriptions</p>
-  <p>More Descriptions</p>
+  <br>
+  <p>{{description}}</p>
   <button ion-button primary (click)="learn(topic)">Learn</button>
-  <button ion-button primary (click)="ask()">Ask</button>
+  <button ion-button primary (click)="ask(topic)">Ask</button>
   <button ion-button primary (click)="mentor(topic)">Mentor</button>
+  <h5> Popular in {{topic}} </h5>
 </ion-content>
