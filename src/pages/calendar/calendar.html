@@ -15,7 +15,7 @@
 
 <ion-content padding>
   <div *ngIf="isMentor">
-    <ion-card *ngFor="let request of requests | async" (click)='goToQuestion()'>
+    <ion-card *ngFor="let request of requests | async">
       <ion-card-header class='wrap'>
         {{request.question}}
       </ion-card-header>
@@ -44,7 +44,7 @@
     </ion-card>
   </div>
 
-  <div *ngIf="isSocial">
+  <!-- <div *ngIf="isSocial">
     <ion-card>
       <ion-card-header>
 
@@ -54,7 +54,7 @@
         <button ion-button color='danger' outline (click)='dismiss()'>Dismiss</button>
       </ion-card-content>
     </ion-card>
-  </div>
+  </div> -->
 
 
 </ion-content>
