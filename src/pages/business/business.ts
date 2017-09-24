@@ -31,7 +31,6 @@ export class BusinessPage {
   ) {
     this.skills = this.firebaseProvider.getBusinessSkills();
   }
->>>>>>> ed2e8ce48d10bec314e08804a946eeb924f0e43f
 
   ionViewDidEnter() {
     console.log("ionViewDidEnter I'm in business");
