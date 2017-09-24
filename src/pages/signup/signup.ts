@@ -48,6 +48,7 @@ export class SignupPage {
       .then(auth => {
         // Could do something with the Auth-Response
         this.userProvider.setUserName(this.signupData.name);
+        this.userProvider.setUserEmail(this.signupData.email);
         this.firebaseProvider.addNewUser(this.signupData);
       })
       .catch(err => {

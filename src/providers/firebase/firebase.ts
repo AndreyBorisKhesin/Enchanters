@@ -68,7 +68,6 @@ export class FirebaseProvider {
   }
 
   getBusinessQuestions(index) {
-
     var str1 = new String('/skills/business/');
     var str2 = str1.concat(index);
     var path =  str2.concat('/requests/')
@@ -76,11 +75,12 @@ export class FirebaseProvider {
     return this.afd.list(path);
   }
 
-  addNewBusinessQuestion(index, newQuestion) {
+  addNewBusinessQuestion(index, addQuestion) {
     var str1 = new String('/skills/business/');
     var str2 = str1.concat(index);
-    var path =  str2.concat('/requests/')
-    this.afd.list(path).push(newQuestion);
+    var path =  str2.concat('/requests/');
+    console.log("In firebase: path is " + path);
+    this.afd.list(path).push(addQuestion);
   }
 
 }
