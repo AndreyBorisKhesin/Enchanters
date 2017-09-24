@@ -34,20 +34,8 @@ export class FirebaseProvider {
     return this.afd.list('/skills/technology/');
   }
 
-  addNewUser(newUserName) {
-    var str1 = new String("/users/");
-    var str2 = str1.concat(newUserName);
-    var path = str2.concat("/name/");
-    this.afd.list(path).push(newUserName);
-    var newPath = str2.concat("/counter/");
-    this.afd.list(newPath).push(0);
-  }
-
-  addNewEmail(newUserName, newUserEmail) {
-    var str1 = new String("/users/");
-    var str2 = str1.concat(newUserName);
-    var path = str2.concat("/email/");
-    this.afd.list(path).push(newUserEmail);
+  addNewUser(signupData) {
+    this.afd.list("/users/").push(signupData);
   }
 
   getBusinessEvents(topic) {
@@ -86,6 +74,13 @@ export class FirebaseProvider {
     var path =  str2.concat('/requests/')
     console.log("In firebase: path is " + path);
     return this.afd.list(path);
+  }
+
+  addNewBusinessQuestion(index, newQuestion) {
+    var str1 = new String('/skills/business/');
+    var str2 = str1.concat(index);
+    var path =  str2.concat('/requests/')
+    this.afd.list(path).push(newQuestion);
   }
 
 }
