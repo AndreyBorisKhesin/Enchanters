@@ -18,7 +18,7 @@ import { AddsocialPage } from '../addsocial/addsocial';
   templateUrl: 'social.html',
 })
 export class SocialPage {
-  events: FirebaseListObservable<any[]>;
+  events: any[];
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
@@ -32,6 +32,10 @@ export class SocialPage {
 
   addEvent() {
     this.navCtrl.push(AddsocialPage);
+  }
+
+  attendEvent() {
+
   }
 
 }

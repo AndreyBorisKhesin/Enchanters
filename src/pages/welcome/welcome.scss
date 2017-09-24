@@ -12,4 +12,8 @@ page-welcome {
 		min-width: 100%;
 		max-width: 100%
 	}
+
+  .no-scroll .scroll-content{
+    overflow: hidden;
+  }
 }
