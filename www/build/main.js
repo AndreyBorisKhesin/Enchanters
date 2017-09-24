@@ -60,7 +60,7 @@ var WelcomePage = (function () {
 }());
 WelcomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-welcome',template:/*ion-inline-start:"C:\Users\Andrey\Documents\Enchanters\src\pages\welcome\welcome.html"*/'<!--\n\n  Generated template for the WelcomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{userName}}, welcome to ENT! </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only (click)="signOut()">\n\n        <ion-icon name="power"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <!-- <ion-card>\n\n    <img src="" />\n\n    <div card-title>ENT</div>\n\n    <div card-subtitle>Education Networking Tree</div>\n\n  </ion-card> -->\n\n\n\n  <ion-card>\n\n\n\n    <ion-item>\n\n      <ion-avatar item-start>\n\n        <!-- <img src="img/marty-avatar.png"> -->\n\n      </ion-avatar>\n\n      <h2>{{userName}}</h2>\n\n      <p>{{userPosition}}</p>\n\n    </ion-item>\n\n\n\n    <ion-card-content>\n\n      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>\n\n    </ion-card-content>\n\n\n\n    <ion-row>\n\n      <ion-col>\n\n        <button ion-button icon-left secondary small>\n\n        <ion-icon name="checkmark-circle"></ion-icon>\n\n        <div>12 Arbies</div>\n\n      </button>\n\n      </ion-col>\n\n      <ion-col>\n\n        <button ion-button icon-left danger small (click)="goToCalendar(\'myQuestions\')">\n\n        <ion-icon name="help-circle"></ion-icon>\n\n        <div>4 Questions</div>\n\n      </button>\n\n      </ion-col>\n\n      <ion-col center text-center>\n\n        <ion-note>\n\n          11h ago\n\n        </ion-note>\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n  </ion-card>\n\n\n\n  <button ion-button block (click)="goToLearningPage()">Learning</button>\n\n  <button ion-button block (click)="goToSocialPage()">Social</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Andrey\Documents\Enchanters\src\pages\welcome\welcome.html"*/,
+        selector: 'page-welcome',template:/*ion-inline-start:"C:\Users\Andrey\Documents\Enchanters\src\pages\welcome\welcome.html"*/'<!--\n\n  Generated template for the WelcomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Welcome to ENT! </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only (click)="signOut()">\n\n        <ion-icon name="power"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <!-- <ion-card>\n\n    <img src="" />\n\n    <div card-title>ENT</div>\n\n    <div card-subtitle>Education Networking Tree</div>\n\n  </ion-card> -->\n\n\n\n  <ion-card>\n\n\n\n    <ion-item>\n\n      <ion-avatar item-start>\n\n        <!-- <img src="img/marty-avatar.png"> -->\n\n      </ion-avatar>\n\n      <h2>{{userName}}</h2>\n\n      <p>{{userPosition}}</p>\n\n    </ion-item>\n\n\n\n    <ion-card-content>\n\n      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>\n\n    </ion-card-content>\n\n\n\n    <ion-row>\n\n      <ion-col>\n\n        <button ion-button icon-left secondary small>\n\n        <ion-icon name="checkmark-circle"></ion-icon>\n\n        <div>12 Arbies</div>\n\n      </button>\n\n      </ion-col>\n\n      <ion-col>\n\n        <button ion-button icon-left danger small (click)="goToCalendar(\'myQuestions\')">\n\n        <ion-icon name="help-circle"></ion-icon>\n\n        <div>4 Questions</div>\n\n      </button>\n\n      </ion-col>\n\n      <ion-col center text-center>\n\n        <ion-note>\n\n          11h ago\n\n        </ion-note>\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n  </ion-card>\n\n\n\n  <button ion-button block (click)="goToLearningPage()">Learning</button>\n\n  <button ion-button block (click)="goToSocialPage()">Social</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Andrey\Documents\Enchanters\src\pages\welcome\welcome.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
@@ -187,11 +187,11 @@ webpackEmptyAsyncContext.id = 152;
 var map = {
 	"../pages/business/business.module": [
 		413,
-		3
+		2
 	],
 	"../pages/calendar/calendar.module": [
 		412,
-		2
+		0
 	],
 	"../pages/question/question.module": [
 		411,
@@ -199,7 +199,7 @@ var map = {
 	],
 	"../pages/social/social.module": [
 		414,
-		0
+		3
 	]
 };
 function webpackAsyncContext(req) {
@@ -256,26 +256,23 @@ var LeafPage = (function () {
         console.log('ionViewDidLoad LeafPage');
     };
     LeafPage.prototype.learn = function (topic) {
-        this.goToLearnCalendar(topic);
+        var filter = "learn-" + topic;
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__calendar_calendar__["a" /* CalendarPage */], { filter: filter });
     };
     LeafPage.prototype.ask = function () {
     };
     LeafPage.prototype.mentor = function (topic) {
-        this.goToMentorCalendar(topic);
+        var filter = "mentor-" + topic;
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__calendar_calendar__["a" /* CalendarPage */], { filter: filter });
     };
     LeafPage.prototype.goToQuestion = function (filter) {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__question_question__["a" /* QuestionPage */]);
-    };
-    LeafPage.prototype.goToLearnCalendar = function (filter) {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__calendar_calendar__["a" /* CalendarPage */], { filter: filter });
-    };
-    LeafPage.prototype.goToMentorCalendar = function (filter) {
     };
     return LeafPage;
 }());
 LeafPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-leaf',template:/*ion-inline-start:"C:\Users\Andrey\Documents\Enchanters\src\pages\leaf\leaf.html"*/'<!--\n\n  Generated template for the LeafPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Topic</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <h1>{{topic}}</h1>\n\n  <p>Descriptions of this topic</p>\n\n  <p>More Descriptions</p>\n\n  <p>More Descriptions</p>\n\n  <button ion-button primary (click)="learn()">Learn</button>\n\n  <button ion-button primary (click)="ask()">Ask</button>\n\n  <button ion-button primary (click)="mentor()">Mentor</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Andrey\Documents\Enchanters\src\pages\leaf\leaf.html"*/,
+        selector: 'page-leaf',template:/*ion-inline-start:"C:\Users\Andrey\Documents\Enchanters\src\pages\leaf\leaf.html"*/'<!--\n\n  Generated template for the LeafPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Topic</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <h1>{{topic}}</h1>\n\n  <p>Descriptions of this topic</p>\n\n  <p>More Descriptions</p>\n\n  <p>More Descriptions</p>\n\n  <button ion-button primary (click)="learn(topic)">Learn</button>\n\n  <button ion-button primary (click)="ask()">Ask</button>\n\n  <button ion-button primary (click)="mentor(topic)">Mentor</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Andrey\Documents\Enchanters\src\pages\leaf\leaf.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
@@ -596,9 +593,9 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                 links: [
                     { loadChildren: '../pages/question/question.module#QuestionPageModule', name: 'QuestionPage', segment: 'question', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/calendar/calendar.module#CalendarPageModule', name: 'CalendarPage', segment: 'calendar', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/business/business.module#BusinessPageModule', name: 'BusinessPage', segment: 'business', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/social/social.module#SocialPageModule', name: 'SocialPage', segment: 'social', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/social/social.module#SocialPageModule', name: 'SocialPage', segment: 'social', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/calendar/calendar.module#CalendarPageModule', name: 'CalendarPage', segment: 'calendar', priority: 'low', defaultHistory: [] }
                 ]
             })
         ],
@@ -902,17 +899,89 @@ var CalendarPage = (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.filter = this.navParams.get('filter');
+        console.log("In calendar, filter = " + this.filter);
         switch (this.filter) {
             case "myQuestions":
                 this.title = "My Questions";
+                // This is going to be difficult
+                break;
+            case "mentor-Accounting & Acturial Science":
+                this.title = "Accounting & Acturial Science Questions";
+                this.topicId = 0;
+                break;
+            case "mentor-Client Services":
+                this.title = "Client Services Questions";
+                this.topicId = 1;
+                break;
+            case "mentor-Loan Management & Insurance":
+                this.title = "Loan & Insurance Questions";
+                this.topicId = 2;
+                break;
+            case "mentor-Marketing":
+                this.title = "Marketing Questions";
+                this.topicId = 3;
+                break;
+            case "mentor-Public Relations":
+                this.title = "Public Relations Questions";
+                this.topicId = 4;
+                break;
+            case "mentor-Sales & Operations":
+                this.title = "Sales & Operations Questions";
+                this.topicId = 5;
+                break;
+            case "mentor-Risk Management":
+                this.title = "Risk Management Questions";
+                this.topicId = 6;
+                break;
+            case "mentor-Trading & Capital Markets":
+                this.title = "Trading & Capital Markets Questions";
+                this.topicId = 7;
+                break;
+            case "mentor-Wealth Management":
+                this.title = "Wealth Management Questions";
+                this.topicId = 8;
+                break;
+            case "learn-Accounting & Acturial Science":
+                this.title = "Accounting & Acturial Science Help";
+                this.topicId = 0;
+                break;
+            case "learn-Client Services":
+                this.title = "Client Services Help";
+                this.topicId = 1;
+                break;
+            case "learn-Loan Management & Insurance":
+                this.title = "Loan & Insurance Help";
+                this.topicId = 2;
+                break;
+            case "learn-Marketing":
+                this.title = "Marketing Help";
+                this.topicId = 3;
+                break;
+            case "learn-Public Relations":
+                this.title = "Public Relations Help";
+                this.topicId = 4;
+                break;
+            case "learn-Sales & Operations":
+                this.title = "Sales & Operations Help";
+                this.topicId = 5;
+                break;
+            case "learn-Risk Management":
+                this.title = "Risk Management Help";
+                this.topicId = 6;
+                break;
+            case "learn-Trading & Capital Markets":
+                this.title = "Trading & Capital Markets Help";
+                this.topicId = 7;
+                break;
+            case "learn-Wealth Management":
+                this.title = "Wealth Management Help";
+                this.topicId = 8;
                 break;
             default:
-                this.title = "Questions";
+                this.title = "Default Calendar";
         }
-        console.log(this.title);
     }
     CalendarPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CalendarPage');
     };
     return CalendarPage;
 }());
@@ -981,7 +1050,7 @@ var BusinessPage = (function () {
 BusinessPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPage */])({}),
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
-        selector: 'page-business',template:/*ion-inline-start:"C:\Users\Andrey\Documents\Enchanters\src\pages\business\business.html"*/'<!--\n\n	Generated template for the BusinessPage page.\n\n\n\n	See http://ionicframework.com/docs/components/#navigation for more info on\n\n	Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n	<ion-navbar>\n\n		<ion-title>\n\n			Learning\n\n		</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<ion-grid>\n\n		<h6>Commercial Banking</h6>\n\n		<ion-row>\n\n			<ion-col col-4 (click)="goToLeaf()"><img class="tile" src="img/Accounting.jpg"></ion-col>\n\n			<ion-col col-4 (click)="goToLeaf()"><img class="tile" src="img/Client.jpg"></ion-col>\n\n			<ion-col col-4 (click)="goToLeaf()"><img class="tile" src="img/Loan and Insurance.jpg"></ion-col>\n\n		</ion-row>\n\n		<h6>Communications</h6>\n\n		<ion-row>\n\n			<ion-col col-4 (click)="goToLeaf()"><img class="tile" src="img/Marketing.jpg"></ion-col>\n\n			<ion-col col-4 (click)="goToLeaf()"><img class="tile" src="img/PR.jpg"></ion-col>\n\n			<ion-col col-4 (click)="goToLeaf()"><img class="tile" src="img/Sales and Op.jpg"></ion-col>\n\n		</ion-row>\n\n		<h6>Investment Banking</h6>\n\n		<ion-row>\n\n			<ion-col col-4 (click)="goToLeaf()"><img class="tile" src="img/Risk.jpg"></ion-col>\n\n			<ion-col col-4 (click)="goToLeaf()"><img class="tile" src="img/Trading and Cap.jpg"></ion-col>\n\n			<ion-col col-4 (click)="goToLeaf()"><img class="tile" src="img/Wealth.jpg"></ion-col>\n\n		</ion-row>\n\n	</ion-grid>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n	<button ion-button class=\'bus-button\' color=\'light\'>Business</button>\n\n	<button ion-button class=\'tech-button\' color=\'light\' (click)=\'goToTech()\'>Technology</button>\n\n</ion-footer>\n\n'/*ion-inline-end:"C:\Users\Andrey\Documents\Enchanters\src\pages\business\business.html"*/,
+        selector: 'page-business',template:/*ion-inline-start:"C:\Users\Andrey\Documents\Enchanters\src\pages\business\business.html"*/'<!--\n\n	Generated template for the BusinessPage page.\n\n\n\n	See http://ionicframework.com/docs/components/#navigation for more info on\n\n	Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n	<ion-navbar>\n\n		<ion-title>\n\n			Learning\n\n		</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<ion-grid>\n\n		<h6>Commercial Banking</h6>\n\n		<ion-row>\n\n			<ion-col col-4 (click)="goToLeaf(\'Accounting & Actuarial Science\')"><img class="tile" src="img/Accounting.jpg"></ion-col>\n\n			<ion-col col-4 (click)="goToLeaf(\'Client Services\')"><img class="tile" src="img/Client.jpg"></ion-col>\n\n			<ion-col col-4 (click)="goToLeaf(\'Loan Management & Insurance\')"><img class="tile" src="img/Loan and Insurance.jpg"></ion-col>\n\n		</ion-row>\n\n		<h6>Communications</h6>\n\n		<ion-row>\n\n			<ion-col col-4 (click)="goToLeaf(\'Marketing\')"><img class="tile" src="img/Marketing.jpg"></ion-col>\n\n			<ion-col col-4 (click)="goToLeaf(\'Public Relations\')"><img class="tile" src="img/PR.jpg"></ion-col>\n\n			<ion-col col-4 (click)="goToLeaf(\'Sales & Operations\')"><img class="tile" src="img/Sales and Op.jpg"></ion-col>\n\n		</ion-row>\n\n		<h6>Investment Banking</h6>\n\n		<ion-row>\n\n			<ion-col col-4 (click)="goToLeaf(\'Risk Management\')"><img class="tile" src="img/Risk.jpg"></ion-col>\n\n			<ion-col col-4 (click)="goToLeaf(\'Trading & Capital Markets\')"><img class="tile" src="img/Trading and Cap.jpg"></ion-col>\n\n			<ion-col col-4 (click)="goToLeaf(\'Wealth Management\')"><img class="tile" src="img/Wealth.jpg"></ion-col>\n\n		</ion-row>\n\n	</ion-grid>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n	<button ion-button class=\'bus-button\' color=\'light\'>Business</button>\n\n	<button ion-button class=\'tech-button\' color=\'light\' (click)=\'goToTech()\'>Technology</button>\n\n</ion-footer>\n\n'/*ion-inline-end:"C:\Users\Andrey\Documents\Enchanters\src\pages\business\business.html"*/,
         styleUrls: ['/pages/business/business.scss']
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */],
