@@ -59,11 +59,11 @@
 						"location": "Green Dragon Room"
 					},
 					"1": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"date": "",
-						"location": ""
+						"name": "Communications Skills Seminar",
+						"description": "This seminar focuses on basic communications skills that are vital in the area of personal and commercial banking.  Skills learned in this seminar are applicable to all fields, so everyone is invited to attend.",
+						"organizer": "Kili",
+						"date": "2017-10-12",
+						"location": "102 (First Floor)"
 					}
 				},
 				"requests": {
@@ -76,9 +76,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Gimli",
+						"email": "GimliSonOfGloin@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -94,26 +94,26 @@
 						"location": "105B"
 					},
 					"1": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"date": "",
-						"location": ""
+						"name": "Calculating Loan Interest",
+						"description": "ANDREY",
+						"organizer": "Fili",
+						"date": "2017-10-12",
+						"location": "First Floor Auditorium"
 					}
 				},
 				"requests": {
 					"0": {
 						"id": "0",
-						"asker": "Tauriel",
-						"email": "Starlight@ent.ca",
+						"asker": "Bombur",
+						"email": "foodlovr@ent.ca",
 						"question": "Should I go into loan management?",
 						"description": "I'm a 4-month intern here at RBC.  I'm thinking of applying to work here full time after graduation. I was wondering if anyone would be willing to meet me to discuss a potential career in loan management"
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Boffur",
+						"email": "boffur@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -129,10 +129,10 @@
 						"location": "Conference Room C"
 					},
 					"1": {
-						"name": "",
+						"name": "Promotional Materials: What to produce and how",
 						"description": "",
-						"organizer": "",
-						"date": "",
+						"organizer": "Arywn",
+						"date": "2017-10-15",
 						"location": ""
 					}
 				},
@@ -146,9 +146,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Rosie Gamgee",
+						"email": "rGamgee@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -164,11 +164,11 @@
 						"location": "Conference Room A"
 					},
 					"1": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "Company Image: what is it and how is it achieved?",
+						"description": "ANDREY",
+						"organizer": "Legolas Greenleaf",
+						"time": "2017-10-13",
+						"location": "Conference Room B"
 					}
 				},
 				"requests": {
@@ -181,9 +181,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Balin",
+						"email": "BalinOfMoria@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -199,11 +199,11 @@
 						"location": "Room 505A"
 					},
 					"1": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "Responsibilities of a Sales Coordinator",
+						"description": "This seminar is focused on interns, co-op, and rotational program students.  Come and learn what duties are involved in being a sales coordinator.  We will also discuss the skills needed for a future career in this field.",
+						"organizer": "Lady Galadriel",
+						"time": "2017-10-31",
+						"location": "Room 505B"
 					}
 				},
 				"requests": {
@@ -212,13 +212,13 @@
 						"asker": "Thorin Oakenshield",
 						"email": "KingUnderTheMountain@ent.ca",
 						"question": "Documents for Depositing Securities",
-						description: "Which documents/information are required for crediting secruties to its corresponding account?  Do I need cusip numbers?"
+						description: "Which documents/information are required for crediting securties to its corresponding account?  Do I need cusip numbers?"
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Dwalin",
+						"email": "dwarfDwalin@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -234,11 +234,11 @@
 						"location": "Room 506A"
 					},
 					"1": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "Ways to Mitigate or Transfer Risk",
+						"description": "ANDREY",
+						"organizer": "Gandalf the Grey",
+						"time": "2017-10-29",
+						"location": "Room 506A"
 					}
 				},
 				"requests": {
@@ -251,9 +251,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Potato Faced Orc",
+						"email": "OrcCommander@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -265,30 +265,30 @@
 						"name": "Stocks and Bonds and Derivatives, Oh My!",
 						"description": "An introductory seminar on trading financial securities.  Basic coverage of the different types of securities and traders. Great for those outside the field who want to learn more about trading.",
 						"organizer": "Radagast the Brown",
-						"time": "2017-20-01",
+						"time": "2017-10-01",
 						"location": "Conference Room A"
 					},
 					"1": {
-						"name": "",
+						"name": "Capital Markets 101",
 						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"organizer": "Gollum",
+						"time": "2017-10-22",
+						"location": "Conference Room B"
 					}
 				},
 				"requests": {
 					"0": {
 						"id": "0",
 						"asker": "Gimli",
-						"email": "DwarvesAreBetterThanElves@ent.ca",
+						"email": "GimliSonOfGloin@ent.ca",
 						"question": "Stocks vs Bonds Difference?",
 						"description": "What is the difference between stocks and bonds?"
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Legolas Greenleaf",
+						"email": "photogenicRoyalty@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -304,11 +304,11 @@
 						"location": "Great Hall"
 					},
 					"1": {
-						"name": "",
-						"description": "",
-						"organizer": "",
-						"time": "",
-						"location": ""
+						"name": "Hedgefunds",
+						"description": "ANDREY",
+						"organizer": "Thorin Oakenshield",
+						"time": "2017-09-27",
+						"location": "Great Hall"
 					}
 				},
 				"requests": {
@@ -321,9 +321,9 @@
 					},
 					"1": {
 						"id": "0",
-						"asker": "",
-						"email": "",
-						"question": "",
+						"asker": "Aragorn",
+						"email": "AragornSonOfArathorn@ent.ca",
+						"question": "ANDREY",
 						"description": ""
 					}
 				}
@@ -341,11 +341,11 @@
 						"location": "Conference Room D"
 					},
 					"1": {
-						"name": "",
-						"description": "",
-						"organizer": "",
+						"name": "What is Computer Architecture?",
+						"description": "A beginner's seminar for those outside of this field but are interested in learning more.ANDREY",
+						"organizer": "Theodin King",
 						"date": "2017-10-19",
-						"location": ""
+						"location": "Auditorium (First Floor)"
 					}
 				},
 				"requests": {
@@ -358,9 +358,9 @@
 					},
 					"1": {
 						id: "0",
-						asker: "",
-						email: "",
-						question: "",
+						asker: "Treebeard",
+						email: "entmoot@ent.ca",
+						question: "ANDREY",
 						description: ""
 					}
 				}
@@ -393,10 +393,10 @@
 					},
 					"1": {
 						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						asker: "Grima Wormtongue",
+						email: "corruption@ent.ca",
+						question: "Reverse Hash?",
+						description: "Why can't hashes be reversed?"
 					}
 				}
 			},
@@ -408,7 +408,7 @@
 						"description": "This seminar will cover the history of computers, computing, and the first operating systems. No computer science background required, everyone is welcome!",
 						"organizer": "Frodo Underhill Baggins",
 						"date": "2017-10-26",
-						"location": ""
+						"location": "Room 303"
 					},
 					"1": {
 						"name": "",
@@ -621,11 +621,11 @@
 						"location": "First Floor Auditorium"
 					},
 					"1": {
-						"name": "",
-						"description": "",
-						"organizer": "",
+						"name": "Web Design",
+						"description": "Covers the 8 principles of good web design.",
+						"organizer": "Selob",
 						"date": "2017-10-03",
-						"location": ""
+						"location": "Room 300"
 					}
 				},
 				"requests": {
@@ -633,7 +633,7 @@
 						id: "0",
 						asker: "Witch King of Angmar",
 						email: "blackhood9@ent.ca",
-						question: "HTML/CSS",
+						question: "HTML/CSS Mockups",
 						description: "Can anyone recommend some good software for building mockups? I want something that can generate the html and css code for me.  I was thinking about using Axure.  Does anyone have experience using it? Will buy coffee for whoever answers :)"
 					},
 					"1": {
