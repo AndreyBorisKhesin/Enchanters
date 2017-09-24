@@ -1,24 +1,23 @@
 <!--
-  Generated template for the LeafPage page.
+	Generated template for the LeafPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
+	See http://ionicframework.com/docs/components/#navigation for more info on
+	Ionic pages and navigation.
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Topic</ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<ion-title>Topic</ion-title>
+	</ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding *ngIf="descriptionObtained">
-  <h1>{{topic}}</h1>
-  <br>
-  <p>{{description}}</p>
-  <button ion-button primary (click)="learn(topic)">Learn</button>
-  <button ion-button primary (click)="ask(topic)">Ask</button>
-  <button ion-button primary (click)="mentor(topic)">Mentor</button>
-  <h5> Popular in {{topic}} </h5>
+	<img src="img/{{topic}}.jpg">
+	<br>
+	<p>{{description}}</p>
+	<button ion-button primary (click)="learn(topic)">Learn</button>
+	<button ion-button primary (click)="ask(topic)">Ask</button>
+	<button ion-button primary (click)="mentor(topic)">Mentor</button>
 </ion-content>
