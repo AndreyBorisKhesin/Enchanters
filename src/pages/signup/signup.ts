@@ -22,25 +22,25 @@ export class SignupPage {
     password: '',
     passwordRetyped: '',
     preferences: {
-    	"b0": 1,
-    	"b1": 1,
-    	"b2": 1,
-    	"b3": 1,
-    	"b4": 1,
-    	"b5": 1,
-    	"b6": 1,
-    	"b7": 1,
-    	"b8": 1,
-    	"t0": 1,
-    	"t1": 1,
-    	"t2": 1,
-    	"t3": 1,
-    	"t4": 1,
-    	"t5": 1,
-    	"t6": 1,
-    	"t7": 1,
-    	"t8": 1,
-	"social": 1
+      "b0": 1,
+      "b1": 1,
+      "b2": 1,
+      "b3": 1,
+      "b4": 1,
+      "b5": 1,
+      "b6": 1,
+      "b7": 1,
+      "b8": 1,
+      "t0": 1,
+      "t1": 1,
+      "t2": 1,
+      "t3": 1,
+      "t4": 1,
+      "t5": 1,
+      "t6": 1,
+      "t7": 1,
+      "t8": 1,
+      "social": 1
     }
   };
 
@@ -53,9 +53,9 @@ export class SignupPage {
     public firebaseProvider: FirebaseProvider) {
     this.signupData.email = this.navParams.get('email');
   }
-  
+
   signup() {
-    if(this.signupData.password !== this.signupData.passwordRetyped) {
+    if (this.signupData.password !== this.signupData.passwordRetyped) {
       let alert = this.alertCtrl.create({
         title: 'Error',
         message: 'Your password and your re-entered password does not match each other.',
@@ -67,10 +67,11 @@ export class SignupPage {
 
     this.afAuth.auth.createUserWithEmailAndPassword(this.signupData.email, this.signupData.password)
       .then(auth => {
-        // Could do something with the Auth-Response
         this.userProvider.setUserName(this.signupData.name);
         this.userProvider.setUserEmail(this.signupData.email);
-	this.userProvider.setUserPreferences(this.signupData.preferences);
+        this.userProvider.setUserPreferences(this.signupData.preferences);
+        this.userProvider.setArbies(0);
+        this.userProvider.setNumQuestions(0);
         this.firebaseProvider.addNewUser(this.signupData);
       })
       .catch(err => {

@@ -16,14 +16,16 @@ export class UserProvider {
   email: string;
   password: string;
   position: string;
-  preferences: any;
+  preferences: Map<string, number>;
+  arbies: number;
+  numQuestions: number;
 
   constructor(public http: Http) {
     this.name = "";
     this.email = "";
     this.password = "";
     this.position = "";
-    this.preferences = "";
+    this.preferences = new Map();
   }
 
   setUserName(value: any) {
@@ -56,6 +58,22 @@ export class UserProvider {
 
   setUserPreferences(value: any) {
     this.preferences = value;
+  }
+
+  setArbies(value: any) {
+    this.arbies = value;
+  }
+
+  getArbies() {
+    return this.arbies;
+  }
+
+  getNumQuestions() {
+    return this.numQuestions;
+  }
+
+  setNumQuestions(value: number) {
+    this.numQuestions = value;
   }
 
 }
