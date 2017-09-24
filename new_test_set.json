@@ -6,15 +6,15 @@
 				"events": {
 					"0": {
 						"name": "Introduction to Pension Mathematics",
-						"description": "Learn about how actuarial functions apply to pension plan funding.  Seminar covers topics of liability, accrud benefic, and projected benefit cost methods.",
+						"description": "Learn about how actuarial functions apply to pension plan funding. Seminar covers topics of liability, accrued benefic, and projected benefit cost methods.",
 						"organizer": "Bilbo Baggins",
 						"date": "2017-10-04",
 						"location": "Conference Room A"
 					},
 					"1": {
 						"name": "Loss Models for Dummies",
-						"description": "Models for loss severity and frequency.  Includes discussions of Poisson models, aggregate claims models, and Classical Ruin Theory.",
-						"organizer": "Thorin Oakensheild",
+						"description": "Models for loss severity and frequency. Includes discussions of Poisson models, aggregate claims models, and Classical Ruin Theory.",
+						"organizer": "Thorin Oakenshield",
 						"date": "2017-09-25",
 						"location": "Great Hall"
 					}
@@ -30,9 +30,9 @@
 					"1": {
 						"id": "0",
 						"asker": "Gandalf",
-						"email": "TheWizard@ent.ca",
+						"email": "thewizard@ent.ca",
 						"question": "MLE for Poisson.",
-						"description": "What's the Maximum Likelihood Estimator for the Poisson Distribution?"
+						"description": "What is the Maximum Likelihood Estimator for the Poisson Distribution?"
 					}
 				}
 			},
@@ -41,14 +41,14 @@
 				"events": {
 					"0": {
 						"name": "Putting the Client First: How to exceed needs and expectations",
-						"description": "Client Services involves working closely with clients to meet their financial goals.  This workshop covers how to personalize the client experience by understanding their financial needs, and offering appropriate solutions.",
+						"description": "Client Services involves working closely with clients to meet their financial goals. This workshop covers how to personalize the client experience by understanding their financial needs, and offering appropriate solutions.",
 						"organizer": "Peregrin Took",
 						"date": "2017-10-23",
 						"location": "Green Dragon Room"
 					},
 					"1": {
 						"name": "Communications Skills Seminar",
-						"description": "This seminar focuses on basic communications skills that are vital in the area of personal and commercial banking.  Skills learned in this seminar are applicable to all fields, so everyone is invited to attend.",
+						"description": "This seminar focuses on basic communications skills that are vital in the area of personal and commercial banking. Skills learned in this seminar are applicable to all fields, so everyone is invited to attend.",
 						"organizer": "Kili",
 						"date": "2017-10-12",
 						"location": "102 (First Floor)"
@@ -65,9 +65,9 @@
 					"1": {
 						"id": "0",
 						"asker": "Gimli",
-						"email": "GimliSonOfGloin@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"email": "gimlisonofgloin@ent.ca",
+						"question": "Tips for talking to clients",
+						"description": "I am a client-facing intern and am nervous that I will not be able to answer all of their questions. What do I do?"
 					}
 				}
 			},
@@ -83,7 +83,7 @@
 					},
 					"1": {
 						"name": "Calculating Loan Interest",
-						"description": "ANDREY",
+						"description": "Some say that compound interest is one of the wonders of the world. This seminar will cover how to compute the amount that a loan will cost after its interest is taken into account. Basic math skills recommended.",
 						"organizer": "Fili",
 						"date": "2017-10-12",
 						"location": "First Floor Auditorium"
@@ -93,16 +93,16 @@
 					"0": {
 						"id": "0",
 						"asker": "Bombur",
-						"email": "foodlovr@ent.ca",
+						"email": "foodlover@ent.ca",
 						"question": "Should I go into loan management?",
-						"description": "I'm a 4-month intern here at RBC.  I'm thinking of applying to work here full time after graduation. I was wondering if anyone would be willing to meet me to discuss a potential career in loan management"
+						"description": "I am a 4-month intern here at RBC. I am thinking of applying to work here full time after graduation. I was wondering if anyone would be willing to meet me to discuss a potential career in loan management."
 					},
 					"1": {
 						"id": "0",
 						"asker": "Boffur",
 						"email": "boffur@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"question": "Insurance Selling",
+						"description": "How has the business of selling insurance shifted from door-to-door visits and cold calls to what we have today?"
 					}
 				}
 			},
@@ -111,17 +111,17 @@
 				"events": {
 					"0": {
 						"name": "How to make your graphic designs appealing",
-						"description": "RBC employs webpages, mobile applications, promotional materials and more to connect with current and potential clients.  Learn how to make your designs appealing and user friendly in this seminar.",
+						"description": "RBC employs webpages, mobile applications, promotional materials and more to connect with current and potential clients. Learn how to make your designs appealing and user friendly in this seminar.",
 						"organizer": "Meriadoc Brandybuck",
 						"date": "2017-10-27",
 						"location": "Conference Room C"
 					},
 					"1": {
 						"name": "Promotional Materials: What to produce and how",
-						"description": "",
+						"description": "Everyone knows business is all about the pitch. However, things like ads, banners, and flyers can still be the difference between a success and failure. We will discuss how to avoid the common pitfalls.",
 						"organizer": "Arywn",
 						"date": "2017-10-15",
-						"location": ""
+						"location": "702"
 					}
 				},
 				"requests": {
@@ -135,9 +135,9 @@
 					"1": {
 						"id": "0",
 						"asker": "Rosie Gamgee",
-						"email": "rGamgee@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"email": "rgamgee@ent.ca",
+						"question": "Video Production",
+						"description": "If a marketing pitch has to be made in a video format, what software and tools should I use to maximize the impact."
 					}
 				}
 			},
@@ -153,8 +153,8 @@
 					},
 					"1": {
 						"name": "Company Image: what is it and how is it achieved?",
-						"description": "ANDREY",
-						"organizer": "Legolas Greenleaf",
+						"description": "A introductory workshop to corporate branding. Includes an introduction to social outreach and when it is appropriate.",
+						"organizer": "Arwyn",
 						"time": "2017-10-13",
 						"location": "Conference Room B"
 					}
@@ -163,16 +163,16 @@
 					"0": {
 						"id": "0",
 						"asker": "Aragorn",
-						"email": "AragornSonOfArathorn@ent.ca",
+						"email": "aragornsonofarathorn@ent.ca",
 						"question": "Does RBC have a Snapchat filter?",
 						"description": "I was thinking of proposing an RBC Snapchat filter, any thoughts?"
 					},
 					"1": {
 						"id": "0",
 						"asker": "Balin",
-						"email": "BalinOfMoria@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"email": "balinofmoria@ent.ca",
+						"question": "Who runs the RBC Twitter account?",
+						"description": "Who gets to decide what goes up on the RBC Twitter account? Can I share some suggestions?"
 					}
 				}
 			},
@@ -188,8 +188,8 @@
 					},
 					"1": {
 						"name": "Responsibilities of a Sales Coordinator",
-						"description": "This seminar is focused on interns, co-op, and rotational program students.  Come and learn what duties are involved in being a sales coordinator.  We will also discuss the skills needed for a future career in this field.",
-						"organizer": "Lady Galadriel",
+						"description": "This seminar is focused on interns, co-op, and rotational program students. Come and learn what duties are involved in being a sales coordinator. We will also discuss the skills needed for a future career in this field.",
+						"organizer": "Galadriel",
 						"time": "2017-10-31",
 						"location": "Room 505B"
 					}
@@ -198,16 +198,16 @@
 					"0": {
 						"id": "0",
 						"asker": "Thorin Oakenshield",
-						"email": "KingUnderTheMountain@ent.ca",
+						"email": "kingunderthemountain@ent.ca",
 						"question": "Documents for Depositing Securities",
-						"description": "Which documents/information are required for crediting securties to its corresponding account?  Do I need cusip numbers?"
+						"description": "Which documents/information are required for crediting securties to its corresponding account? Do I need cusip numbers?"
 					},
 					"1": {
 						"id": "0",
 						"asker": "Dwalin",
-						"email": "dwarfDwalin@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"email": "dwarfdwalin@ent.ca",
+						"question": "Essense of Sales and Operations",
+						"description": "Could someone please explain what these positions entail in a few sentences?"
 					}
 				}
 			},
@@ -216,15 +216,15 @@
 				"events": {
 					"0": {
 						"name": "Risk Management Q&A Session",
-						"description": "Bring your questions about VaR and CTE risk measures, strategies for mitigating or transferring risk, or anything else you like.  Casual Q&A session; food and beverages provided.",
-						"organizer": "Gandalf the White",
+						"description": "Bring your questions about VaR and CTE risk measures, strategies for mitigating or transferring risk, or anything else you like. Casual Q&A session; food and beverages provided.",
+						"organizer": "Gandalf",
 						"time": "2017-10-30",
 						"location": "Room 506A"
 					},
 					"1": {
 						"name": "Ways to Mitigate or Transfer Risk",
-						"description": "ANDREY",
-						"organizer": "Gandalf the Grey",
+						"description": "A workshop on how to make sure that even if an investment is not likely to pay off, the loss on it will not be significant. This and much more at the workshop!",
+						"organizer": "Smeagol",
 						"time": "2017-10-29",
 						"location": "Room 506A"
 					}
@@ -233,16 +233,16 @@
 					"0": {
 						"id": "0",
 						"asker": "Lord Elrond",
-						"email": "Rivendell@ent.ca",
+						"email": "rivendell@ent.ca",
 						"question": "VaR Confusion!",
 						"description": "Can someone please explain to me what Value at Risk is? How is it used? Thanks!"
 					},
 					"1": {
 						"id": "0",
-						"asker": "Potato Faced Orc",
-						"email": "OrcCommander@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"asker": "Gothmog",
+						"email": "orclieutenant@ent.ca",
+						"question": "Investment Risk Assessment",
+						"description": "What are the most significant factors in assessing the risk of an investment?"
 					}
 				}
 			},
@@ -251,14 +251,14 @@
 				"events": {
 					"0": {
 						"name": "Stocks and Bonds and Derivatives, Oh My!",
-						"description": "An introductory seminar on trading financial securities.  Basic coverage of the different types of securities and traders. Great for those outside the field who want to learn more about trading.",
+						"description": "An introductory seminar on trading financial securities. Basic coverage of the different types of securities and traders. Great for those outside the field who want to learn more about trading.",
 						"organizer": "Radagast the Brown",
 						"time": "2017-10-01",
 						"location": "Conference Room A"
 					},
 					"1": {
 						"name": "Capital Markets 101",
-						"description": "",
+						"description": "If terms like shares and bonds sound unfamiliar to you, come to this introductory seminar in capital markets. No prior experience required!",
 						"organizer": "Gollum",
 						"time": "2017-10-22",
 						"location": "Conference Room B"
@@ -268,16 +268,16 @@
 					"0": {
 						"id": "0",
 						"asker": "Gimli",
-						"email": "GimliSonOfGloin@ent.ca",
+						"email": "gimlisonofgloin@ent.ca",
 						"question": "Stocks vs Bonds Difference?",
 						"description": "What is the difference between stocks and bonds?"
 					},
 					"1": {
 						"id": "0",
 						"asker": "Legolas Greenleaf",
-						"email": "photogenicRoyalty@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"email": "photogenicroyalty@ent.ca",
+						"question": "Selling bonds",
+						"description": "When you sell a bond, who buys it? Why would they want it if you do not?"
 					}
 				}
 			},
@@ -286,14 +286,14 @@
 				"events": {
 					"0": {
 						"name": "Managing HNWI Wealth",
-						"description": "A seminar on wealth management for high-net-worth-individuals.",
+						"description": "A seminar on wealth management for high-net-worth individuals.",
 						"organizer": "Smaug",
 						"time": "2017-09-26",
 						"location": "Great Hall"
 					},
 					"1": {
-						"name": "Hedgefunds",
-						"description": "ANDREY",
+						"name": "Hedge Funds",
+						"description": "The basics of construcing your portfolio to make your hedge fund successful.",
 						"organizer": "Thorin Oakenshield",
 						"time": "2017-09-27",
 						"location": "Great Hall"
@@ -303,16 +303,16 @@
 					"0": {
 						"id": "0",
 						"asker": "Legolas Greenleaf",
-						"email": "photogenicRoyalty@ent.ca",
+						"email": "photogenicroyalty@ent.ca",
 						"question": "WM strategy?",
-						"description": "I have heard some people prefer a wealth management goal that revolves around client life goals, working environments, and spending habits.  What is everybody's opinion on this strategy?"
+						"description": "I have heard some people prefer a wealth management goal that revolves around client life goals, working environments, and spending habits. What is everybody's opinion on this strategy?"
 					},
 					"1": {
 						"id": "0",
 						"asker": "Aragorn",
-						"email": "AragornSonOfArathorn@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"email": "aragornsonofarathorn@ent.ca",
+						"question": "Index Funds",
+						"description": "Why do some people say that you cannot beat an index fund, no matter how smart you are?"
 					}
 				}
 			}
@@ -323,14 +323,14 @@
 				"events": {
 					"0": {
 						"name": "Direct Memory Access Seminar",
-						"description": "Direct Memory Access falls under the system design subcategory of computer architecuture.  System design involves computer hardware other than those within a computing system.  DMA allows certain hardware to access RAM independent of the CPU.  Learn more at this seminar!",
+						"description": "Direct Memory Access falls under the system design subcategory of computer architecuture. System design involves computer hardware other than those within a computing system. DMA allows certain hardware to access RAM independent of the CPU. Learn more at this seminar!",
 						"organizer": "Boromir",
 						"date": "2017-09-25",
 						"location": "Conference Room D"
 					},
 					"1": {
 						"name": "What is Computer Architecture?",
-						"description": "A beginner's seminar for those outside of this field but are interested in learning more.ANDREY",
+						"description": "A beginner's seminar for those outside of this field but are interested in learning more. No experience required!",
 						"organizer": "Theodin King",
 						"date": "2017-10-19",
 						"location": "Auditorium (First Floor)"
@@ -340,7 +340,7 @@
 					"0": {
 						"id": "0",
 						"asker": "Galadriel",
-						"email": "Lothlorien@ent.ca",
+						"email": "ladyoflorien@ent.ca",
 						"question": "Latency versus Throughput",
 						"description": "Is latency or throughput a better guage for a computer's performance speed?"
 					},
@@ -348,8 +348,8 @@
 						"id": "0",
 						"asker": "Treebeard",
 						"email": "entmoot@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"question": "Transistors",
+						"description": "What is the difference between an NPN and a PNP transistor? Why does it matter?"
 					}
 				}
 			},
@@ -358,15 +358,15 @@
 				"events": {
 					"0": {
 						"name": "Introduction to RSA Workshop",
-						"description": "RSA is a modern technique used by computers to encrypt and decrypt messages.  The algorithm was described in 1978 by Ron Rivest, Adi Shamir, and Leonard Adleman and involves taking the product of prime numbers to produce a public key that can only be decrypted if the prime factors are known.  This seminar is good for both computer scientists in the security and cryptography field and those who are interested in learning more about online security.",
+						"description": "RSA is a modern technique used by computers to encrypt and decrypt messages. The algorithm was described in 1978 by Ron Rivest, Adi Shamir, and Leonard Adleman and involves taking the product of prime numbers to produce a public key that can only be decrypted if the prime factors are known. This seminar is good for both computer scientists in the security and cryptography field and those who are interested in learning more about online security.",
 						"organizer": "Sauron",
 						"date": "2017-10-06",
 						"location": "Mordor"
 					},
 					"1": {
 						"name": "Basic Password Hashing and Authentication",
-						"description": "This seminar is an introduction to one of the methods used to keep passwords secure.  Hashing involves taking data of any length and turning it into data of fixed length.  We will discuss the hashing algorithm and the benefits of using password hashing as a security method.",
-						"organizer": "Saruman the White",
+						"description": "This seminar is an introduction to one of the methods used to keep passwords secure. Hashing involves taking data of any length and turning it into data of fixed length. We will discuss the hashing algorithm and the benefits of using password hashing as a security method.",
+						"organizer": "Saruman",
 						"date": "2017-10-01",
 						"location": "Confernce Room A"
 					}
@@ -374,17 +374,17 @@
 				"requests": {
 					"0": {
 						"id": "0",
-						"asker": "Sauron",
-						"email": "OneRingToRuleThemAll@ent.ca",
+						"asker": "Figwit",
+						"email": "twowholelines@ent.ca",
 						"question": "How to hash",
-						"description": "I'm interested in incorporating password hashing as an added level of security.  Is there anyone available to meet up and discuss this?"
+						"description": "I am interested in incorporating password hashing as an added level of security. Is there anyone available to meet up and discuss this?"
 					},
 					"1": {
 						"id": "0",
 						"asker": "Grima Wormtongue",
 						"email": "corruption@ent.ca",
 						"question": "Reverse Hash?",
-						"description": "Why can't hashes be reversed?"
+						"description": "Why is it that hashes cannot be reversed?"
 					}
 				}
 			},
@@ -399,8 +399,13 @@
 						"location": "Room 303"
 					},
 					"1": {
+<<<<<<< HEAD
+						"name": "Windows, OSX, and Linux, What is the Difference?",
+						"description": "An introduction to the internal differences of opearting systems and what to do to account for this.",
+=======
 						"name": "ANDREY",
 						"description": "",
+>>>>>>> d12b8588f4bad14af008b3ce50e6efa564a2e029
 						"organizer": "Isildur",
 						"date": "2017-10-30",
 						"location": "Room 800"
@@ -410,16 +415,16 @@
 					"0": {
 						"id": "0",
 						"asker": "Sam Gamgee",
-						"email": "samwiseTheBrave@ent.ca",
+						"email": "samwisethebrave@ent.ca",
 						"question": "Different types of OS",
 						"description": "what are the pros and cons of single/multi-tasking OS and single/multi-user OS?"
 					},
 					"1": {
 						"id": "0",
 						"asker": "Denethor II",
-						"email": "StewardOfGondar@ent.ca",
+						"email": "stewardofgondor@ent.ca",
 						"question": "Defrag",
-						"description": "What does it mean to 'defrag' my computer?"
+						"description": "What does it mean to defrag my computer?"
 					}
 				}
 			},
@@ -427,15 +432,15 @@
 				"name": "Algorithms & Data Structures",
 				"events": {
 					"0": {
-						"name": "When to Use What: determing which type of algorithm to use",
-						"description": "If you have questions about when a divide-and-conquor algorithm is appropriate or when to use a greedy algorithm, this seminar is for you!  We will discuss several types of algorithms, their benefits and drawbacks, and when to use them.",
+						"name": "When to Use What: determining which type of algorithm to use",
+						"description": "If you have questions about when a divide-and-conquor algorithm is appropriate or when to use a greedy algorithm, this seminar is for you! We will discuss several types of algorithms, their benefits and drawbacks, and when to use them.",
 						"orginizer": "Faramir",
 						"date": "2017-09-29",
 						"location": "505A"
 					},
 					"1": {
-						"name": "ANDREY",
-						"description": "",
+						"name": "Graphs and Trees",
+						"description": "This seminar covers the essentials of data representations using graphs and trees, and explains the differences between the two.",
 						"organizer": "Eomer",
 						"date": "2017-10-05",
 						"location": "505B"
@@ -444,17 +449,17 @@
 				"requests": {
 					"0": {
 						"id": "0",
-						"asker": "Saruman the White",
-						"email": "SarumanWhite@ent.ca",
+						"asker": "Saruman",
+						"email": "sarumanthewhite@ent.ca",
 						"question": "How to sort data",
-						"description": "I have a question about how to sort my data.  I want to be able to search through it more efficiently but I'm not sure how.  Can someone message me for a meet up?"
+						"description": "I have a question about how to sort my data. I want to be able to search through it more efficiently but I am not sure how. Can someone message me for a meet up?"
 					},
 					"1": {
 						"id": "0",
 						"asker": "Grima Wormtongue",
 						"email": "corruption@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"question": "DFS",
+						"description": "Why is it that depth-first-search does not work with my directed graph?"
 					}
 				}
 			},
@@ -463,15 +468,15 @@
 				"events": {
 					"0": {
 						"name": "Data Quality Management",
-						"description": "What constitutes high quality data?  I will discuss the definitions, quality assurance, and quality control.  I will also cover the optimum use of data quality and how to apply data quality to your own projects.",
+						"description": "What constitutes high quality data? I will discuss the definitions, quality assurance, and quality control. I will also cover the optimum use of data quality and how to apply data quality to your own projects.",
 						"organizer": "Theodin of Rohan",
 						"date": "2017-09-24",
 						"location": "103C"
 					},
 					"1": {
-						"name": "ANDREY",
-						"description": "",
-						"organizer": "Shadow Fax",
+						"name": "Excel 101",
+						"description": "Learn the ropes of one of the world's most powerful pieces of data-processing software.",
+						"organizer": "Shadowfax",
 						"date": "2017-10-03",
 						"location": "103B"
 					}
@@ -480,16 +485,16 @@
 					"0": {
 						"id": "0",
 						"asker": "Eowyn",
-						"email": "ladyOfRohan@ent.ca",
+						"email": "ladyofrohan@ent.ca",
 						"question": "Zero Defect Data",
-						"description": "I've heard the term Zero Defect Data but I'm not really sure what it is.  Can someone explain this to me?"
+						"description": "I have heard the term Zero Defect Data but I am not really sure what it is. Can someone explain this to me?"
 					},
 					"1": {
 						"id": "0",
-						"asker": "Eowyn",
-						"email": "ladyOfRohan@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"asker": "Bilbo Baggins",
+						"email": "theburglar@ent.ca",
+						"question": "Artifacts",
+						"description": "How do I properly handle my data artifacts? Is there a procedure for this?"
 					}
 				}
 			},
@@ -498,7 +503,7 @@
 				"events": {
 					"0": {
 						"name": "Clustering Workshop",
-						"description": "Learn about the techniques and uses of R clustering.  Bring your personal computers- we will be doing a walkthrough example.",
+						"description": "Learn about the techniques and uses of R clustering. Bring your personal computers- we will be doing a walkthrough example.",
 						"organizer": "Faramir",
 						"date": "2017-10-26",
 						"location": "505B"
@@ -515,16 +520,16 @@
 					"0": {
 						"id": "0",
 						"asker": "Eowyn",
-						"email": "ladyOfRohan@ent.ca",
+						"email": "ladyofrohan@ent.ca",
 						"question": "Clustering workshop question",
 						"description": "Does anyone have any recommendations for learning some R before the workshop? Online courses are preferred, textbooks okay."
 					},
 					"1": {
 						"id": "0",
 						"asker": "Galadriel",
-						"email": "LadyOfLorien@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"email": "ladyoflorien@ent.ca",
+						"question": "Deep Learning",
+						"description": "I have heard the term deep learning before. What does it refer to? Is it the same as machine learning?"
 					}
 				}
 			},
@@ -533,14 +538,14 @@
 				"events": {
 					"0": {
 						"name": "Intro to HCI",
-						"description": "Human Computer Interaction focuses on the interface between computer and user.  This interaction is highly important when designing computer technology or web applications.  I will cover the fundaments of HCI research and how it is employed in our everyday world.",
+						"description": "Human Computer Interaction focuses on the interface between computer and user. This interaction is highly important when designing computer technology or web applications. I will cover the fundaments of HCI research and how it is employed in our everyday world.",
 						"organizer": "Azog the Defiler",
 						"date": "2017-10-04",
 						"location": "Great Hall"
 					},
 					"1": {
-						"name": "ANDREY",
-						"description": "",
+						"name": "Natural Language Processing",
+						"description": "We learn the basics of turning English speech into a machine instruction. We will discuss which algorithms are good and which shall not pass.",
 						"organizer": "Balrog",
 						"date": "2017-10-21",
 						"location": "Moria"
@@ -550,16 +555,16 @@
 					"0": {
 						"id": "0",
 						"asker": "The Necromancer",
-						"email": "Dolguldor@ent.ca",
+						"email": "dolguldor@ent.ca",
 						"question": "RBC banking app",
-						"description": "I'm working on the RBC banking app and wanted to know more about HCI.  Would HCI be applicable to my project and how?"
+						"description": "I am working on the RBC banking app and wanted to know more about HCI. Would HCI be applicable to my project and how?"
 					},
 					"1": {
 						"id": "0",
 						"asker": "Saruman",
-						"email": "SarumanWhite@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"email": "sarumanthewhite@ent.ca",
+						"question": "User Interface",
+						"description": "I am having trouble finding a good way to structure my user interface. Where can I learn more on the subject?"
 					}
 				}
 			},
@@ -568,14 +573,14 @@
 				"events": {
 					"0": {
 						"name": "Ionic Workshop",
-						"description": "Learn how to use Ionic to develop mobile applications.  Previous programming experience strongly recommended.",
+						"description": "Learn how to use Ionic to develop mobile applications. Previous programming experience strongly recommended.",
 						"organizer": "Tom Bombadil",
 						"date": "2017-10-15",
 						"location": "103 (First Floor)"
 					},
 					"1": {
-						"name": "ANDREY",
-						"description": "",
+						"name": "Cross-Platforming",
+						"description": "How to make sure that your apps can work on iOS, Android, and Windows phones. Mobile development experience not required.",
 						"organizer": "Peter Jackson",
 						"date": "2017-10-11",
 						"location": "First Floor Auditorium"
@@ -587,14 +592,14 @@
 						"asker": "Ring Wraith #4",
 						"email": "blackhood4@ent.ca",
 						"question": "Runtime Error",
-						"description": "I keep getting a runtime error when I run my code.  I can't seem to find the error.  What are some of the possible reasons for getting this error? Any debugging advice?"
+						"description": "I keep getting a runtime error when I run my code. I cannot seem to find the error. What are some of the possible reasons for getting this error? Any debugging advice?"
 					},
 					"1": {
 						"id": "0",
 						"asker": "J.R.R. Tolkien",
-						"email": "middleEarth@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"email": "middleearth@ent.ca",
+						"question": "Login page",
+						"description": "How do I add a login page to my app with secure passwords?"
 					}
 				}
 			},
@@ -603,7 +608,7 @@
 				"events": {
 					"0": {
 						"name": "Web Development 101",
-						"description": "Learn about the stages of web development from the conceptual stage to final product.  No programming experience required.",
+						"description": "Learn about the stages of web development from the conceptual stage to final product. No programming experience required.",
 						"organizer": "Tom Bombadil",
 						"date": "2017-09-27",
 						"location": "First Floor Auditorium"
@@ -611,7 +616,7 @@
 					"1": {
 						"name": "Web Design",
 						"description": "Covers the 8 principles of good web design.",
-						"organizer": "Selob",
+						"organizer": "Shelob",
 						"date": "2017-10-03",
 						"location": "Room 300"
 					}
@@ -622,14 +627,14 @@
 						"asker": "Witch King of Angmar",
 						"email": "blackhood9@ent.ca",
 						"question": "HTML/CSS Mockups",
-						"description": "Can anyone recommend some good software for building mockups? I want something that can generate the html and css code for me.  I was thinking about using Axure.  Does anyone have experience using it? Will buy coffee for whoever answers :)"
+						"description": "Can anyone recommend some good software for building mockups? I want something that can generate the html and css code for me. I was thinking about using Axure. Does anyone have experience using it? Will buy coffee for whoever answers :)"
 					},
 					"1": {
 						"id": "0",
 						"asker": "Elijah Wood",
-						"email": "isDanielRadcliffe@ent.ca",
-						"question": "ANDREY",
-						"description": ""
+						"email": "realfrodobaggins@ent.ca",
+						"question": "Browser size",
+						"description": "All my components keep getting shifted if I change the browser size. How can I fix this?"
 					}
 				}
 			}
