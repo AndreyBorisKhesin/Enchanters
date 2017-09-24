@@ -14,5 +14,15 @@
 
 
 <ion-content padding>
-
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Question</ion-label>
+      <ion-input type="question" [(ngModel)]="addQuestion.question"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Description</ion-label>
+      <ion-input type="description" [(ngModel)]="addQuestion.description"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button full ion-button (click)="submitQuestion()">Submit Question</button> <br/>
 </ion-content>

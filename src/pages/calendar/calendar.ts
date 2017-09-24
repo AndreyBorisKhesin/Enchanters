@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { FirebaseProvider } from '../../providers/firebase/firebase';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
@@ -10,10 +10,10 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-calendar',
   templateUrl: 'calendar.html',
+  styleUrls: ['/pages/calendar/calendar.scss'],
 })
 export class CalendarPage {
 
@@ -123,8 +123,14 @@ export class CalendarPage {
     }
 
     // get requests from firebase
-    this.requests = this.db.getBusinessQuestions(this.topicId);
-    console.log(this.requests);
+    if (this.isMentor){
+      console.log("Is mentor");
+      this.requests = this.db.getBusinessQuestions(this.topicId);
+    } else {
+      console.log("Not mentor");
+      this.requests = this.db.getBusinessEvents(this.topicId);
+    }
+
   }
 
   ionViewDidLoad() {

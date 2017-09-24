@@ -48,8 +48,8 @@ export class SignupPage {
       .then(auth => {
         // Could do something with the Auth-Response
         this.userProvider.setUserName(this.signupData.name);
-        this.firebaseProvider.addNewUser(this.signupData.name);
-        this.firebaseProvider.addNewEmail(this.signupData.name, this.signupData.email);
+        this.userProvider.setUserEmail(this.signupData.email);
+        this.firebaseProvider.addNewUser(this.signupData);
       })
       .catch(err => {
         // Handle error
