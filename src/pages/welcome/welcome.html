@@ -20,26 +20,23 @@
 <ion-content padding class="no-scroll">
 	<ion-grid>
 		<ion-row>
-			<ion-col col-3>
-				<br><img class="left" src="img/tree.png">
+			<ion-col col-12>
+				<ion-item text-center>{{userEmail}}</ion-item>
 			</ion-col>
-			<ion-col col-9>
-				<ion-card>
-					<ion-item text-center>{{userName}}<br><ion-note>{{userEmail}}</ion-note></ion-item>
-				</ion-card>
+		</ion-row>
+		<ion-row>
+			<ion-col col-12 text-center>
+				<img class="left" src="img/tree.png">
 			</ion-col>
 		</ion-row>
 	</ion-grid>
-	<ion-item>
-		<p text-justify>Here are your specialties and interests:</p>
-	</ion-item>
 </ion-content>
 <ion-footer>
 	<ion-grid>
 		<ion-row>
-			<ion-col col-12 text-center>
+			<ion-col col-12 text-center><ion-item text-center large>
 				<!--button ion-button small class="tiny-button"!-->
-					<ion-icon padding-right name="md-checkmark-circle"></ion-icon>{{arbies}} Arbies
+					<ion-icon padding-right name="md-checkmark-circle"></ion-icon>{{arbies}} Arbies</ion-item>
 				<!--/button>
 				<button ion-button small class="tiny-button" (click)="goToCalendar('myQuestions')">
 					<ion-icon padding-right name="md-help-circle"></ion-icon>4 Questions

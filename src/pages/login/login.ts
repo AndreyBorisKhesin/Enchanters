@@ -39,6 +39,7 @@ export class LoginPage {
         toast.present();
       });
 
+    this.userProvider.setUserEmail(this.loginData.email);
     // retrive user data from firebase and populate user provider
     // let allUsers = this.db.getUserData() as Array<Array<any>>;
     // console.log(allUsers);

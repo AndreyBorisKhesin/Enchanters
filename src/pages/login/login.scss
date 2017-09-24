@@ -1,6 +1,10 @@
 page-login {
 	.logo {
-		min-width: 85%;
-		max-width: 85%
+		min-width: 70%;
+		max-width: 70%
+	}
+
+	.no-scroll .scroll-content {
+		overflow: hidden
 	}
 }
