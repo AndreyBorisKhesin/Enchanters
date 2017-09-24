@@ -1,38 +1,39 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ModalController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { UserProvider } from '../../providers/user/user';
 import { FirebaseProvider } from '../../providers/firebase/firebase';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
-import { AddeventPage } from '../addevent/addevent';
 
 /**
- * Generated class for the CalendarPage page.
+ * Generated class for the AddeventPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
+@IonicPage()
 @Component({
-  selector: 'page-calendar',
-  templateUrl: 'calendar.html',
-  styleUrls: ['/pages/calendar/calendar.scss'],
+  selector: 'page-addevent',
+  templateUrl: 'addevent.html',
 })
-export class CalendarPage {
+export class AddeventPage {
+  newEvent = {
+    date: '',
+    description: '',
+    location: '',
+    name: '',
+    organizer: ''
+  };
 
+  topicId: number;
   filter: string;
   title: string;
-  topicId: number;
-  requests: FirebaseListObservable<any[]>;
-  isMentor: boolean;
 
-  constructor(
-    public navCtrl: NavController,
-    public navParams: NavParams,
-    public db: FirebaseProvider,
-    public modelController: ModalController,
-  ) {
-    this.isMentor = true;
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public userProvider: UserProvider,
+              public firebaseProvider: FirebaseProvider) {
     this.filter = this.navParams.get('filter');
-    console.log("In calendar, filter = " + this.filter);
+    console.log("In addevent, filter = " + this.filter);
 
     switch (this.filter) {
       case "myQuestions":
@@ -78,28 +79,17 @@ export class CalendarPage {
       default:
         this.title = "Default Question";
     }
-
-    // get requests from firebase
-    if (this.isMentor){
-      console.log("Is mentor");
-      this.requests = this.db.getBusinessQuestions(this.topicId);
-    } else {
-      console.log("Not mentor");
-      this.requests = this.db.getBusinessEvents(this.topicId);
-    }
-
   }
 
-  goToQuestion() {
-    console.log("Going to question");
-  }
-
-  goToEvent() {
-    console.log("Going to event");
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad AddeventPage');
   }
 
   addEvent() {
-    this.navCtrl.push(AddeventPage, {filter: this.filter});
+    this.newEvent.organizer = this.userProvider.getUserName();
+    console.log("In addevent, organizer = " + this.newEvent.organizer);
+    this.firebaseProvider.addNewBusinessEvent(this.topicId, this.newEvent);
+    this.navCtrl.pop();
   }
 
 }
