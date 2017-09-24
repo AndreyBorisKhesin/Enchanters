@@ -1,20 +1,4 @@
 {
-	"socials": {
-		"0": {
-      "name": "social 1",
-      "description": "Learn about how actuarial functions apply to pension plan funding.  Seminar covers topics of liability, accrud benefic, and projected benefit cost methods.",
-      "organizer": "Bilbo Baggins",
-      "date": "2017-10-04",
-      "location": "Conference Room A"
-		},
-		"1": {
-      "name": "social 2",
-      "description": "Learn about how actuarial functions apply to pension plan funding.  Seminar covers topics of liability, accrud benefic, and projected benefit cost methods.",
-      "organizer": "Bilbo Baggins",
-      "date": "2017-10-04",
-      "location": "Conference Room A"
-		}
-	},
 	"skills": {
 		"business": {
 			"0": {
@@ -216,7 +200,7 @@
 						"asker": "Thorin Oakenshield",
 						"email": "KingUnderTheMountain@ent.ca",
 						"question": "Documents for Depositing Securities",
-						description: "Which documents/information are required for crediting securties to its corresponding account?  Do I need cusip numbers?"
+						"description": "Which documents/information are required for crediting securties to its corresponding account?  Do I need cusip numbers?"
 					},
 					"1": {
 						"id": "0",
@@ -333,7 +317,7 @@
 				}
 			}
 		},
-		"technology": {
+	"technology": {
 			"0": {
 				"name": "Computer Architecture",
 				"events": {
@@ -416,7 +400,7 @@
 					},
 					"1": {
 						"name": "ANDREY",
-						"description": ""
+						"description": "",
 						"organizer": "Isildur",
 						"date": "2017-10-30",
 						"location": "Room 800"
@@ -666,21 +650,21 @@
 					"organizer": "Peter Jackson",
 					"date": "2017-10-25",
 					"location": "First Floor Auditorium"
-					}
+					},
 				"2": {
 					"name": "Softball Game",
 					"description": "Come join us for a friendly game of softball against Scotiabank! We will meet in the lobby and walk to the softball field at 1:00pm",
 					"organizer": "Aragorn",
 					"date": "2017-10-21",
 					"location": "Lobby"
-					}
+					},
 				"3": {
 					"name": "Karaoke Night",
 					"description": "Karaoke Night at Bar Plus! Please RSVP by Friday.",
 					"organizer": "Peregrin Took",
 					"date": "2017-10-06",
 					"location": "Bar Plus"
-					}
+					},
 				"4": {
 					"name": "Laser Tag",
 					"description": "Business versus Technology laser tag tournament! Winners get bragging rights.  Please RSVP one week in adavance.",
@@ -689,6 +673,7 @@
 					"location": "Laser Quest"
 					}
 				}
+			}
 		}
-	}
-}
+
+
