@@ -14,13 +14,25 @@
 
 
 <ion-content padding>
-  <ion-card *ngFor="let request of requests | async">
-    <ion-card-content>
-      {{request.question}} <br> {{request.email}}
-    </ion-card-content>
+  <div *ngIf="isMentor">
+    <ion-card *ngFor="let request of requests | async">
+      <ion-card-content class='wrap'>
+        {{request.question}}
+        <br> {{request.email}}
+      </ion-card-content>
+    </ion-card>
+  </div>
 
-
-  </ion-card>
+  <div *ngIf="!isMentor">
+    <ion-card *ngFor="let request of requests | async">
+      <ion-card-header class="wrap">
+        {{request.name}}
+      </ion-card-header>
+      <ion-card-content>
+        {{request.date}} <br> {{request.location}} <br> {{request.organizer}}
+      </ion-card-content>
+    </ion-card>
+  </div>
 
 
 </ion-content>
