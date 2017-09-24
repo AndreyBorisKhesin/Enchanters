@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CalendarPage } from '../calendar/calendar';
 import { FirebaseProvider } from '../../providers/firebase/firebase';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { AddsocialPage } from '../addsocial/addsocial';
