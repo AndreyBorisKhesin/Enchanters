@@ -13,27 +13,27 @@ import { TechnologyPage } from '../technology/technology';
  */
 
 @Component({
-  selector: 'page-business',
-  templateUrl: 'business.html',
-  styleUrls: ['/pages/business/business.scss']
+	selector: 'page-business',
+	templateUrl: 'business.html',
+	styleUrls: ['/pages/business/business.scss']
 })
 export class BusinessPage {
 
-  public skills: FirebaseListObservable<any[]>;
+	public skills: FirebaseListObservable<any[]>;
 
-  constructor(
-    public navCtrl: NavController,
-    public firebaseProvider: FirebaseProvider,
-    public navParams: NavParams
-  ) {
-    this.skills = this.firebaseProvider.getBusinessSkills();
-  }
+	constructor(
+		public navCtrl: NavController,
+		public firebaseProvider: FirebaseProvider,
+		public navParams: NavParams
+	) {
+		this.skills = this.firebaseProvider.getBusinessSkills();
+	}
 
-  goToLeaf(topic: any) {
-    this.navCtrl.push(LeafPage, {topic: topic});
-  }
+	goToLeaf(topic: any) {
+		this.navCtrl.push(LeafPage, {topic: topic});
+	}
 
-  goToTech() {
-    this.navCtrl.push(TechnologyPage);
-  }
+	goToTech() {
+		this.navCtrl.push(TechnologyPage);
+	}
 }
