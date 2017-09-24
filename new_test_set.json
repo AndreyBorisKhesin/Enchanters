@@ -103,18 +103,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Tauriel",
-						email: "Starlight@ent.ca",
-						question: "Should I go into loan management?",
-						description: "I'm a 4-month intern here at RBC.  I'm thinking of applying to work here full time after graduation. I was wondering if anyone would be willing to meet me to discuss a potential career in loan management"
+						"id": "0",
+						"asker": "Tauriel",
+						"email": "Starlight@ent.ca",
+						"question": "Should I go into loan management?",
+						"description": "I'm a 4-month intern here at RBC.  I'm thinking of applying to work here full time after graduation. I was wondering if anyone would be willing to meet me to discuss a potential career in loan management"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -138,18 +138,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Peregrin Took",
-						email: "pippin@ent.ca",
-						question: "Which colors are better to use?",
+						"id": "0",
+						"asker": "Peregrin Took",
+						"email": "pippin@ent.ca",
+						"question": "Which colors are better to use?",
 						description: "Are there some colors that are more appealing to use than others? I thought that bright, warm colors were better but I notice a lot of websites employ a more muted, blue color scheme."
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -173,18 +173,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Aragorn",
-						email: "AragornSonOfArathorn@ent.ca",
-						question: "Does RBC have a Snapchat filter?",
-						description: "I was thinking of proposing an RBC Snapchat filter, any thoughts?"
+						"id": "0",
+						"asker": "Aragorn",
+						"email": "AragornSonOfArathorn@ent.ca",
+						"question": "Does RBC have a Snapchat filter?",
+						"description": "I was thinking of proposing an RBC Snapchat filter, any thoughts?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -208,18 +208,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Thorin Oakenshield",
-						email: "KingUnderTheMountain@ent.ca",
-						question: "Documents for Depositing Securities",
+						"id": "0",
+						"asker": "Thorin Oakenshield",
+						"email": "KingUnderTheMountain@ent.ca",
+						"question": "Documents for Depositing Securities",
 						description: "Which documents/information are required for crediting secruties to its corresponding account?  Do I need cusip numbers?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -243,18 +243,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Lord Elrond",
-						email: "Rivendell@ent.ca",
-						question: "VaR Confusion!",
-						description: "Can someone please explain to me what Value at Risk is? How is it used? Thanks!"
+						"id": "0",
+						"asker": "Lord Elrond",
+						"email": "Rivendell@ent.ca",
+						"question": "VaR Confusion!",
+						"description": "Can someone please explain to me what Value at Risk is? How is it used? Thanks!"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -278,18 +278,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Gimli",
-						email: "DwarvesAreBetterThanElves@ent.ca",
-						question: "Stocks vs Bonds Difference?",
-						description: "What is the difference between stocks and bonds?"
+						"id": "0",
+						"asker": "Gimli",
+						"email": "DwarvesAreBetterThanElves@ent.ca",
+						"question": "Stocks vs Bonds Difference?",
+						"description": "What is the difference between stocks and bonds?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -313,18 +313,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Legolas Greenleaf",
-						email: "photogenicRoyalty@ent.ca",
-						question: "WM strategy?",
-						description: "I have heard some people prefer a wealth management goal that revolves around client life goals, working environments, and spending habits.  What is everybody's opinion on this strategy?"
+						"id": "0",
+						"asker": "Legolas Greenleaf",
+						"email": "photogenicRoyalty@ent.ca",
+						"question": "WM strategy?",
+						"description": "I have heard some people prefer a wealth management goal that revolves around client life goals, working environments, and spending habits.  What is everybody's opinion on this strategy?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			}
