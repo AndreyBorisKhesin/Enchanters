@@ -24,7 +24,7 @@ export class CalendarPage {
   topicId: number;
   requests: FirebaseListObservable<any[]>;
   isMentor: boolean;
-  isSocial: boolean;
+  isTech: boolean;
 
   constructor(
     public navCtrl: NavController,
@@ -34,6 +34,7 @@ export class CalendarPage {
     public userProvider: UserProvider,
   ) {
     this.isMentor = false;
+    this.isTech = false;
     this.filter = this.navParams.get('filter');
 
     switch (this.filter) {
@@ -122,18 +123,126 @@ export class CalendarPage {
         this.title = "Wealth Management Help";
         this.topicId = 8;
         break;
+      case "mentor-Computer Architecture":
+        this.title = "Computer Architecture";
+        this.topicId = 0;
+        this.isTech = true;
+        this.isMentor = true;
+        break;
+      case "mentor-Security & Cryptography":
+        this.title = "Security & Cryptography";
+        this.topicId = 1;
+        this.isTech = true;
+        this.isMentor = true;
+        break;
+      case "mentor-Operating Systems":
+        this.title = "Operating Systems";
+        this.topicId = 2;
+        this.isTech = true;
+        this.isMentor = true;
+        break;
+      case "mentor-Algorithms & Data Structures":
+        this.title = "Algorithms & Data Structures";
+        this.topicId = 3;
+        this.isTech = true;
+        this.isMentor = true;
+        break;
+      case "mentor-Data Management":
+        this.title = "Data Management";
+        this.topicId = 4;
+        this.isTech = true;
+        this.isMentor = true;
+        break;
+      case "mentor-Machine Learning":
+        this.title = "Machine Learning";
+        this.topicId = 5;
+        this.isTech = true;
+        this.isMentor = true;
+        break;
+      case "mentor-Human-Computer Interaction":
+        this.title = "Human-Computer Interaction";
+        this.topicId = 6;
+        this.isTech = true;
+        this.isMentor = true;
+        break;
+      case "mentor-Mobile Development":
+        this.title = "Mobile Development";
+        this.topicId = 7;
+        this.isTech = true;
+        this.isMentor = true;
+        break;
+      case "mentor-Web Development":
+        this.title = "Web Development";
+        this.topicId = 8;
+        this.isTech = true;
+        this.isMentor = true;
+        break;
+      case "learn-Computer Architecture":
+        this.title = "Computer Architecture";
+        this.topicId = 0;
+        this.isTech = true;
+        break;
+      case "learn-Security & Cryptography":
+        this.title = "Security & Cryptography";
+        this.topicId = 1;
+        this.isTech = true;
+        break;
+      case "learn-Operating Systems":
+        this.title = "Operating Systems";
+        this.topicId = 2;
+        this.isTech = true;
+        break;
+      case "learn-Algorithms & Data Structures":
+        this.title = "Algorithms & Data Structures";
+        this.topicId = 3;
+        this.isTech = true;
+        break;
+      case "learn-Data Management":
+        this.title = "Data Management";
+        this.topicId = 4;
+        this.isTech = true;
+        break;
+      case "learn-Machine Learning":
+        this.title = "Machine Learning";
+        this.topicId = 5;
+        this.isTech = true;
+        break;
+      case "learn-Human-Computer Interaction":
+        this.title = "Human-Computer Interaction";
+        this.topicId = 6;
+        this.isTech = true;
+        break;
+      case "learn-Mobile Development":
+        this.title = "Mobile Development";
+        this.topicId = 7;
+        this.isTech = true;
+        break;
+      case "learn-Web Development":
+        this.title = "Web Development";
+        this.topicId = 8;
+        this.isTech = true;
+        break;
       default:
         this.title = "Default Calendar";
     }
 
     // get requests from firebase
-
     if (this.isMentor) {
       console.log("Is mentor");
-      this.requests = this.db.getBusinessQuestions(this.topicId);
+      if (this.isTech) {
+        console.log("Is tech");
+        this.requests = this.db.getTechnologyQuestions(this.topicId);
+      } else {
+        this.requests = this.db.getBusinessQuestions(this.topicId);
+      }
     } else {
       console.log("Not mentor");
-      this.requests = this.db.getBusinessEvents(this.topicId);
+      if (this.isTech) {
+        console.log("Is tech");
+        this.requests = this.db.getTechnologyEvents(this.topicId);
+      } else {
+        this.requests = this.db.getBusinessEvents(this.topicId);
+      }
     }
   }
 
