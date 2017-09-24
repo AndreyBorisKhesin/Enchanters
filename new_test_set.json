@@ -33,18 +33,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Smaug",
-						email: "gimmegold@ent.ca",
-						question: "Loss Model Question",
-						description: "Can someone explain ruin theory?"
+						"id": "0",
+						"asker": "Smaug",
+						"email": "gimmegold@ent.ca",
+						"question": "Loss Model Question",
+						"description": "Can someone explain ruin theory?"
 					},
 					"1": {
-						id: "0",
-						asker: "Gandalf",
-						email: "TheWizard@ent.ca",
-						question: "MLE for Poisson.",
-						description: "What's the Maximum Likelihood Estimator for the Poisson Distribution?"
+						"id": "0",
+						"asker": "Gandalf",
+						"email": "TheWizard@ent.ca",
+						"question": "MLE for Poisson.",
+						"description": "What's the Maximum Likelihood Estimator for the Poisson Distribution?"
 					}
 				}
 			},
@@ -68,18 +68,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Meriadoc Brandybuck",
-						email: "pipeweed@ent.ca",
-						question: "Student Banking",
-						description: "I have a client with a student banking account and the Signature Rewards Visa card. How do I waive the annual fee?"
+						"id": "0",
+						"asker": "Meriadoc Brandybuck",
+						"email": "pipeweed@ent.ca",
+						"question": "Student Banking",
+						"description": "I have a client with a student banking account and the Signature Rewards Visa card. How do I waive the annual fee?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -103,18 +103,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Tauriel",
-						email: "Starlight@ent.ca",
-						question: "Should I go into loan management?",
-						description: "I'm a 4-month intern here at RBC.  I'm thinking of applying to work here full time after graduation. I was wondering if anyone would be willing to meet me to discuss a potential career in loan management"
+						"id": "0",
+						"asker": "Tauriel",
+						"email": "Starlight@ent.ca",
+						"question": "Should I go into loan management?",
+						"description": "I'm a 4-month intern here at RBC.  I'm thinking of applying to work here full time after graduation. I was wondering if anyone would be willing to meet me to discuss a potential career in loan management"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -138,18 +138,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Peregrin Took",
-						email: "pippin@ent.ca",
-						question: "Which colors are better to use?",
-						description: "Are there some colors that are more appealing to use than others? I thought that bright, warm colors were better but I notice a lot of websites employ a more muted, blue color scheme."
+						"id": "0",
+						"asker": "Peregrin Took",
+						"email": "pippin@ent.ca",
+						"question": "Which colors are better to use?",
+						"description": "Are there some colors that are more appealing to use than others? I thought that bright, warm colors were better but I notice a lot of websites employ a more muted, blue color scheme."
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -173,18 +173,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Aragorn",
-						email: "AragornSonOfArathorn@ent.ca",
-						question: "Does RBC have a Snapchat filter?",
-						description: "I was thinking of proposing an RBC Snapchat filter, any thoughts?"
+						"id": "0",
+						"asker": "Aragorn",
+						"email": "AragornSonOfArathorn@ent.ca",
+						"question": "Does RBC have a Snapchat filter?",
+						"description": "I was thinking of proposing an RBC Snapchat filter, any thoughts?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -208,18 +208,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Thorin Oakenshield",
-						email: "KingUnderTheMountain@ent.ca",
-						question: "Documents for Depositing Securities",
-						description: "Which documents/information are required for crediting secruties to its corresponding account?  Do I need cusip numbers?"
+						"id": "0",
+						"asker": "Thorin Oakenshield",
+						"email": "KingUnderTheMountain@ent.ca",
+						"question": "Documents for Depositing Securities",
+						"description": "Which documents/information are required for crediting secruties to its corresponding account?  Do I need cusip numbers?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -243,18 +243,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Lord Elrond",
-						email: "Rivendell@ent.ca",
-						question: "VaR Confusion!",
-						description: "Can someone please explain to me what Value at Risk is? How is it used? Thanks!"
+						"id": "0",
+						"asker": "Lord Elrond",
+						"email": "Rivendell@ent.ca",
+						"question": "VaR Confusion!",
+						"description": "Can someone please explain to me what Value at Risk is? How is it used? Thanks!"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -278,18 +278,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Gimli",
-						email: "DwarvesAreBetterThanElves@ent.ca",
-						question: "Stocks vs Bonds Difference?",
-						description: "What is the difference between stocks and bonds?"
+						"id": "0",
+						"asker": "Gimli",
+						"email": "DwarvesAreBetterThanElves@ent.ca",
+						"question": "Stocks vs Bonds Difference?",
+						"description": "What is the difference between stocks and bonds?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -313,18 +313,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Legolas Greenleaf",
-						email: "photogenicRoyalty@ent.ca",
-						question: "WM strategy?",
-						description: "I have heard some people prefer a wealth management goal that revolves around client life goals, working environments, and spending habits.  What is everybody's opinion on this strategy?"
+						"id": "0",
+						"asker": "Legolas Greenleaf",
+						"email": "photogenicRoyalty@ent.ca",
+						"question": "WM strategy?",
+						"description": "I have heard some people prefer a wealth management goal that revolves around client life goals, working environments, and spending habits.  What is everybody's opinion on this strategy?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			}
@@ -350,18 +350,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Galadriel",
-						email: "Lothlorien@ent.ca",
-						question: "Latency versus Throughput",
-						description: "Is latency or throughput a better guage for a computer's performance speed?"
+						"id": "0",
+						"asker": "Galadriel",
+						"email": "Lothlorien@ent.ca",
+						"question": "Latency versus Throughput",
+						"description": "Is latency or throughput a better guage for a computer's performance speed?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -385,18 +385,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Sauron",
-						email: "OneRingToRuleThemAll@ent.ca",
-						question: "How to hash",
-						description: "I'm interested in incorporating password hashing as an added level of security.  Is there anyone available to meet up and discuss this?"
+						"id": "0",
+						"asker": "Sauron",
+						"email": "OneRingToRuleThemAll@ent.ca",
+						"question": "How to hash",
+						"description": "I'm interested in incorporating password hashing as an added level of security.  Is there anyone available to meet up and discuss this?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -420,18 +420,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Sam Gamgee",
-						email: "samwiseTheBrave@ent.ca",
-						question: "Different types of OS",
-						description: "what are the pros and cons of single/multi-tasking OS and single/multi-user OS?"
+						"id": "0",
+						"asker": "Sam Gamgee",
+						"email": "samwiseTheBrave@ent.ca",
+						"question": "Different types of OS",
+						"description": "what are the pros and cons of single/multi-tasking OS and single/multi-user OS?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -439,7 +439,7 @@
 				"name": "Algorithms & Data Structures",
 				"events": {
 					"0": {
-						"name": When to Use What: determing which type of algorithm to use"",
+						"name": "When to Use What: determing which type of algorithm to use",
 						"description": "If you have questions about when a divide-and-conquor algorithm is appropriate or when to use a greedy algorithm, this seminar is for you!  We will discuss several types of algorithms, their benefits and drawbacks, and when to use them.",
 						"orginizer": "Faramir",
 						"date": "2017-09-29",
@@ -455,18 +455,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Saruman the White",
-						email: "SarumanWhite@ent.ca",
-						question: "How to sort data",
-						description: "I have a question about how to sort my data.  I want to be able to search through it more efficiently but I'm not sure how.  Can someone message me for a meet up?"
+						"id": "0",
+						"asker": "Saruman the White",
+						"email": "SarumanWhite@ent.ca",
+						"question": "How to sort data",
+						"description": "I have a question about how to sort my data.  I want to be able to search through it more efficiently but I'm not sure how.  Can someone message me for a meet up?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -490,18 +490,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Eowyn",
-						email: "ladyOfRohan@ent.ca",
-						question: "Zero Defect Data",
-						description: "I've heard the term Zero Defect Data but I'm not really sure what it is.  Can someone explain this to me?"
+						"id": "0",
+						"asker": "Eowyn",
+						"email": "ladyOfRohan@ent.ca",
+						"question": "Zero Defect Data",
+						"description": "I've heard the term Zero Defect Data but I'm not really sure what it is.  Can someone explain this to me?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -525,18 +525,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Eowyn",
-						email: "ladyOfRohan@ent.ca",
-						question: "Clustering workshop question",
-						description: "Does anyone have any recommendations for learning some R before the workshop? Online courses are preferred, textbooks okay."
+						"id": "0",
+						"asker": "Eowyn",
+						"email": "ladyOfRohan@ent.ca",
+						"question": "Clustering workshop question",
+						"description": "Does anyone have any recommendations for learning some R before the workshop? Online courses are preferred, textbooks okay."
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -560,18 +560,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "The Necromancer",
-						email: "Dolguldor@ent.ca",
-						question: "RBC banking app",
-						description: "I'm working on the RBC banking app and wanted to know more about HCI.  Would HCI be applicable to my project and how?"
+						"id": "0",
+						"asker": "The Necromancer",
+						"email": "Dolguldor@ent.ca",
+						"question": "RBC banking app",
+						"description": "I'm working on the RBC banking app and wanted to know more about HCI.  Would HCI be applicable to my project and how?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -595,18 +595,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Ring Wraith #4",
-						email: "blackhood4@ent.ca",
-						question: "Runtime Error",
-						description: "I keep getting a runtime error when I run my code.  I can't seem to find the error.  What are some of the possible reasons for getting this error? Any debugging advice?"
+						"id": "0",
+						"asker": "Ring Wraith #4",
+						"email": "blackhood4@ent.ca",
+						"question": "Runtime Error",
+						"description": "I keep getting a runtime error when I run my code.  I can't seem to find the error.  What are some of the possible reasons for getting this error? Any debugging advice?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
@@ -630,18 +630,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Witch King of Angmar",
-						email: "blackhood9@ent.ca",
-						question: "HTML/CSS",
-						description: "Can anyone recommend some good software for building mockups? I want something that can generate the html and css code for me.  I was thinking about using Axure.  Does anyone have experience using it? Will buy coffee for whoever answers :)"
+						"id": "0",
+						"asker": "Witch King of Angmar",
+						"email": "blackhood9@ent.ca",
+						"question": "HTML/CSS",
+						"description": "Can anyone recommend some good software for building mockups? I want something that can generate the html and css code for me.  I was thinking about using Axure.  Does anyone have experience using it? Will buy coffee for whoever answers :)"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			}
