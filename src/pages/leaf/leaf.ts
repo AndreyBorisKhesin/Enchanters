@@ -48,10 +48,6 @@ export class LeafPage {
     this.navCtrl.push(CalendarPage, { filter: filter });
   }
 
-  goToQuestion(filter: any): void {
-    this.navCtrl.push(QuestionPage);
-  }
-
   getDescription(): void {
     switch (this.topic) {
       case "Accounting & Actuarial Science":

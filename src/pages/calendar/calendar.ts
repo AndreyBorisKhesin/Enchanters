@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { FirebaseProvider } from '../../providers/firebase/firebase';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
@@ -27,6 +27,7 @@ export class CalendarPage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public db: FirebaseProvider,
+    public modelController: ModalController,
   ) {
     this.isMentor = false;
     this.filter = this.navParams.get('filter');
@@ -133,7 +134,12 @@ export class CalendarPage {
 
   }
 
-  ionViewDidLoad() {
+  goToQuestion() {
+    console.log("Going to question");
+  }
+
+  goToEvent() {
+    console.log("Going to event");
   }
 
 }
