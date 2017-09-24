@@ -14,7 +14,7 @@
 
 
 <ion-content padding>
-  <ion-card *ngFor="let request of requests">
+  <ion-card *ngFor="let request of requests | async">
     <ion-card-content>
       {{request.question}} <br> {{request.email}}
     </ion-card-content>

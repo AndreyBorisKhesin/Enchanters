@@ -79,7 +79,7 @@ export class FirebaseProvider {
     return this.afd.list(path);
   }
 
-  getBusinessQuestions(index: any) {
+  getBusinessQuestions(index) {
 
     var str1 = new String('/skills/business/');
     var str2 = str1.concat(index);
