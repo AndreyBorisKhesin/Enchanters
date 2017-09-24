@@ -13,9 +13,8 @@
 
 </ion-header>
 
-
 <ion-content padding>
-  <div *ngIf="isMentor">
+<div *ngIf="isMentor">
     <ion-card *ngFor="let request of requests | async">
       <ion-card-header class='wrap'>
         {{request.question}}
@@ -29,9 +28,8 @@
         <button ion-button color='secondary' class="but" outline (click)='connect()'>Connect</button>
       </ion-card-content>
     </ion-card>
-    <button full ion-button (click)="addEvent()">Add Event</button>
   </div>
-
+  
   <div *ngIf="!isMentor">
     <ion-card *ngFor="let request of requests | async">
       <ion-card-header class="wrap">
@@ -60,3 +58,9 @@
 
 
 </ion-content>
+
+<ion-footer padding> 
+<div *ngIf="isMentor">
+   <button full ion-button (click)="addEvent()">Add Event</button>
+</div>
+</ion-footer>
