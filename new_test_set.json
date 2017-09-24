@@ -33,18 +33,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Smaug",
-						email: "gimmegold@ent.ca",
-						question: "Loss Model Question",
-						description: "Can someone explain ruin theory?"
+						"id": "0",
+						"asker": "Smaug",
+						"email": "gimmegold@ent.ca",
+						"question": "Loss Model Question",
+						"description": "Can someone explain ruin theory?"
 					},
 					"1": {
-						id: "0",
-						asker: "Gandalf",
-						email: "TheWizard@ent.ca",
-						question: "MLE for Poisson.",
-						description: "What's the Maximum Likelihood Estimator for the Poisson Distribution?"
+						"id": "0",
+						"asker": "Gandalf",
+						"email": "TheWizard@ent.ca",
+						"question": "MLE for Poisson.",
+						"description": "What's the Maximum Likelihood Estimator for the Poisson Distribution?"
 					}
 				}
 			},
@@ -68,18 +68,18 @@
 				},
 				"requests": {
 					"0": {
-						id: "0",
-						asker: "Meriadoc Brandybuck",
-						email: "pipeweed@ent.ca",
-						question: "Student Banking",
-						description: "I have a client with a student banking account and the Signature Rewards Visa card. How do I waive the annual fee?"
+						"id": "0",
+						"asker": "Meriadoc Brandybuck",
+						"email": "pipeweed@ent.ca",
+						"question": "Student Banking",
+						"description": "I have a client with a student banking account and the Signature Rewards Visa card. How do I waive the annual fee?"
 					},
 					"1": {
-						id: "0",
-						asker: "",
-						email: "",
-						question: "",
-						description: ""
+						"id": "0",
+						"asker": "",
+						"email": "",
+						"question": "",
+						"description": ""
 					}
 				}
 			},
