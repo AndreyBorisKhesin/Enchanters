@@ -96,10 +96,7 @@ export class FirebaseProvider {
   }
 
   getSocialEvents() {
-    var str1 = new String('/skills/business/');
-    var str2 = str1.concat(index);
-    var path =  str2.concat('/events/')
-    return this.afd.list(path);
+    return this.afd.list('/social/events/');
   }
 
 }

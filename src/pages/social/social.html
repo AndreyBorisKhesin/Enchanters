@@ -14,13 +14,13 @@
 
 
 <ion-content padding>
-  <ion-card *ngFor="let request of requests | async" (click)='goToQuestion()'>
+  <ion-card *ngFor="let event of events | async" (click)='goToQuestion()'>
     <ion-card-header class='wrap'>
-      {{request.question}}
+      {{event.name}}
     </ion-card-header>
     <ion-card-content class='wrap'>
-      {{request.asker}}
-      <br> {{request.email}} <br>{{request.description}}
+      {{event.date}}
+      <br> {{event.location}} <br>{{event.description}}
       <br/>
     </ion-card-content>
   </ion-card>
