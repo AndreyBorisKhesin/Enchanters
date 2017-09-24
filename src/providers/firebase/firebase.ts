@@ -84,6 +84,7 @@ export class FirebaseProvider {
     var str1 = new String('/skills/business/');
     var str2 = str1.concat(index);
     var path =  str2.concat('/requests/')
+    console.log("In firebase: path is " + path);
     return this.afd.list(path);
   }
 

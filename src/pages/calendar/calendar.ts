@@ -20,9 +20,15 @@ export class CalendarPage {
   filter: string;
   title: string;
   topicId: number;
-  requests: any;
+  requests: FirebaseListObservable<any[]>;
+  isMentor: boolean;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public db: FirebaseProvider,
+  ) {
+    this.isMentor = false;
     this.filter = this.navParams.get('filter');
     console.log("In calendar, filter = " + this.filter);
 
@@ -34,38 +40,47 @@ export class CalendarPage {
       case "mentor-Accounting & Actuarial Science":
         this.title = "Accounting & Actuarial Science Questions";
         this.topicId = 0;
+        this.isMentor = true;
         break;
       case "mentor-Client Services":
         this.title = "Client Services Questions";
         this.topicId = 1;
+        this.isMentor = true;
         break;
       case "mentor-Loan Management & Insurance":
         this.title = "Loan & Insurance Questions";
         this.topicId = 2;
+        this.isMentor = true;
         break;
       case "mentor-Marketing":
         this.title = "Marketing Questions";
         this.topicId = 3;
+        this.isMentor = true;
         break;
       case "mentor-Public Relations":
         this.title = "Public Relations Questions";
         this.topicId = 4;
+        this.isMentor = true;
         break;
       case "mentor-Sales & Operations":
         this.title = "Sales & Operations Questions";
         this.topicId = 5;
+        this.isMentor = true;
         break;
       case "mentor-Risk Management":
         this.title = "Risk Management Questions";
         this.topicId = 6;
+        this.isMentor = true;
         break;
       case "mentor-Trading & Capital Markets":
         this.title = "Trading & Capital Markets Questions";
         this.topicId = 7;
+        this.isMentor = true;
         break;
       case "mentor-Wealth Management":
         this.title = "Wealth Management Questions";
         this.topicId = 8;
+        this.isMentor = true;
         break;
       case "learn-Accounting & Actuarial Science":
         this.title = "Accounting & Actuarial Science Help";
@@ -108,8 +123,8 @@ export class CalendarPage {
     }
 
     // get requests from firebase
-
-
+    this.requests = this.db.getBusinessQuestions(this.topicId);
+    console.log(this.requests);
   }
 
   ionViewDidLoad() {

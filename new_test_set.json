@@ -32,15 +32,21 @@
 					}
 				},
 				"requests": {
-          "0": {
-            "question": "Test question 0",
-            "email": "christine@ent.com"
-          },
-          "1": {
-            "question": "Test question 1",
-            "email": "christine@ent.com"
-          }
-        }
+					"0": {
+						id: "0",
+						asker: "Smaug",
+						email: "gimmegold@ent.ca",
+						question: "Loss Model Question",
+						description: "Can someone explain ruin theory?"
+					},
+					"1": {
+						id: "0",
+						asker: "Gandalf",
+						email: "TheWizard@ent.ca",
+						question: "MLE for Poisson.",
+						description: "What's the Maximum Likelihood Estimator for the Poisson Distribution?"
+					}
+				}
 			},
 			"1": {
 				"name": "Client Services",
@@ -60,7 +66,22 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Meriadoc Brandybuck",
+						email: "pipeweed@ent.ca",
+						question: "Student Banking",
+						description: "I have a client with a student banking account and the Signature Rewards Visa card. How do I waive the annual fee?"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"2": {
 				"name": "Loan Management & Insurance",
@@ -80,7 +101,22 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Tauriel",
+						email: "Starlight@ent.ca",
+						question: "Should I go into loan management?",
+						description: "I'm a 4-month intern here at RBC.  I'm thinking of applying to work here full time after graduation. I was wondering if anyone would be willing to meet me to discuss a potential career in loan management"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"3": {
 				"name": "Marketing",
@@ -100,7 +136,22 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Peregrin Took",
+						email: "pippin@ent.ca",
+						question: "Which colors are better to use?",
+						description: "Are there some colors that are more appealing to use than others? I thought that bright, warm colors were better but I notice a lot of websites employ a more muted, blue color scheme."
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"4": {
 				"name": "Public Relations",
@@ -120,7 +171,22 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Aragorn",
+						email: "AragornSonOfArathorn@ent.ca",
+						question: "Does RBC have a Snapchat filter?",
+						description: "I was thinking of proposing an RBC Snapchat filter, any thoughts?"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"5": {
 				"name": "Sales & Operations",
@@ -140,7 +206,22 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Thorin Oakenshield",
+						email: "KingUnderTheMountain@ent.ca",
+						question: "Documents for Depositing Securities",
+						description: "Which documents/information are required for crediting secruties to its corresponding account?  Do I need cusip numbers?"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"6": {
 				"name": "Risk Management",
@@ -160,7 +241,22 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Lord Elrond",
+						email: "Rivendell@ent.ca",
+						question: "VaR Confusion!",
+						description: "Can someone please explain to me what Value at Risk is? How is it used? Thanks!"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"7": {
 				"name": "Trading & Capital Markets",
@@ -180,7 +276,22 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Gimli",
+						email: "DwarvesAreBetterThanElves@ent.ca",
+						question: "Stocks vs Bonds Difference?",
+						description: "What is the difference between stocks and bonds?"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"8": {
 				"name": "Wealth Management",
@@ -200,7 +311,22 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Legolas Greenleaf",
+						email: "photogenicRoyalty@ent.ca",
+						question: "WM strategy?",
+						description: "I have heard some people prefer a wealth management goal that revolves around client life goals, working environments, and spending habits.  What is everybody's opinion on this strategy?"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			}
 		},
 		"technology": {
@@ -208,11 +334,11 @@
 				"name": "Computer Architecture",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
+						"name": "Direct Memory Access Seminar",
+						"description": "Direct Memory Access falls under the system design subcategory of computer architecuture.  System design involves computer hardware other than those within a computing system.  DMA allows certain hardware to access RAM independent of the CPU.  Learn more at this seminar!",
+						"organizer": "Boromir",
 						"date": "2017-09-25",
-						"location": ""
+						"location": "Conference Room D"
 					},
 					"1": {
 						"name": "",
@@ -222,35 +348,65 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Galadriel",
+						email: "Lothlorien@ent.ca",
+						question: "Latency versus Throughput",
+						description: "Is latency or throughput a better guage for a computer's performance speed?"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"1": {
 				"name": "Security & Cryptography",
 				"events": {
 					"0": {
-						"name": "Introduction to RSA WOrkshop",
-						"description": "",
+						"name": "Introduction to RSA Workshop",
+						"description": "RSA is a modern technique used by computers to encrypt and decrypt messages.  The algorithm was described in 1978 by Ron Rivest, Adi Shamir, and Leonard Adleman and involves taking the product of prime numbers to produce a public key that can only be decrypted if the prime factors are known.  This seminar is good for both computer scientists in the security and cryptography field and those who are interested in learning more about online security.",
 						"organizer": "Sauron",
 						"date": "2017-10-06",
-						"location": ""
+						"location": "Mordor"
 					},
 					"1": {
 						"name": "Basic Password Hashing and Authentication",
-						"description": "",
+						"description": "This seminar is an introduction to one of the methods used to keep passwords secure.  Hashing involves taking data of any length and turning it into data of fixed length.  We will discuss the hashing algorithm and the benefits of using password hashing as a security method.",
 						"organizer": "Saruman the White",
 						"date": "2017-10-01",
-						"location": ""
+						"location": "Confernce Room A"
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Sauron",
+						email: "OneRingToRuleThemAll@ent.ca",
+						question: "How to hash",
+						description: "I'm interested in incorporating password hashing as an added level of security.  Is there anyone available to meet up and discuss this?"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"2": {
 				"name": "Operating Systems",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
+						"name": "History of Operating Systems",
+						"description": "This seminar will cover the history of computers, computing, and the first operating systems. No computer science background required, everyone is welcome!",
+						"organizer": "Frodo Underhill Baggins",
 						"date": "2017-10-26",
 						"location": ""
 					},
@@ -262,17 +418,32 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Sam Gamgee",
+						email: "samwiseTheBrave@ent.ca",
+						question: "Different types of OS",
+						description: "what are the pros and cons of single/multi-tasking OS and single/multi-user OS?"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"3": {
 				"name": "Algorithms & Data Structures",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
+						"name": When to Use What: determing which type of algorithm to use"",
+						"description": "If you have questions about when a divide-and-conquor algorithm is appropriate or when to use a greedy algorithm, this seminar is for you!  We will discuss several types of algorithms, their benefits and drawbacks, and when to use them.",
+						"orginizer": "Faramir",
 						"date": "2017-09-29",
-						"location": ""
+						"location": "505A"
 					},
 					"1": {
 						"name": "",
@@ -282,17 +453,32 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Saruman the White",
+						email: "SarumanWhite@ent.ca",
+						question: "How to sort data",
+						description: "I have a question about how to sort my data.  I want to be able to search through it more efficiently but I'm not sure how.  Can someone message me for a meet up?"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"4": {
 				"name": "Data Management",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
+						"name": "Data Quality Management",
+						"description": "What constitutes high quality data?  I will discuss the definitions, quality assurance, and quality control.  I will also cover the optimum use of data quality and how to apply data quality to your own projects.",
+						"organizer": "Theodin of Rohan",
 						"date": "2017-09-24",
-						"location": ""
+						"location": "103C"
 					},
 					"1": {
 						"name": "",
@@ -302,17 +488,32 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Eowyn",
+						email: "ladyOfRohan@ent.ca",
+						question: "Zero Defect Data",
+						description: "I've heard the term Zero Defect Data but I'm not really sure what it is.  Can someone explain this to me?"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"5": {
 				"name": "Machine Learning",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
+						"name": "Clustering Workshop",
+						"description": "Learn about the techniques and uses of R clustering.  Bring your personal computers- we will be doing a walkthrough example.",
+						"organizer": "Faramir",
 						"date": "2017-10-26",
-						"location": ""
+						"location": "505B"
 					},
 					"1": {
 						"name": "",
@@ -322,17 +523,32 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Eowyn",
+						email: "ladyOfRohan@ent.ca",
+						question: "Clustering workshop question",
+						description: "Does anyone have any recommendations for learning some R before the workshop? Online courses are preferred, textbooks okay."
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"6": {
 				"name": "Human-Computer Interaction",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
+						"name": "Intro to HCI",
+						"description": "Human Computer Interaction focuses on the interface between computer and user.  This interaction is highly important when designing computer technology or web applications.  I will cover the fundaments of HCI research and how it is employed in our everyday world.",
+						"organizer": "Azog the Defiler",
 						"date": "2017-10-04",
-						"location": ""
+						"location": "Great Hall"
 					},
 					"1": {
 						"name": "",
@@ -342,17 +558,32 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "The Necromancer",
+						email: "Dolguldor@ent.ca",
+						question: "RBC banking app",
+						description: "I'm working on the RBC banking app and wanted to know more about HCI.  Would HCI be applicable to my project and how?"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"7": {
 				"name": "Mobile Development",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
+						"name": "Ionic Workshop",
+						"description": "Learn how to use Ionic to develop mobile applications.  Previous programming experience strongly recommended.",
+						"organizer": "Tom Bombadil",
 						"date": "2017-10-15",
-						"location": ""
+						"location": "103 (First Floor)"
 					},
 					"1": {
 						"name": "",
@@ -362,17 +593,32 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Ring Wraith #4",
+						email: "blackhood4@ent.ca",
+						question: "Runtime Error",
+						description: "I keep getting a runtime error when I run my code.  I can't seem to find the error.  What are some of the possible reasons for getting this error? Any debugging advice?"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			},
 			"8": {
 				"name": "Web Development",
 				"events": {
 					"0": {
-						"name": "",
-						"description": "",
-						"organizer": "",
+						"name": "Web Development 101",
+						"description": "Learn about the stages of web development from the conceptual stage to final product.  No programming experience required.",
+						"organizer": "Tom Bombadil",
 						"date": "2017-09-27",
-						"location": ""
+						"location": "First Floor Auditorium"
 					},
 					"1": {
 						"name": "",
@@ -382,7 +628,22 @@
 						"location": ""
 					}
 				},
-				"requests": {}
+				"requests": {
+					"0": {
+						id: "0",
+						asker: "Witch King of Angmar",
+						email: "blackhood9@ent.ca",
+						question: "HTML/CSS",
+						description: "Can anyone recommend some good software for building mockups? I want something that can generate the html and css code for me.  I was thinking about using Axure.  Does anyone have experience using it? Will buy coffee for whoever answers :)"
+					},
+					"1": {
+						id: "0",
+						asker: "",
+						email: "",
+						question: "",
+						description: ""
+					}
+				}
 			}
 		}
 	}
