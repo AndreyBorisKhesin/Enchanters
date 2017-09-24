@@ -30,7 +30,8 @@ export class LeafPage {
   }
 
   learn(topic: string) {
-    this.goToLearnCalendar(topic);
+    let filter = "learn-" + topic;
+    this.navCtrl.push(CalendarPage, {filter: filter});
   }
 
   ask() {
@@ -38,21 +39,12 @@ export class LeafPage {
   }
 
   mentor(topic: string) {
-    this.goToMentorCalendar(topic);
+    let filter = "mentor-" + topic;
+    this.navCtrl.push(CalendarPage, {filter: filter});
   }
 
   goToQuestion(filter: any): void {
     this.navCtrl.push(QuestionPage);
   }
-
-  goToLearnCalendar(filter: any): void {
-    this.navCtrl.push(CalendarPage, {filter: filter});
-  }
-
-  goToMentorCalendar(filter: any): void {
-
-  }
-
-
 
 }

@@ -13,7 +13,7 @@ import { TechnologyPage } from '../technology/technology';
  */
 
 @IonicPage({
-  // defaultHistory: ['HomePage', 'WelcomePage']
+	// defaultHistory: ['HomePage', 'WelcomePage']
 })
 @Component({
   selector: 'page-business',
@@ -45,5 +45,4 @@ export class BusinessPage {
   goToTech() {
     this.navCtrl.push(TechnologyPage);
   }
-
 }
