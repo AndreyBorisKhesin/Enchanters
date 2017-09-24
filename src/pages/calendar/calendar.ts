@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FirebaseProvider } from '../../providers/firebase/firebase';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 /**
  * Generated class for the CalendarPage page.
@@ -18,6 +20,7 @@ export class CalendarPage {
   filter: string;
   title: string;
   topicId: number;
+  requests: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.filter = this.navParams.get('filter');
@@ -28,7 +31,7 @@ export class CalendarPage {
         this.title = "My Questions";
         // This is going to be difficult
         break;
-      case "mentor-Accounting & Acturial Science":
+      case "mentor-Accounting & Actuarial Science":
         this.title = "Accounting & Acturial Science Questions";
         this.topicId = 0;
         break;
@@ -65,7 +68,7 @@ export class CalendarPage {
         this.topicId = 8;
         break;
       case "learn-Accounting & Acturial Science":
-        this.title = "Accounting & Acturial Science Help";
+        this.title = "Accounting & Actuarial Science Help";
         this.topicId = 0;
         break;
       case "learn-Client Services":
@@ -103,6 +106,9 @@ export class CalendarPage {
       default:
         this.title = "Default Calendar";
     }
+
+    // get requests from firebase
+
 
   }
 
