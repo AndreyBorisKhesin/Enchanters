@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { UserProvider } from '../../providers/user/user';
+import { FirebaseProvider } from '../../providers/firebase/firebase';
 
 /**
  * Generated class for the SignupPage page.
@@ -27,7 +28,8 @@ export class SignupPage {
     private navParams: NavParams,
     private alertCtrl: AlertController,
     private afAuth: AngularFireAuth,
-    public userProvider: UserProvider) {
+    public userProvider: UserProvider,
+    public firebaseProvider: FirebaseProvider) {
     this.signupData.email = this.navParams.get('email');
   }
 
@@ -45,8 +47,9 @@ export class SignupPage {
     this.afAuth.auth.createUserWithEmailAndPassword(this.signupData.email, this.signupData.password)
       .then(auth => {
         // Could do something with the Auth-Response
-        console.log(auth);
         this.userProvider.setUserName(this.signupData.name);
+        this.firebaseProvider.addNewUser(this.signupData.name);
+        this.firebaseProvider.addNewEmail(this.signupData.name, this.signupData.email);
       })
       .catch(err => {
         // Handle error
